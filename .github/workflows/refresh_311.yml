@@ -1,0 +1,57 @@
+# Daily data refresh for the NYC 311 Power BI dashboard.
+# Pulls the latest 311 requests with sodapy, rebuilds the star-schema CSVs, checks them,
+# and publishes them to the `data` branch. Power BI reads them from:
+#   https://raw.githubusercontent.com/<user>/<repo>/data/<table>.csv
+# The `data` branch is replaced on every run (one commit only), so the repo never grows.
+
+name: Refresh 311 data
+
+on:
+  schedule:
+    - cron: "0 10 * * *"     # 10:00 UTC = 6am New York (summer) / 5am (winter)
+  workflow_dispatch:          # also allows a manual run from the Actions tab
+
+permissions:
+  contents: write             # needed to push the data branch; uses GitHub's built-in token, no keys
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      # Keep the monthly raw files between runs, so only the newest 3 months are downloaded each day
+      - name: Restore raw data cache
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: raw-${{ github.run_id }}
+          restore-keys: raw-
+
+      - name: Fetch from the 311 API
+        run: python python/01_fetch.py
+
+      - name: Build model tables
+        run: python python/02_transform.py
+
+      - name: Verify (stops here if any check fails, so Power BI keeps yesterday's good data)
+        run: python python/verify.py | tee verify.log && grep -q "ALL CHECKS PASSED" verify.log
+
+      - name: Publish CSVs to the data branch
+        run: |
+          cd data/model
+          git init -q -b data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898237+github-actions[bot]@users.noreply.github.com"
+          git add *.csv
+          git commit -q -m "Data refresh $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data

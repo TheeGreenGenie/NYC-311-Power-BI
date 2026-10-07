@@ -1,0 +1,18 @@
+# Python environment (rebuilt from requirements.txt)
+NYC311Venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Raw API pull: millions of rows, too large for GitHub. Recreate with: python python\01_fetch.py
+data/raw/
+
+# Model CSVs: published daily to the `data` branch by GitHub Actions, not stored on main
+data/model/
+
+# Office / OS temp files
+~$*
+Thumbs.db
+
+# Planning notes
+PLAN.md
