@@ -1,0 +1,7 @@
+# NYC_311 - Python dependencies
+# Install INSIDE the project venv (NYC311Venv):  pip install -r requirements.txt
+# The same file is used by the GitHub Actions workflow that refreshes the data daily.
+
+sodapy>=2.2           # official Socrata client: pulls 311 requests from the NYC Open Data API (no key needed)
+pandas>=2.2           # cleaning, aggregating and writing the star-schema CSVs Power BI reads
+pyarrow>=17.0         # fast Parquet storage for the raw pull (data/raw/)
