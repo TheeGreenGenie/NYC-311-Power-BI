@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "d435ae521ab866d5f8b7",
+  "displayName": "Complaint Detail",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "70182493a9b89ecb51e0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_complaint"
+              }
+            },
+            "Property": "ComplaintType"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "79b5b65490709747cd1d",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "e80c358cf63a16be38ec",
+        "boundFilter": "70182493a9b89ecb51e0",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_complaint"
+              }
+            },
+            "Property": "ComplaintType"
+          }
+        }
+      }
+    ]
+  },
+  "visibility": "HiddenInViewMode"
+}

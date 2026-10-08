@@ -1,0 +1,43 @@
+table dim_agency
+	lineageTag: e83bfe5c-97cc-4712-9957-1f865bf6b6f1
+
+	column AgencyKey
+		dataType: string
+		lineageTag: ac1b3330-9d39-488c-9cf3-e1e705e1be42
+		summarizeBy: none
+		sourceColumn: AgencyKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AgencyName
+		dataType: string
+		lineageTag: af0e1c40-6727-4316-8fa6-8e827240e5ed
+		summarizeBy: none
+		sourceColumn: AgencyName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Agency
+		dataType: string
+		lineageTag: ae5538f8-f974-4d9c-9615-e277df35ab81
+		summarizeBy: none
+		sourceColumn: Agency
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_agency = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("dim_agency.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {{"AgencyKey", type text}, {"AgencyName", type text}}, "en-US"),
+				    Label  = Table.AddColumn(Typed, "Agency", each [AgencyKey] & " · " & [AgencyName], type text)
+				in
+				    Label
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

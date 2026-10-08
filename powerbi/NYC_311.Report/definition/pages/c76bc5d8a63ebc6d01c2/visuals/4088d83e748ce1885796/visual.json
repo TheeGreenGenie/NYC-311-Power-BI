@@ -1,0 +1,511 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "4088d83e748ce1885796",
+  "position": {
+    "x": 24,
+    "y": 200,
+    "z": 2600,
+    "height": 496,
+    "width": 808,
+    "tabOrder": 2600
+  },
+  "visual": {
+    "visualType": "decompositionTreeVisual",
+    "query": {
+      "queryState": {
+        "Analyze": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Requests"
+                }
+              },
+              "queryRef": "_Measures.Requests",
+              "nativeQueryRef": "Requests"
+            }
+          ]
+        },
+        "ExplainBy": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  },
+                  "Property": "Day Type"
+                }
+              },
+              "queryRef": "dim_date.Day Type",
+              "nativeQueryRef": "Day Type",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_agency"
+                    }
+                  },
+                  "Property": "Agency"
+                }
+              },
+              "queryRef": "dim_agency.Agency",
+              "nativeQueryRef": "Agency",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_complaint"
+                    }
+                  },
+                  "Property": "ComplaintType"
+                }
+              },
+              "queryRef": "dim_complaint.ComplaintType",
+              "nativeQueryRef": "ComplaintType",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_borough"
+                    }
+                  },
+                  "Property": "Borough"
+                }
+              },
+              "queryRef": "dim_borough.Borough",
+              "nativeQueryRef": "Borough",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  },
+                  "Property": "Season"
+                }
+              },
+              "queryRef": "dim_date.Season",
+              "nativeQueryRef": "Season",
+              "active": false
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_category"
+                    }
+                  },
+                  "Property": "Category"
+                }
+              },
+              "queryRef": "dim_category.Category",
+              "nativeQueryRef": "Category",
+              "active": false
+            }
+          ]
+        }
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "ExplainBy"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "dim_date.Day Type"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  },
+                  "Property": "Day Type"
+                }
+              }
+            ],
+            "isPinned": true,
+            "AIInformation": {
+              "method": "MaxSplit"
+            }
+          },
+          {
+            "queryRefs": [
+              "dim_agency.Agency"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_agency"
+                    }
+                  },
+                  "Property": "Agency"
+                }
+              }
+            ],
+            "isPinned": true,
+            "AIInformation": {
+              "method": "MaxSplit"
+            }
+          },
+          {
+            "queryRefs": [
+              "dim_complaint.ComplaintType"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_complaint"
+                    }
+                  },
+                  "Property": "ComplaintType"
+                }
+              }
+            ]
+          },
+          {
+            "queryRefs": [
+              "dim_borough.Borough"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "dim_date.Season"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "dim_category.Category"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_category"
+                    }
+                  },
+                  "Property": "Category"
+                }
+              }
+            ]
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'Weekday'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
+    "objects": {
+      "tree": [
+        {
+          "properties": {
+            "effectiveBarsPerLevel": {
+              "expr": {
+                "Literal": {
+                  "Value": "5L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "insights": [
+        {
+          "properties": {
+            "isAINode": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dim_date"
+                          }
+                        },
+                        "Property": "Day Type"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Weekday'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "isAINode": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dim_date"
+                          }
+                        },
+                        "Property": "Day Type"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Weekday'"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dim_agency"
+                          }
+                        },
+                        "Property": "Agency"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'NYPD · New York City Police Department'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "''Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Break every request down any way you like'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2cea1665f624aef4e5da",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Requests"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "754097b40090f8317eac",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_date"
+              }
+            },
+            "Property": "Day Type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6a123d5c1b962dff81c5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_agency"
+              }
+            },
+            "Property": "Agency"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "19547f6ca356ef762a4d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_category"
+              }
+            },
+            "Property": "Category"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d10b653cb576f13a2f08",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_borough"
+              }
+            },
+            "Property": "Borough"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "221daa6bf25f1b035177",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_date"
+              }
+            },
+            "Property": "Season"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "44cc90a80b4d7c2e0efd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_complaint"
+              }
+            },
+            "Property": "ComplaintType"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

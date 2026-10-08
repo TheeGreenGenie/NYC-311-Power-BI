@@ -1,0 +1,73 @@
+table dim_location
+	lineageTag: 8f51c61b-36dd-476a-ac92-7712b0665346
+
+	column ZIP
+		dataType: string
+		lineageTag: d5510e7c-44e0-4606-8e51-d8256e10a3b5
+		summarizeBy: none
+		sourceColumn: ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Borough
+		dataType: string
+		lineageTag: d7fd0249-c0a4-4221-aabc-287f4ac0637f
+		summarizeBy: none
+		sourceColumn: Borough
+
+		annotation SummarizationSetBy = Automatic
+
+	column Latitude
+		dataType: double
+		lineageTag: f9be29f8-00fd-4bd1-8f11-0754675eadb1
+		summarizeBy: none
+		sourceColumn: Latitude
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Longitude
+		dataType: double
+		lineageTag: 1af42ad4-40ff-4ea2-a901-e2d9f90730bc
+		summarizeBy: none
+		sourceColumn: Longitude
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ZIP Label'
+		dataType: string
+		lineageTag: 4aa7ab7e-86e2-440c-a848-62a6abc6a764
+		summarizeBy: none
+		sourceColumn: ZIP Label
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Borough Hierarchy'
+		lineageTag: 05591019-7ae0-4b0b-b745-535f7b274bed
+
+		level Borough
+			lineageTag: f7c358eb-e100-4ec4-b2df-94432afb4dcb
+			column: Borough
+
+		level 'ZIP Label'
+			lineageTag: 0f5a03d5-3b5d-4491-bf23-6e0112b5a4ec
+			column: 'ZIP Label'
+
+	partition dim_location = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("dim_location.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {
+				        {"ZIP", type text}, {"Borough", type text}, {"Latitude", type number}, {"Longitude", type number}}, "en-US"),
+				    Label  = Table.AddColumn(Typed, "ZIP Label", each [ZIP] & " (" & [Borough] & ")", type text)
+				in
+				    Label
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

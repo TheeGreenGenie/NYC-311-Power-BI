@@ -1,0 +1,68 @@
+relationship 6380b297-635a-4a37-ad6d-c784ad486bb2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: refresh_info.FetchedAt
+	toColumn: LocalDateTable_c642a33b-0620-4a60-aca7-dab76ef44624.Date
+
+relationship 0e88041e-d1bc-4204-831f-aa118479a8e3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: refresh_info.LatestRequest
+	toColumn: LocalDateTable_ace7bf1c-82c8-41ec-8cef-34df83d286d2.Date
+
+relationship e4c98a33-8f93-4f34-b6bb-ad828ac1745d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: refresh_info.DataAsOf
+	toColumn: LocalDateTable_7819354c-23a6-48b2-b8a7-529906915965.Date
+
+relationship 37ad4bcd-f392-4f33-9739-9d5dd42e9af6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: refresh_info.WindowStart
+	toColumn: LocalDateTable_a1edbb9b-7ba4-4ffb-a29f-74c3e5e385a9.Date
+
+relationship e50ee3a0-72dd-818c-d0da-08b0ba3c5cdc
+	fromColumn: fact_requests_daily.Date
+	toColumn: dim_date.Date
+
+relationship fa9dd69b-3889-4e66-31c0-e3ba166b25c6
+	fromColumn: fact_requests_daily.ComplaintKey
+	toColumn: dim_complaint.ComplaintKey
+
+relationship ebc7b1c0-7886-c0ec-82cb-b648af8ae2a8
+	fromColumn: fact_requests_daily.AgencyKey
+	toColumn: dim_agency.AgencyKey
+
+relationship cf773eca-ee82-53cd-aad7-5eda13c8eba5
+	fromColumn: fact_requests_daily.Borough
+	toColumn: dim_borough.Borough
+
+relationship 5807ae33-b29c-96c3-7d16-7db339f31892
+	fromColumn: fact_zip_monthly.MonthStart
+	toColumn: dim_date.Date
+
+relationship d28968cd-102e-a0c7-b6c1-3c18c991424c
+	fromColumn: fact_zip_monthly.Category
+	toColumn: dim_category.Category
+
+relationship fb2ed99c-36fa-106b-2d77-09d1fd0f2df3
+	fromColumn: fact_open_backlog.ComplaintKey
+	toColumn: dim_complaint.ComplaintKey
+
+relationship a4262ba6-835c-4298-22b0-ffaffd62c201
+	fromColumn: fact_open_backlog.AgencyKey
+	toColumn: dim_agency.AgencyKey
+
+relationship c8b82c55-729d-fce8-d9ec-c4ce6514e642
+	fromColumn: fact_open_backlog.Borough
+	toColumn: dim_borough.Borough
+
+relationship 49a12081-c4c3-9669-3320-c0a3346035ef
+	fromColumn: dim_complaint.Category
+	toColumn: dim_category.Category
+
+relationship 736542e6-7bf3-a12d-77ed-47526a4c6a77
+	fromColumn: dim_location.Borough
+	toColumn: dim_borough.Borough
+
+relationship c8db0f54-7dc2-c9dc-3ec4-4dadb5387a1e
+	fromColumn: fact_zip_monthly.ZIP
+	toColumn: dim_location.ZIP
+

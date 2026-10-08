@@ -10,6 +10,24 @@ data/raw/
 # Model CSVs: published daily to the `data` branch by GitHub Actions, not stored on main
 data/model/
 
+# Power BI project: local cache, personal editor settings and scratch DAX queries
+**/.pbi/
+powerbi/NYC_311.SemanticModel/DAXQueries/
+
+# Build notes and copy-paste sources: the same code now lives inside the Power BI project
+docs/
+powerbi/queries.m
+powerbi/measures.dax
+powerbi/measures_query.dax
+powerbi/theme.json
+
+# Memo source page; the PDF next to it is the deliverable
+output/Insights_Memo.html
+
+# Old .pbix copies from before the report was built; NYC_311.pbip is the current report
+powerbi/*.pbix
+powerbi/pbip/
+
 # Office / OS temp files
 ~$*
 Thumbs.db

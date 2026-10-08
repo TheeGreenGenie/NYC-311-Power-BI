@@ -1,0 +1,39 @@
+table dim_borough
+	lineageTag: 6a22ef1e-90d1-4141-b708-c0b2716fb05d
+
+	column Borough
+		dataType: string
+		lineageTag: b6b96274-bd81-4cea-bb67-3a05c380018f
+		summarizeBy: none
+		sourceColumn: Borough
+		sortByColumn: BoroughSort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column BoroughSort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a5da078a-b92d-4e3d-a367-87ad1080619c
+		summarizeBy: sum
+		sourceColumn: BoroughSort
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_borough = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("dim_borough.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {{"Borough", type text}, {"BoroughSort", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

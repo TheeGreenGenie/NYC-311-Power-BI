@@ -1,0 +1,21 @@
+table 'Target Days'
+	lineageTag: 13ddca5f-96a5-4d67-b655-e7a9a0ef5919
+
+	column 'Target Days'
+		formatString: 0
+		lineageTag: 4c4cdaa9-a648-4680-9175-77ee801da348
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Target Days]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Target Days' = calculated
+		mode: import
+		source = ```
+				DATATABLE ( "Target Days", INTEGER, { { 1 }, { 3 }, { 7 }, { 14 }, { 30 } } )
+				
+				```
+
+	annotation PBI_Id = 74993651e9ce42df9616a62cbec9763e
+

@@ -1,0 +1,201 @@
+table dim_date
+	lineageTag: 86cfaebe-7b0e-4645-a4a4-ccc14420a854
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 733ef959-3982-4e8f-8c32-919b33325c29
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b4e021b-cc9b-4f1c-909b-0782b699b559
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = User
+
+	column Quarter
+		dataType: string
+		lineageTag: d11cdfc3-b264-4a8d-a089-911fe9a5cf0a
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNum
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 037e9178-49e7-4a02-960e-a214740a049e
+		summarizeBy: sum
+		sourceColumn: MonthNum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		dataType: string
+		lineageTag: 4368e570-1f3f-44c6-87e0-e3f0e83cb612
+		summarizeBy: none
+		sourceColumn: MonthName
+		sortByColumn: MonthNum
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonth
+		dataType: string
+		lineageTag: 7dfbd935-9fac-4610-b34a-3ea1e5197858
+		summarizeBy: none
+		sourceColumn: YearMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthStart
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8d766f9d-6f77-4cd3-80ff-d080284aa410
+		summarizeBy: none
+		sourceColumn: MonthStart
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column WeekStart
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1d5efabd-028e-4078-848c-6e794b7d8a52
+		summarizeBy: none
+		sourceColumn: WeekStart
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Weekday
+		dataType: string
+		lineageTag: 4f003c36-141f-4df6-a57e-82246db1c3ac
+		summarizeBy: none
+		sourceColumn: Weekday
+		sortByColumn: WeekdayNum
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekdayNum
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 25529b62-df09-4309-874c-0bb70bee6bed
+		summarizeBy: sum
+		sourceColumn: WeekdayNum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsWeekend
+		dataType: int64
+		formatString: 0
+		lineageTag: 989aec7a-6886-402f-930f-be7fab9ddb55
+		summarizeBy: sum
+		sourceColumn: IsWeekend
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsHoliday
+		dataType: int64
+		formatString: 0
+		lineageTag: 69a8dd60-ef0b-425d-8862-252102fd1f83
+		summarizeBy: sum
+		sourceColumn: IsHoliday
+
+		annotation SummarizationSetBy = Automatic
+
+	column Season
+		dataType: string
+		lineageTag: 6d57e197-af16-4720-ad11-378632c0a8f7
+		summarizeBy: none
+		sourceColumn: Season
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsMatureCohort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3a7baf1e-0a56-43a4-81c2-ffe00efc377d
+		summarizeBy: sum
+		sourceColumn: IsMatureCohort
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsCompleteMonth
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 04f96beb-0615-4a37-8221-4342732f22c5
+		summarizeBy: sum
+		sourceColumn: IsCompleteMonth
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		lineageTag: 46e67c3c-bebd-4bfe-9f88-e4ea18763a9c
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: MonthStart
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day Type'
+		dataType: string
+		lineageTag: ce6c7ed8-6bee-4645-98e4-be090570d0d3
+		summarizeBy: none
+		sourceColumn: Day Type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_date = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("dim_date.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {
+				        {"Date", type date}, {"Year", Int64.Type}, {"Quarter", type text}, {"MonthNum", Int64.Type},
+				        {"MonthName", type text}, {"YearMonth", type text}, {"MonthStart", type date}, {"WeekStart", type date},
+				        {"Weekday", type text}, {"WeekdayNum", Int64.Type}, {"IsWeekend", Int64.Type}, {"IsHoliday", Int64.Type},
+				        {"Season", type text}, {"IsMatureCohort", Int64.Type}, {"IsCompleteMonth", Int64.Type}}, "en-US"),
+				    MonthLabel = Table.AddColumn(Typed, "Month", each Date.ToText([MonthStart], "MMM yyyy", "en-US"), type text),
+				    DayType    = Table.AddColumn(MonthLabel, "Day Type",
+				                     each if [IsHoliday] = 1 then "Holiday" else if [IsWeekend] = 1 then "Weekend" else "Weekday",
+				                     type text)
+				in
+				    DayType
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

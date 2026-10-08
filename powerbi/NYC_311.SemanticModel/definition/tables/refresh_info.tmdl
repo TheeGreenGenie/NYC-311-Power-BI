@@ -1,0 +1,117 @@
+table refresh_info
+	isHidden
+	lineageTag: d4bc2de5-f975-4dd9-ad24-9be2b4b66429
+
+	column FetchedAt
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: dafeeb21-8587-4e11-8aec-16102d0b2535
+		summarizeBy: none
+		sourceColumn: FetchedAt
+
+		variation Variation
+			isDefault
+			relationship: 6380b297-635a-4a37-ad6d-c784ad486bb2
+			defaultHierarchy: LocalDateTable_c642a33b-0620-4a60-aca7-dab76ef44624.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LatestRequest
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 403633e2-4451-41ac-a965-2287bef16a81
+		summarizeBy: none
+		sourceColumn: LatestRequest
+
+		variation Variation
+			isDefault
+			relationship: 0e88041e-d1bc-4204-831f-aa118479a8e3
+			defaultHierarchy: LocalDateTable_ace7bf1c-82c8-41ec-8cef-34df83d286d2.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DataAsOf
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 09785779-3494-4743-b79c-5a35ff2d0814
+		summarizeBy: none
+		sourceColumn: DataAsOf
+
+		variation Variation
+			isDefault
+			relationship: e4c98a33-8f93-4f34-b6bb-ad828ac1745d
+			defaultHierarchy: LocalDateTable_7819354c-23a6-48b2-b8a7-529906915965.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column WindowStart
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 868334b7-7502-468d-97ea-bd7a08971a8e
+		summarizeBy: none
+		sourceColumn: WindowStart
+
+		variation Variation
+			isDefault
+			relationship: 37ad4bcd-f392-4f33-9739-9d5dd42e9af6
+			defaultHierarchy: LocalDateTable_a1edbb9b-7ba4-4ffb-a29f-74c3e5e385a9.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column TotalRequests
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b095e01e-1cd6-4336-a931-901645841c1a
+		summarizeBy: sum
+		sourceColumn: TotalRequests
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column OpenRequests
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 09ca526b-b54d-450c-946a-e1d9f43a85cb
+		summarizeBy: sum
+		sourceColumn: OpenRequests
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition refresh_info = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("refresh_info.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {
+				        {"FetchedAt", type datetime}, {"LatestRequest", type datetime}, {"DataAsOf", type date},
+				        {"WindowStart", type date}, {"TotalRequests", Int64.Type}, {"OpenRequests", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

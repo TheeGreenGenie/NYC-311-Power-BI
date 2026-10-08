@@ -1,0 +1,49 @@
+table Metric
+	lineageTag: e32cfed3-0b81-4996-861a-7bfa7632c016
+
+	column Metric
+		lineageTag: b8987b34-e1f8-4534-a461-038f6381ec45
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Metric Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Metric Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Metric Fields'
+		isHidden
+		lineageTag: beffc487-2fb8-429c-853b-bed7e81aa74f
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Metric Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Metric Order'
+		isHidden
+		formatString: 0
+		lineageTag: 62b9b1a2-1847-458d-b128-5eeb9d7a29ae
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Metric = calculated
+		mode: import
+		source =
+				{
+				    ("Requests", NAMEOF('_Measures'[Requests]), 0),
+				    ("Avg Response Days", NAMEOF('_Measures'[Avg Response Days]), 1),
+				    ("% Within Target", NAMEOF('_Measures'[% Within Target]), 2)
+				}
+
+	annotation PBI_Id = dac74cf7bfea4e3eae5c488b2120ebe0
+

@@ -1,0 +1,99 @@
+table fact_open_backlog
+	lineageTag: 0b88eb7a-1a61-4692-9bc9-82f4da4f7ab9
+
+	column ComplaintKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 719dfc97-0013-485b-9518-db5db132e4c7
+		summarizeBy: none
+		sourceColumn: ComplaintKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AgencyKey
+		dataType: string
+		isHidden
+		lineageTag: e024112f-611c-4e36-be8e-95819bfcfb5c
+		summarizeBy: none
+		sourceColumn: AgencyKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Borough
+		dataType: string
+		isHidden
+		lineageTag: dd7823ec-87d1-4e9d-bf41-d62f8293229b
+		summarizeBy: none
+		sourceColumn: Borough
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AgeBucket
+		dataType: string
+		lineageTag: 50684287-ad1f-4f7f-b9e4-823d929cfdf9
+		summarizeBy: none
+		sourceColumn: AgeBucket
+		sortByColumn: AgeBucketSort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column OpenRequests
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0dc235ae-cdf7-49e8-8ab0-a3387c790cdf
+		summarizeBy: sum
+		sourceColumn: OpenRequests
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AgeDaysSum
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2a1fca8e-47bb-4268-8788-179d26dae4bc
+		summarizeBy: sum
+		sourceColumn: AgeDaysSum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AgeBucketSort
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b4f1ba90-c8f4-4881-a481-8445f4dd69de
+		summarizeBy: sum
+		sourceColumn: AgeBucketSort
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_open_backlog = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("fact_open_backlog.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {
+				        {"AgeBucket", type text}, {"ComplaintKey", Int64.Type}, {"AgencyKey", type text}, {"Borough", type text},
+				        {"OpenRequests", Int64.Type}, {"AgeDaysSum", Int64.Type}, {"AgeBucketSort", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

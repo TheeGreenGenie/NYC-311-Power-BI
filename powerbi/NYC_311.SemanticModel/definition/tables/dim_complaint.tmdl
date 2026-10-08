@@ -1,0 +1,46 @@
+table dim_complaint
+	lineageTag: 23501fd8-98dc-424a-b898-4923a6072142
+
+	column ComplaintKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e2c2b0a7-7249-4df9-a6d1-c1c57884ee88
+		summarizeBy: none
+		sourceColumn: ComplaintKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ComplaintType
+		dataType: string
+		lineageTag: a820a001-9342-4fa7-a73e-b9da42ffcce4
+		summarizeBy: none
+		sourceColumn: ComplaintType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 1dacb3e5-e5d4-407f-aba3-87bbc9ef634d
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_complaint = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("dim_complaint.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {
+				        {"ComplaintKey", Int64.Type}, {"ComplaintType", type text}, {"Category", type text}}, "en-US"),
+				    Trimmed = Table.TransformColumns(Typed, {{"ComplaintType", Text.Trim, type text}})
+				in
+				    Trimmed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

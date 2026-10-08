@@ -1,0 +1,55 @@
+table 'Time Comparison'
+	lineageTag: 55eb7b11-07bf-4822-be4b-3687713f09a0
+
+	calculationGroup
+		precedence: 1
+
+		calculationItem Current = SELECTEDMEASURE ()
+
+		calculationItem 'Prior Month' = ```
+				CALCULATE ( SELECTEDMEASURE (), DATEADD ( dim_date[Date], -1, MONTH ) )
+				
+				```
+
+		calculationItem 'MoM %' = ```
+				VAR cur = SELECTEDMEASURE () VAR prv = CALCULATE ( SELECTEDMEASURE (), DATEADD ( dim_date[Date], -1, MONTH ) ) RETURN DIVIDE ( cur - prv, prv )
+				
+				```
+
+			formatStringDefinition = ""
+
+		calculationItem 'Same Month Last Year' = ```
+				CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( dim_date[Date] ) )
+				
+				```
+
+		calculationItem 'YoY %' = ```
+				VAR cur = SELECTEDMEASURE () VAR prv = CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( dim_date[Date] ) ) RETURN DIVIDE ( cur - prv, prv )
+				
+				```
+
+			formatStringDefinition = ""
+
+		calculationItem 'Year to Date' = ```
+				CALCULATE ( SELECTEDMEASURE (), DATESYTD ( dim_date[Date] ) )
+				
+				```
+
+	column Comparison
+		dataType: string
+		lineageTag: ba5fab03-c080-45ef-9f68-1fc8bbff3bfa
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordinal
+		dataType: int64
+		formatString: 0
+		lineageTag: 759281bc-e0c0-467a-9b13-62bc720e6dee
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+

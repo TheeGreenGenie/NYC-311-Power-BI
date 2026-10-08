@@ -1,0 +1,25 @@
+expression BaseUrl = "https://raw.githubusercontent.com/TheeGreenGenie/NYC-311-Power-BI/data/" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 0ea5e708-bf53-45d2-abf3-a1d2a4158afd
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression GetCsv =
+		let
+		    GetCsv = (fileName as text) as table =>
+		        let
+		            Source   = Csv.Document(
+		                           Web.Contents(BaseUrl, [RelativePath = fileName]),
+		                           [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+		            Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true])
+		        in
+		            Promoted
+		in
+		    GetCsv
+	lineageTag: 22490fbb-d4f6-484a-9ccb-39194ae5b9a1
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+

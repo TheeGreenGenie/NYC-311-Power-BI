@@ -1,0 +1,516 @@
+table _Measures
+	lineageTag: e1489dfd-c0aa-4106-a447-d7dad7606c36
+
+	measure 'As Of Date' = ```
+			
+			        MAX ( refresh_info[DataAsOf] )
+			```
+		formatString: Short Date
+		displayFolder: 0 Dates
+		lineageTag: 2f4d9c6b-a313-4b40-9383-9245fb6a375d
+
+	measure 'Last Full Month End' = ```
+			
+			        EOMONTH ( [As Of Date], -1 )
+			```
+		formatString: Short Date
+		displayFolder: 0 Dates
+		lineageTag: 97cba91c-ff5f-45ea-b127-6a4ecad146fd
+
+	measure 'Mature Month End' = ```
+			
+			        EOMONTH ( [As Of Date] - 30, -1 )
+			```
+		formatString: Short Date
+		displayFolder: 0 Dates
+		lineageTag: df4ec135-a267-4ae0-8552-b7898204d95f
+
+	measure 'Data As Of Label' = ```
+			
+			        "Data through " & FORMAT ( [As Of Date], "mmm d, yyyy" ) & "  ·  refreshed daily"
+			```
+		displayFolder: 0 Dates
+		lineageTag: 326ef0f4-f4e4-49c2-82d0-b31f7360b30f
+
+	measure 'Last Full Month Label' = ```
+			
+			        FORMAT ( [Last Full Month End], "mmmm yyyy" )
+			```
+		displayFolder: 0 Dates
+		lineageTag: 65c93594-2192-4c3e-af89-b7ecfaba95d5
+
+	measure 'Mature Month Label' = ```
+			
+			        FORMAT ( [Mature Month End], "mmmm yyyy" )
+			```
+		displayFolder: 0 Dates
+		lineageTag: 222e1edd-2015-4531-a266-226c393f18e1
+
+	measure Requests = ```
+			
+			        SUM ( fact_requests_daily[Requests] )
+			```
+		formatString: #,0
+		displayFolder: 1 Volume
+		lineageTag: a0dd4a12-ac5c-4f22-9a79-d0cf8d7c340c
+
+	measure 'Closed Requests' = ```
+			
+			        SUM ( fact_requests_daily[Closed] )
+			```
+		formatString: #,0
+		displayFolder: 1 Volume
+		lineageTag: b1b83468-f56b-417d-988c-6bf79e626797
+
+	measure '% Closed' = ```
+			
+			        DIVIDE ( [Closed Requests], [Requests] )
+			```
+		formatString: #,0.0%;-#,0.0%;#,0.0%
+		displayFolder: 1 Volume
+		lineageTag: 5f3e0e2d-48ba-4ad8-baa5-0b8741243ca1
+
+	measure 'Requests per Day' = ```
+			
+			        DIVIDE ( [Requests], COUNTROWS ( dim_date ) )
+			```
+		formatString: #,0
+		displayFolder: 1 Volume
+		lineageTag: 82182034-64bc-42a9-a252-e7ae5a76fb5d
+
+	measure 'Requests 7-Day Avg' = ```
+			
+			        AVERAGEX ( DATESINPERIOD ( dim_date[Date], MAX ( dim_date[Date] ), -7, DAY ), [Requests] )
+			```
+		formatString: #,0
+		displayFolder: 1 Volume
+		lineageTag: edf62210-0994-4365-9e96-756132498200
+
+	measure 'Requests 28-Day Avg' = ```
+			
+			        AVERAGEX ( DATESINPERIOD ( dim_date[Date], MAX ( dim_date[Date] ), -28, DAY ), [Requests] )
+			```
+		formatString: #,0
+		displayFolder: 1 Volume
+		lineageTag: 4d8af017-fb2d-4f63-b78e-1d9d9253e085
+
+	measure 'Busiest Weekday' = ```
+			
+			        VAR t = TOPN ( 1, VALUES ( dim_date[Weekday] ), [Requests per Day], DESC )
+			        RETURN MAXX ( t, dim_date[Weekday] ) & "  ·  " & FORMAT ( MAXX ( t, [Requests per Day] ), "#,0" ) & " a day"
+			```
+		displayFolder: 1 Volume
+		lineageTag: a781c5d5-1e65-484b-9a78-ccf1fbc87d58
+
+	measure 'Requests LFM' = ```
+			
+			        VAR e = [Last Full Month End]
+			        RETURN CALCULATE ( [Requests], DATESBETWEEN ( dim_date[Date], EOMONTH ( e, -1 ) + 1, e ) )
+			```
+		formatString: #,0
+		displayFolder: 1 Volume
+		lineageTag: 97c5363c-4b10-4857-9439-85aa5b312156
+
+	measure 'Requests LFM Prior' = ```
+			
+			        VAR e = EOMONTH ( [Last Full Month End], -1 )
+			        RETURN CALCULATE ( [Requests], DATESBETWEEN ( dim_date[Date], EOMONTH ( e, -1 ) + 1, e ) )
+			```
+		formatString: #,0
+		displayFolder: 1 Volume
+		lineageTag: 61e24553-bde3-41d3-9ab3-0367fc5d30bc
+
+	measure 'Requests LFM MoM %' = ```
+			
+			        DIVIDE ( [Requests LFM] - [Requests LFM Prior], [Requests LFM Prior] )
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1 Volume
+		lineageTag: 0edf6338-d249-4036-b4a5-c582489f373e
+
+	measure 'Requests LFM Last Year' = ```
+			
+			        VAR e = EOMONTH ( [Last Full Month End], -12 )
+			        RETURN CALCULATE ( [Requests], DATESBETWEEN ( dim_date[Date], EOMONTH ( e, -1 ) + 1, e ) )
+			```
+		formatString: #,0
+		displayFolder: 1 Volume
+		lineageTag: d865881a-a05a-411d-ae83-9766d3cd784c
+
+	measure 'Requests LFM YoY %' = ```
+			
+			        DIVIDE ( [Requests LFM] - [Requests LFM Last Year], [Requests LFM Last Year] )
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 1 Volume
+		lineageTag: 70bb7a98-6764-4cbd-acbe-38665c5ac7c0
+
+	measure 'Timed Closed' = ```
+			
+			        SUM ( fact_requests_daily[TimedClosed] )
+			```
+		formatString: #,0
+		displayFolder: 2 Response Time
+		lineageTag: fc12dd5f-90fe-43b6-bf7a-6f8f9518ca8f
+
+	measure 'Avg Response Days (All)' = ```
+			
+			        DIVIDE ( SUM ( fact_requests_daily[ResponseHoursSum] ), [Timed Closed] ) / 24
+			```
+		formatString: 0.0
+		displayFolder: 2 Response Time
+		lineageTag: edc238f8-e242-4aa2-85ae-3380815df95c
+
+	measure 'Avg Response Days' = ```
+			
+			        CALCULATE ( [Avg Response Days (All)], KEEPFILTERS ( dim_date[IsMatureCohort] = 1 ) )
+			```
+		formatString: 0.0
+		displayFolder: 2 Response Time
+		lineageTag: b74a6bdd-bbb5-45b8-975a-17e3ad1b5cbb
+
+	measure 'Avg Response Days MM' = ```
+			
+			        VAR e = [Mature Month End]
+			        RETURN CALCULATE ( [Avg Response Days (All)], DATESBETWEEN ( dim_date[Date], EOMONTH ( e, -1 ) + 1, e ) )
+			```
+		formatString: 0.0
+		displayFolder: 2 Response Time
+		lineageTag: 36802778-09da-4b5d-8a2e-c94f812d4d45
+
+	measure 'Avg Response Days MM Prior' = ```
+			
+			        VAR e = EOMONTH ( [Mature Month End], -1 )
+			        RETURN CALCULATE ( [Avg Response Days (All)], DATESBETWEEN ( dim_date[Date], EOMONTH ( e, -1 ) + 1, e ) )
+			```
+		formatString: 0.0
+		displayFolder: 2 Response Time
+		lineageTag: e1f44126-99ec-4f9d-8f97-721289112de3
+
+	measure 'Avg Response MM Change %' = ```
+			
+			        DIVIDE ( [Avg Response Days MM] - [Avg Response Days MM Prior], [Avg Response Days MM Prior] )
+			```
+		displayFolder: 2 Response Time
+		lineageTag: b4b6b195-d65b-4761-8b44-ff857a578251
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Selected Target Days' = ```
+			
+			        SELECTEDVALUE ( 'Target Days'[Target Days], 7 )
+			```
+		formatString: 0
+		displayFolder: 3 Target
+		lineageTag: d128b4d4-61cc-4593-840f-b981c450ddfa
+
+	measure 'Within Target Count' = ```
+			
+			        SWITCH (
+			            [Selected Target Days],
+			            1,  SUM ( fact_requests_daily[Within1d] ),
+			            3,  SUM ( fact_requests_daily[Within3d] ),
+			            7,  SUM ( fact_requests_daily[Within7d] ),
+			            14, SUM ( fact_requests_daily[Within14d] ),
+			            30, SUM ( fact_requests_daily[Within30d] )
+			        )
+			```
+		formatString: #,0
+		displayFolder: 3 Target
+		lineageTag: 100abef8-dc71-448a-b03f-4f49b1778045
+
+	measure '% Within Target' = ```
+			
+			        VAR cutoff = [As Of Date] - [Selected Target Days]
+			        RETURN
+			            CALCULATE ( DIVIDE ( [Within Target Count], [Requests] ), KEEPFILTERS ( dim_date[Date] <= cutoff ) )
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3 Target
+		lineageTag: 5b5103a2-566f-4146-bcc3-4155639ade70
+
+	measure '% Within Target MM' = ```
+			
+			        VAR e = [Mature Month End]
+			        RETURN CALCULATE ( [% Within Target], DATESBETWEEN ( dim_date[Date], EOMONTH ( e, -1 ) + 1, e ) )
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3 Target
+		lineageTag: 03cd8a20-05a0-464e-b3db-eada27c1338b
+
+	measure '% Within Target MM Prior' = ```
+			
+			        VAR e = EOMONTH ( [Mature Month End], -1 )
+			        RETURN CALCULATE ( [% Within Target], DATESBETWEEN ( dim_date[Date], EOMONTH ( e, -1 ) + 1, e ) )
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: 3 Target
+		lineageTag: b97a1f42-251d-483d-b1df-8b4162bbb731
+
+	measure '% Within Target MM Change pts' = ```
+			
+			        ( [% Within Target MM] - [% Within Target MM Prior] ) * 100
+			```
+		formatString: 0.0
+		displayFolder: 3 Target
+		lineageTag: 9923d06b-c9ea-4d20-b241-84cc00668f97
+
+	measure 'Target Label' = ```
+			
+			        "% closed within " & [Selected Target Days] & IF ( [Selected Target Days] = 1, " day", " days" )
+			```
+		displayFolder: 3 Target
+		lineageTag: c22559b3-03e7-4507-9af5-aad471ede124
+
+	measure 'Open Backlog' = ```
+			
+			        SUM ( fact_open_backlog[OpenRequests] )
+			```
+		formatString: #,0
+		displayFolder: 4 Backlog
+		lineageTag: 5a215aa0-a2f9-4e25-9452-3478967fdd28
+
+	measure 'Open 31+ Days' = ```
+			
+			        CALCULATE ( [Open Backlog], fact_open_backlog[AgeBucketSort] >= 3 )
+			```
+		formatString: #,0
+		displayFolder: 4 Backlog
+		lineageTag: 8a79b197-b680-47b3-9f24-430374dee980
+
+	measure '% Open 31+ Days' = ```
+			
+			        DIVIDE ( [Open 31+ Days], [Open Backlog] )
+			```
+		formatString: 0%;-0%;0%
+		displayFolder: 4 Backlog
+		lineageTag: a5b9b3fb-4384-4769-8f49-e52b9006b8a2
+
+	measure 'Avg Open Age Days' = ```
+			
+			        DIVIDE ( SUM ( fact_open_backlog[AgeDaysSum] ), [Open Backlog] )
+			```
+		formatString: 0
+		displayFolder: 4 Backlog
+		lineageTag: 16b1b779-b913-463b-9b9c-0c49ab3b9fb9
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'ZIP Requests' = ```
+			
+			        SUM ( fact_zip_monthly[Requests] )
+			```
+		formatString: #,0
+		displayFolder: 5 Geography
+		lineageTag: 0cedbac2-6c6f-4af9-933f-355b25792c0f
+
+	measure 'ZIP Avg Response Days' = ```
+			
+			        VAR e = [Mature Month End]
+			        RETURN
+			            CALCULATE (
+			                DIVIDE ( SUM ( fact_zip_monthly[ResponseHoursSum] ), SUM ( fact_zip_monthly[TimedClosed] ) ) / 24,
+			                KEEPFILTERS ( dim_date[Date] <= e )
+			            )
+			```
+		formatString: 0.0
+		displayFolder: 5 Geography
+		lineageTag: dc8f6067-550b-42dd-85ad-1852538bf368
+
+	measure 'Top ZIP' = ```
+			
+			        VAR t = TOPN ( 1, FILTER ( VALUES ( dim_location[ZIP Label] ), [ZIP Requests] > 0 ), [ZIP Requests], DESC )
+			        RETURN MAXX ( t, dim_location[ZIP Label] )
+			```
+		displayFolder: 5 Geography
+		lineageTag: 63a78fe8-d4de-45fb-a03f-8a83520ef90b
+
+	measure 'Top Borough' = ```
+			
+			        VAR t = TOPN ( 1, FILTER ( VALUES ( dim_borough[Borough] ), dim_borough[Borough] <> "Unspecified" ), [Requests], DESC )
+			        RETURN MAXX ( t, dim_borough[Borough] )
+			```
+		displayFolder: 5 Geography
+		lineageTag: 0848eaae-cda6-4d9e-bb23-4274718cf6b9
+
+	measure 'Slowest Borough' = ```
+			
+			        VAR t = TOPN ( 1, FILTER ( VALUES ( dim_borough[Borough] ), dim_borough[Borough] <> "Unspecified" ), [Avg Response Days], DESC )
+			        RETURN MAXX ( t, dim_borough[Borough] ) & "  ·  " & FORMAT ( MAXX ( t, [Avg Response Days] ), "0.0" ) & " days"
+			```
+		displayFolder: 5 Geography
+		lineageTag: e1cd11b7-0d89-4a11-a8e8-a9d65bfa2b4d
+
+	measure 'Fastest Borough' = ```
+			
+			        VAR t = TOPN ( 1, FILTER ( VALUES ( dim_borough[Borough] ), dim_borough[Borough] <> "Unspecified" ), [Avg Response Days], ASC )
+			        RETURN MAXX ( t, dim_borough[Borough] ) & "  ·  " & FORMAT ( MAXX ( t, [Avg Response Days] ), "0.0" ) & " days"
+			```
+		displayFolder: 5 Geography
+		lineageTag: 0e0a9410-0f14-45aa-89f5-bbf0e314cd26
+
+	measure 'Top Complaint LFM' = ```
+			
+			        VAR t = TOPN ( 1, VALUES ( dim_complaint[ComplaintType] ), [Requests LFM], DESC )
+			        RETURN MAXX ( t, dim_complaint[ComplaintType] )
+			```
+		displayFolder: 6 Complaints
+		lineageTag: e1d05124-6d55-4418-b965-3b739ee7c885
+
+	measure 'Fastest Growing Complaint' = ```
+			
+			        VAR t =
+			            ADDCOLUMNS (
+			                FILTER ( VALUES ( dim_complaint[ComplaintType] ), [Requests LFM Prior] >= 500 ),
+			                "@growth", [Requests LFM MoM %]
+			            )
+			        VAR top1 = TOPN ( 1, t, [@growth], DESC )
+			        RETURN MAXX ( top1, dim_complaint[ComplaintType] ) & "  ·  " & FORMAT ( MAXX ( top1, [@growth] ), "+0%;-0%" )
+			```
+		displayFolder: 6 Complaints
+		lineageTag: 441cad5f-fe59-4082-8f8c-5e236317faab
+
+	measure 'Complaint Types Count' = ```
+			
+			        DISTINCTCOUNT ( fact_requests_daily[ComplaintKey] )
+			```
+		formatString: 0
+		displayFolder: 6 Complaints
+		lineageTag: b7804301-fed9-4644-b2be-dc72dbf9e4f3
+
+	measure 'Noise Share LFM' = ```
+			
+			        DIVIDE ( CALCULATE ( [Requests LFM], dim_category[Category] = "Noise" ), [Requests LFM] )
+			```
+		formatString: 0%;-0%;0%
+		displayFolder: 6 Complaints
+		lineageTag: 6b630fff-e23c-4c16-9621-a0ba8bf78bdc
+
+	measure 'Best Agency' = ```
+			
+			        VAR t = TOPN ( 1, FILTER ( VALUES ( dim_agency[AgencyKey] ), [Requests] >= 5000 ), [% Within Target], DESC )
+			        RETURN MAXX ( t, dim_agency[AgencyKey] ) & "  ·  " & FORMAT ( MAXX ( t, [% Within Target] ), "0%" )
+			```
+		displayFolder: 7 Agencies
+		lineageTag: 9d0051e1-85b3-4a15-856c-2fdeda0621ea
+
+	measure 'Worst Agency' = ```
+			
+			        VAR t = TOPN ( 1, FILTER ( VALUES ( dim_agency[AgencyKey] ), [Requests] >= 5000 ), [% Within Target], ASC )
+			        RETURN MAXX ( t, dim_agency[AgencyKey] ) & "  ·  " & FORMAT ( MAXX ( t, [% Within Target] ), "0%" )
+			```
+		displayFolder: 7 Agencies
+		lineageTag: a3c11d54-bf3f-4526-9307-a40954b283a8
+
+	measure 'Arrow Requests MoM' = ```
+			
+			        VAR c = [Requests LFM MoM %]
+			        RETURN IF ( c >= 0, "▲ ", "▼ " ) & FORMAT ( ABS ( c ), "0.0%" ) & " vs prior month"
+			```
+		displayFolder: 8 Display
+		lineageTag: 9b16c8c8-99a9-4d4b-a5bf-c69da882cd42
+
+	measure 'Arrow Response MoM' = ```
+			
+			        VAR c = [Avg Response MM Change %]
+			        RETURN IF ( c >= 0, "▲ ", "▼ " ) & FORMAT ( ABS ( c ), "0.0%" ) & IF ( c >= 0, " slower", " faster" )
+			```
+		displayFolder: 8 Display
+		lineageTag: 4e64a160-4d07-44e3-af15-e0fa47003a56
+
+	measure 'Arrow Target MoM' = ```
+			
+			        VAR c = [% Within Target MM Change pts]
+			        RETURN IF ( c >= 0, "▲ ", "▼ " ) & FORMAT ( ABS ( c ), "0.0" ) & " pts vs prior month"
+			```
+		displayFolder: 8 Display
+		lineageTag: 37eb1d94-0469-4a01-ba8a-c7ad417c1764
+
+	measure 'Color Response MoM' = ```
+			
+			        IF ( [Avg Response MM Change %] > 0, "#B91C1C", "#15803D" )
+			```
+		displayFolder: 8 Display
+		lineageTag: e93629a5-a0a9-46bf-90be-fe5011fd6b84
+
+	measure 'Color Target MoM' = ```
+			
+			        IF ( [% Within Target MM Change pts] < 0, "#B91C1C", "#15803D" )
+			```
+		displayFolder: 8 Display
+		lineageTag: 07ededb5-7e18-4189-9570-abe1548ca5e0
+
+	measure 'Color Target Level' = ```
+			
+			        VAR p = [% Within Target]
+			        RETURN SWITCH ( TRUE (), ISBLANK ( p ), BLANK (), p >= 0.85, "#15803D", p >= 0.70, "#B45309", "#B91C1C" )
+			```
+		displayFolder: 8 Display
+		lineageTag: 2bcdeadb-ef99-4719-94aa-4b36a1ec9276
+
+	measure 'Title Overview' = ```
+			
+			        VAR c = [Requests LFM MoM %]
+			        RETURN
+			            "In " & [Last Full Month Label] & ", New Yorkers filed " & FORMAT ( [Requests LFM], "#,0" )
+			                & " requests, " & IF ( c >= 0, "up ", "down " ) & FORMAT ( ABS ( c ), "0%" ) & " from the month before"
+			```
+		displayFolder: 8 Display
+		lineageTag: 9f0bbf84-c2c8-41c2-acd2-02774e87b4bd
+
+	measure 'Title Response' = ```
+			
+			        VAR c = [Avg Response MM Change %]
+			        RETURN
+			            "Requests opened in " & [Mature Month Label] & " took " & FORMAT ( [Avg Response Days MM], "0.0" )
+			                & " days on average to close, " & FORMAT ( ABS ( c ), "0%" ) & IF ( c > 0, " slower", " faster" )
+			                & " than the month before"
+			```
+		displayFolder: 8 Display
+		lineageTag: 257e1724-3df2-4758-9393-8a2b6f7ea62f
+
+	measure 'Title Map' = ```
+			
+			        "Where requests come from: " & [Top ZIP] & " filed the most"
+			```
+		displayFolder: 8 Display
+		lineageTag: 3d6252f9-e92d-4f9a-a5bc-b3f1cc1949b8
+
+	measure 'Title Agencies' = ```
+			
+			        "Agencies ranked by " & LOWER ( [Target Label] )
+			```
+		displayFolder: 8 Display
+		lineageTag: a639a884-8cb3-41dc-a524-c5cf61ac4dad
+
+	measure 'Title Complaint Detail' = ```
+			
+			        "Complaint: " & SELECTEDVALUE ( dim_complaint[ComplaintType], "several types" )
+			```
+		displayFolder: 8 Display
+		lineageTag: 254414e4-5871-4550-b494-af47d4484ba6
+
+	measure 'Footnote Mature' = ```
+			
+			        "Response times use requests opened at least 30 days ago (through " & FORMAT ( [Mature Month End], "mmm yyyy" )
+			            & "), so recent requests that haven't had time to close don't make the numbers look better than they are."
+			```
+		displayFolder: 8 Display
+		lineageTag: 52367b15-9a5b-4d75-b413-8e568872f357
+
+	measure 'Note Open 31+' = FORMAT ( [% Open 31+ Days], "0%" ) & " open more than 30 days"
+		displayFolder: 8 Display
+		lineageTag: 62334c14-aca7-4c79-b9f7-16f9a3c806d8
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

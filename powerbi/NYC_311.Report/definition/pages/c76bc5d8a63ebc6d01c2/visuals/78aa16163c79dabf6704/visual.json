@@ -1,0 +1,311 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "78aa16163c79dabf6704",
+  "position": {
+    "x": 864,
+    "y": 208,
+    "z": 2601,
+    "height": 496,
+    "width": 400,
+    "tabOrder": 2601
+  },
+  "visual": {
+    "visualType": "keyDriversVisual",
+    "query": {
+      "queryState": {
+        "Details": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requests_daily"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "fact_requests_daily.Date",
+              "nativeQueryRef": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requests_daily"
+                    }
+                  },
+                  "Property": "ComplaintKey"
+                }
+              },
+              "queryRef": "fact_requests_daily.ComplaintKey",
+              "nativeQueryRef": "ComplaintKey"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requests_daily"
+                    }
+                  },
+                  "Property": "AgencyKey"
+                }
+              },
+              "queryRef": "fact_requests_daily.AgencyKey",
+              "nativeQueryRef": "AgencyKey"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_requests_daily"
+                    }
+                  },
+                  "Property": "Borough"
+                }
+              },
+              "queryRef": "fact_requests_daily.Borough",
+              "nativeQueryRef": "Borough1"
+            }
+          ]
+        },
+        "ExplainBy": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_category"
+                    }
+                  },
+                  "Property": "Category"
+                }
+              },
+              "queryRef": "dim_category.Category",
+              "nativeQueryRef": "Category"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_borough"
+                    }
+                  },
+                  "Property": "Borough"
+                }
+              },
+              "queryRef": "dim_borough.Borough",
+              "nativeQueryRef": "Borough"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  },
+                  "Property": "Day Type"
+                }
+              },
+              "queryRef": "dim_date.Day Type",
+              "nativeQueryRef": "Day Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_date"
+                    }
+                  },
+                  "Property": "Season"
+                }
+              },
+              "queryRef": "dim_date.Season",
+              "nativeQueryRef": "Season"
+            }
+          ]
+        },
+        "Target": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Response Days"
+                }
+              },
+              "queryRef": "_Measures.Avg Response Days",
+              "nativeQueryRef": "Avg Response Days"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "keyDrivers": [
+        {
+          "properties": {
+            "numericTargetSelectedKind": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "selectedAnalysis": {
+              "expr": {
+                "Literal": {
+                  "Value": "'keyInfluencers'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'What makes a request slow to close?'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5a53b0952511bbffeef7",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_category"
+              }
+            },
+            "Property": "Category"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b314a7b1b053af30bb94",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_borough"
+              }
+            },
+            "Property": "Borough"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c94ba756e8a83b36714b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_date"
+              }
+            },
+            "Property": "Day Type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "78f4525d980f0fb37a05",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_date"
+              }
+            },
+            "Property": "Season"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "79b8c60e0a8475d60eb5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_requests_daily"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "02c9027abceb3a2a0a14",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_requests_daily"
+              }
+            },
+            "Property": "ComplaintKey"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "28c95f202210aa8bacdb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_requests_daily"
+              }
+            },
+            "Property": "AgencyKey"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f157100697395ed5d7d5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_requests_daily"
+              }
+            },
+            "Property": "Borough"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

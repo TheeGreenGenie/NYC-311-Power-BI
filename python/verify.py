@@ -18,9 +18,12 @@ def load(name, **kw):
     return pd.read_csv(MODEL_DIR / f"{name}.csv", **kw)
 
 
-raw = pd.concat([pd.read_parquet(f, columns=["unique_key", "status"])
+info = pd.read_csv(MODEL_DIR / "refresh_info.csv").iloc[0]
+raw = pd.concat([pd.read_parquet(f, columns=["unique_key", "status", "created_date"])
                  for f in sorted(RAW_DIR.glob("created_*.parquet"))], ignore_index=True)
 raw = raw.drop_duplicates("unique_key")
+# The model stops at the last complete day (DataAsOf); compare against the same rows
+raw = raw[pd.to_datetime(raw.created_date, format="ISO8601") < pd.Timestamp(info.DataAsOf) + pd.Timedelta(days=1)]
 open_raw = pd.read_parquet(RAW_DIR / "open_requests.parquet", columns=["unique_key", "status"])
 open_raw = open_raw.drop_duplicates("unique_key")
 
@@ -33,7 +36,6 @@ dim_category = load("dim_category")
 dim_agency = load("dim_agency", dtype={"AgencyKey": str})
 dim_borough = load("dim_borough")
 dim_location = load("dim_location", dtype={"ZIP": str})
-info = load("refresh_info").iloc[0]
 
 # ---------- totals ----------
 check("Daily fact total = raw request count", daily.Requests.sum() == len(raw),
@@ -73,6 +75,8 @@ fetched = pd.Timestamp(info.FetchedAt)
 latest = pd.Timestamp(info.LatestRequest)
 check("Latest request is within 3 days of the fetch time", (fetched - latest) <= pd.Timedelta(days=3),
       f"latest {latest}, fetched {fetched}")
+check("Data stops at the last complete day", daily.Date.max() == pd.Timestamp(info.DataAsOf),
+      f"last fact date {daily.Date.max():%Y-%m-%d}, DataAsOf {info.DataAsOf}")
 
 # ---------- headline numbers (the build tutorial uses these as check numbers) ----------
 print()

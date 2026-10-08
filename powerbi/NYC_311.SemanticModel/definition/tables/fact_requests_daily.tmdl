@@ -1,0 +1,181 @@
+table fact_requests_daily
+	isHidden
+	lineageTag: 0997001a-e8b6-43c9-94fb-ce3b4ecfa418
+
+	column Date
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: e2106214-203d-45b3-a0a2-44097c85b896
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ComplaintKey
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3e79de4d-0adb-469c-882f-2cb10190e3dc
+		summarizeBy: none
+		sourceColumn: ComplaintKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AgencyKey
+		dataType: string
+		isHidden
+		lineageTag: 70fe8da9-5726-4156-bdb0-811e8d87b61b
+		summarizeBy: none
+		sourceColumn: AgencyKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Borough
+		dataType: string
+		isHidden
+		lineageTag: 66b1df94-319d-4d32-9107-e06af84a3aaa
+		summarizeBy: none
+		sourceColumn: Borough
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Requests
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0674d261-d6cd-4acc-8b37-2d1dc17b5cb6
+		summarizeBy: sum
+		sourceColumn: Requests
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Closed
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1387dfef-0dfb-4ce2-8fe4-ff094fd1ccb9
+		summarizeBy: sum
+		sourceColumn: Closed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TimedClosed
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 67c7fc10-0c25-4d4e-a97c-5389477f58c0
+		summarizeBy: sum
+		sourceColumn: TimedClosed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResponseHoursSum
+		dataType: double
+		isHidden
+		lineageTag: ae021fba-17a0-4737-9526-be3c9e5d71ab
+		summarizeBy: sum
+		sourceColumn: ResponseHoursSum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Within1d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ca09a0bd-e09a-4262-a22e-6cc237190db5
+		summarizeBy: sum
+		sourceColumn: Within1d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Within3d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 07ad8cc2-a0aa-4bec-bd4a-58da8aebadf9
+		summarizeBy: sum
+		sourceColumn: Within3d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Within7d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3904ea8d-2183-46e2-aaac-eed436a3e927
+		summarizeBy: sum
+		sourceColumn: Within7d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Within14d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 41b87c5f-d73c-472b-a671-b0faef7655be
+		summarizeBy: sum
+		sourceColumn: Within14d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Within30d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 119f8ebb-582a-4b6a-b6d4-33765ab7e487
+		summarizeBy: sum
+		sourceColumn: Within30d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_requests_daily = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("fact_requests_daily.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {
+				        {"Date", type date}, {"ComplaintKey", Int64.Type}, {"AgencyKey", type text}, {"Borough", type text},
+				        {"Requests", Int64.Type}, {"Closed", Int64.Type}, {"TimedClosed", Int64.Type},
+				        {"ResponseHoursSum", type number},
+				        {"Within1d", Int64.Type}, {"Within3d", Int64.Type}, {"Within7d", Int64.Type},
+				        {"Within14d", Int64.Type}, {"Within30d", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

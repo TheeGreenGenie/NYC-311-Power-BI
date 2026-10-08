@@ -1,0 +1,169 @@
+table fact_zip_monthly
+	isHidden
+	lineageTag: c44b3d9d-08f2-4ffb-8faa-2ca15608bcd0
+
+	column Requests
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a4768848-aecc-41e1-b16e-ff280c63d490
+		summarizeBy: sum
+		sourceColumn: Requests
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Closed
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 7bb5d32a-c19e-4115-bad1-3c0e50a914ee
+		summarizeBy: sum
+		sourceColumn: Closed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TimedClosed
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c0146d3b-45a4-4622-b1e1-9088f67fa34e
+		summarizeBy: sum
+		sourceColumn: TimedClosed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResponseHoursSum
+		dataType: double
+		isHidden
+		lineageTag: 581fdb94-418b-4a40-8ff6-a46fd4459f20
+		summarizeBy: sum
+		sourceColumn: ResponseHoursSum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Within1d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: dee046d7-9dd9-4aa4-9ec7-9dd5d8f84cc9
+		summarizeBy: sum
+		sourceColumn: Within1d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Within3d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4c8f00b6-5e71-4327-93a4-98b74415ee20
+		summarizeBy: sum
+		sourceColumn: Within3d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Within7d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 9d2267b0-ecfa-4b90-832f-1b4cd8ac8898
+		summarizeBy: sum
+		sourceColumn: Within7d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Within14d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e59651d1-5a85-470d-ae77-896c61acf7ac
+		summarizeBy: sum
+		sourceColumn: Within14d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Within30d
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2109fb37-2c49-4ec2-be30-a54945e59fa2
+		summarizeBy: sum
+		sourceColumn: Within30d
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthStart
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 7e4fae96-4728-4261-b9d8-33f68c8c15ab
+		summarizeBy: none
+		sourceColumn: MonthStart
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ZIP
+		dataType: string
+		isHidden
+		lineageTag: 8f462732-a230-4c40-ad47-6e6dd23c35ed
+		summarizeBy: none
+		sourceColumn: ZIP
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		isHidden
+		lineageTag: d31a12b9-623d-4dfc-a7ec-df3d241225e4
+		summarizeBy: none
+		sourceColumn: Category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_zip_monthly = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("fact_zip_monthly.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {
+				        {"MonthStart", type date}, {"ZIP", type text}, {"Category", type text},
+				        {"Requests", Int64.Type}, {"Closed", Int64.Type}, {"TimedClosed", Int64.Type},
+				        {"ResponseHoursSum", type number},
+				        {"Within1d", Int64.Type}, {"Within3d", Int64.Type}, {"Within7d", Int64.Type},
+				        {"Within14d", Int64.Type}, {"Within30d", Int64.Type}}, "en-US")
+				in
+				    Typed
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

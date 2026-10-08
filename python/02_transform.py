@@ -99,7 +99,12 @@ def main():
     op = op[op["IsClosed"] == 0]
     window_start = pd.Timestamp(months[0].stem.replace("created_", "") + "-01")
     latest = df["created"].max()
-    as_of = latest.normalize()
+    # The API runs about a day behind, so the newest day is usually only partly loaded.
+    # Stop at the last COMPLETE day, so the daily chart doesn't end in a false drop.
+    as_of = (latest + pd.Timedelta(minutes=1)).normalize() - pd.Timedelta(days=1)
+    partial = df["Date"] > as_of
+    print(f"Dropping {partial.sum():,} requests from the partial day after {as_of:%Y-%m-%d}")
+    df = df[~partial]
 
     # ---------- dimensions (built from both pulls so every key in every fact exists) ----------
     both = pd.concat([df, op], ignore_index=True)

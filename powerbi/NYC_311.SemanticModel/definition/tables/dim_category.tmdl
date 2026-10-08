@@ -1,0 +1,24 @@
+table dim_category
+	lineageTag: 8b2d35fc-85a3-4bd9-9af1-4a9104327265
+
+	column Category
+		dataType: string
+		lineageTag: d55df47b-7135-4603-b152-ac1b1be6f7eb
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_category = m
+		mode: import
+		source =
+				let
+				    Source = GetCsv("dim_category.csv"),
+				    Typed  = Table.TransformColumnTypes(Source, {{"Category", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

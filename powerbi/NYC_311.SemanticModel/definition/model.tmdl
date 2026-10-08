@@ -1,0 +1,38 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["BaseUrl","GetCsv","fact_zip_monthly","fact_open_backlog","dim_date","dim_complaint","dim_category","dim_agency","dim_borough","dim_location","refresh_info","fact_requests_daily","_Measures"]
+
+annotation PBI_ProTooling = ["DaxQueryView_Desktop","CalcGroup","DevMode"]
+
+ref table fact_zip_monthly
+ref table fact_open_backlog
+ref table dim_date
+ref table dim_complaint
+ref table dim_category
+ref table dim_agency
+ref table dim_borough
+ref table dim_location
+ref table refresh_info
+ref table fact_requests_daily
+ref table DateTableTemplate_24359825-55b6-4262-9977-de68899d0819
+ref table LocalDateTable_c642a33b-0620-4a60-aca7-dab76ef44624
+ref table LocalDateTable_ace7bf1c-82c8-41ec-8cef-34df83d286d2
+ref table LocalDateTable_7819354c-23a6-48b2-b8a7-529906915965
+ref table LocalDateTable_a1edbb9b-7ba4-4ffb-a29f-74c3e5e385a9
+ref table _Measures
+ref table 'Target Days'
+ref table 'Time Comparison'
+ref table Metric
+
+ref cultureInfo en-US
+
