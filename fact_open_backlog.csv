@@ -1,0 +1,2187 @@
+AgeBucket,ComplaintKey,AgencyKey,Borough,OpenRequests,AgeDaysSum,AgeBucketSort
+0-7 days,1,DSNY,Bronx,1,3,1
+0-7 days,1,DSNY,Brooklyn,9,18,1
+0-7 days,1,DSNY,Manhattan,6,8,1
+0-7 days,1,DSNY,Queens,2,12,1
+0-7 days,2,NYPD,Bronx,4,4,1
+0-7 days,2,NYPD,Brooklyn,6,8,1
+0-7 days,2,NYPD,Queens,8,8,1
+0-7 days,2,NYPD,Staten Island,1,1,1
+0-7 days,3,DOB,Brooklyn,1,4,1
+0-7 days,3,DOB,Queens,1,4,1
+0-7 days,4,DEP,Bronx,18,57,1
+0-7 days,4,DEP,Brooklyn,24,64,1
+0-7 days,4,DEP,Manhattan,43,98,1
+0-7 days,4,DEP,Queens,16,27,1
+0-7 days,4,DEP,Staten Island,4,20,1
+0-7 days,5,DOHMH,Bronx,1,1,1
+0-7 days,5,DOHMH,Brooklyn,1,6,1
+0-7 days,5,DOHMH,Manhattan,9,29,1
+0-7 days,6,DPR,Bronx,4,14,1
+0-7 days,6,DPR,Brooklyn,49,213,1
+0-7 days,6,DPR,Manhattan,29,110,1
+0-7 days,6,DPR,Queens,15,60,1
+0-7 days,7,NYPD,Brooklyn,3,3,1
+0-7 days,7,NYPD,Manhattan,1,1,1
+0-7 days,8,HPD,Bronx,197,709,1
+0-7 days,8,HPD,Brooklyn,178,652,1
+0-7 days,8,HPD,Manhattan,115,437,1
+0-7 days,8,HPD,Queens,56,192,1
+0-7 days,8,HPD,Staten Island,5,14,1
+0-7 days,9,DOHMH,Bronx,1,1,1
+0-7 days,9,DOHMH,Brooklyn,3,12,1
+0-7 days,9,DOHMH,Manhattan,4,9,1
+0-7 days,9,DOHMH,Queens,2,10,1
+0-7 days,10,DOHMH,Manhattan,1,3,1
+0-7 days,10,DOHMH,Staten Island,1,7,1
+0-7 days,11,DOT,Brooklyn,1,2,1
+0-7 days,12,DOB,Bronx,1,1,1
+0-7 days,12,DOB,Brooklyn,1,1,1
+0-7 days,13,DOT,Bronx,1,5,1
+0-7 days,13,DOT,Brooklyn,3,13,1
+0-7 days,13,DOT,Manhattan,3,10,1
+0-7 days,13,DOT,Queens,2,11,1
+0-7 days,13,DOT,Staten Island,1,4,1
+0-7 days,14,NYPD,Brooklyn,1,1,1
+0-7 days,16,NYPD,Bronx,6,6,1
+0-7 days,16,NYPD,Brooklyn,28,32,1
+0-7 days,16,NYPD,Queens,25,25,1
+0-7 days,16,NYPD,Staten Island,2,2,1
+0-7 days,17,DOB,Bronx,2,8,1
+0-7 days,17,DOB,Brooklyn,13,51,1
+0-7 days,17,DOB,Manhattan,4,13,1
+0-7 days,17,DOB,Queens,10,31,1
+0-7 days,19,DOT,Brooklyn,1,2,1
+0-7 days,19,DOT,Manhattan,2,5,1
+0-7 days,20,DOT,Bronx,3,8,1
+0-7 days,20,DOT,Brooklyn,13,49,1
+0-7 days,20,DOT,Manhattan,23,101,1
+0-7 days,20,DOT,Queens,23,92,1
+0-7 days,20,DOT,Staten Island,2,13,1
+0-7 days,25,DOB,Bronx,26,117,1
+0-7 days,25,DOB,Brooklyn,59,262,1
+0-7 days,25,DOB,Manhattan,23,109,1
+0-7 days,25,DOB,Queens,152,653,1
+0-7 days,25,DOB,Staten Island,20,79,1
+0-7 days,25,DOB,Unspecified,1,7,1
+0-7 days,26,DOT,Brooklyn,1,5,1
+0-7 days,26,DOT,Manhattan,2,6,1
+0-7 days,26,DOT,Queens,11,35,1
+0-7 days,26,DOT,Staten Island,2,11,1
+0-7 days,29,OOS,Bronx,11,43,1
+0-7 days,29,OOS,Brooklyn,26,101,1
+0-7 days,29,OOS,Manhattan,23,109,1
+0-7 days,29,OOS,Queens,12,54,1
+0-7 days,30,DSNY,Brooklyn,2,8,1
+0-7 days,30,DSNY,Manhattan,1,2,1
+0-7 days,30,DSNY,Queens,1,1,1
+0-7 days,31,DOHMH,Bronx,1,2,1
+0-7 days,31,DOHMH,Brooklyn,10,43,1
+0-7 days,31,DOHMH,Manhattan,5,14,1
+0-7 days,31,DOHMH,Queens,4,14,1
+0-7 days,33,DCWP,Bronx,36,139,1
+0-7 days,33,DCWP,Brooklyn,86,323,1
+0-7 days,33,DCWP,Manhattan,103,414,1
+0-7 days,33,DCWP,Queens,75,263,1
+0-7 days,33,DCWP,Staten Island,6,10,1
+0-7 days,33,DCWP,Unspecified,2,5,1
+0-7 days,34,DOHMH,Bronx,1,3,1
+0-7 days,36,DOT,Bronx,6,27,1
+0-7 days,36,DOT,Brooklyn,59,218,1
+0-7 days,36,DOT,Manhattan,22,62,1
+0-7 days,36,DOT,Queens,45,156,1
+0-7 days,36,DOT,Staten Island,6,25,1
+0-7 days,37,DPR,Bronx,22,91,1
+0-7 days,37,DPR,Brooklyn,170,687,1
+0-7 days,37,DPR,Manhattan,13,54,1
+0-7 days,37,DPR,Queens,234,928,1
+0-7 days,37,DPR,Staten Island,31,113,1
+0-7 days,37,DPR,Unspecified,4,19,1
+0-7 days,38,DOHMH,Bronx,3,4,1
+0-7 days,38,DOHMH,Brooklyn,1,2,1
+0-7 days,38,DOHMH,Manhattan,1,2,1
+0-7 days,38,DOHMH,Queens,1,1,1
+0-7 days,39,DSNY,Bronx,3,4,1
+0-7 days,39,DSNY,Brooklyn,31,60,1
+0-7 days,39,DSNY,Manhattan,4,10,1
+0-7 days,39,DSNY,Queens,24,42,1
+0-7 days,39,DSNY,Staten Island,6,13,1
+0-7 days,40,DPR,Bronx,20,67,1
+0-7 days,40,DPR,Brooklyn,67,246,1
+0-7 days,40,DPR,Manhattan,12,43,1
+0-7 days,40,DPR,Queens,92,406,1
+0-7 days,40,DPR,Staten Island,14,48,1
+0-7 days,40,DPR,Unspecified,2,12,1
+0-7 days,45,DSNY,Brooklyn,3,7,1
+0-7 days,45,DSNY,Queens,3,5,1
+0-7 days,46,DSNY,Bronx,64,134,1
+0-7 days,46,DSNY,Brooklyn,192,556,1
+0-7 days,46,DSNY,Manhattan,89,199,1
+0-7 days,46,DSNY,Queens,75,182,1
+0-7 days,46,DSNY,Staten Island,22,46,1
+0-7 days,46,DSNY,Unspecified,1,2,1
+0-7 days,48,HPD,Bronx,304,1067,1
+0-7 days,48,HPD,Brooklyn,334,1250,1
+0-7 days,48,HPD,Manhattan,231,873,1
+0-7 days,48,HPD,Queens,104,365,1
+0-7 days,48,HPD,Staten Island,15,49,1
+0-7 days,50,DOHMH,Bronx,1,1,1
+0-7 days,50,DOHMH,Brooklyn,1,2,1
+0-7 days,50,DOHMH,Manhattan,1,2,1
+0-7 days,50,DOHMH,Queens,2,4,1
+0-7 days,51,NYPD,Brooklyn,1,1,1
+0-7 days,54,DSNY,Brooklyn,2,7,1
+0-7 days,54,DSNY,Queens,1,1,1
+0-7 days,54,DSNY,Staten Island,2,3,1
+0-7 days,55,DOT,Bronx,1,1,1
+0-7 days,56,HPD,Bronx,147,484,1
+0-7 days,56,HPD,Brooklyn,189,655,1
+0-7 days,56,HPD,Manhattan,148,525,1
+0-7 days,56,HPD,Queens,69,263,1
+0-7 days,56,HPD,Staten Island,11,42,1
+0-7 days,57,DOB,Bronx,2,8,1
+0-7 days,57,DOB,Brooklyn,4,16,1
+0-7 days,57,DOB,Queens,5,20,1
+0-7 days,58,DOB,Bronx,51,198,1
+0-7 days,58,DOB,Brooklyn,52,205,1
+0-7 days,58,DOB,Manhattan,54,230,1
+0-7 days,58,DOB,Queens,29,106,1
+0-7 days,58,HPD,Bronx,11,38,1
+0-7 days,58,HPD,Brooklyn,6,12,1
+0-7 days,58,HPD,Manhattan,11,38,1
+0-7 days,58,HPD,Queens,5,16,1
+0-7 days,59,DOB,Bronx,8,34,1
+0-7 days,59,DOB,Brooklyn,14,63,1
+0-7 days,59,DOB,Manhattan,10,53,1
+0-7 days,59,DOB,Queens,8,37,1
+0-7 days,59,DOB,Staten Island,4,16,1
+0-7 days,60,DHS,Bronx,3,3,1
+0-7 days,60,DHS,Brooklyn,2,2,1
+0-7 days,60,DHS,Manhattan,7,7,1
+0-7 days,60,DHS,Queens,1,1,1
+0-7 days,61,DOT,Unspecified,1,2,1
+0-7 days,62,DOT,Unspecified,5,10,1
+0-7 days,64,HPD,Bronx,169,620,1
+0-7 days,64,HPD,Brooklyn,201,720,1
+0-7 days,64,HPD,Manhattan,131,483,1
+0-7 days,64,HPD,Queens,40,158,1
+0-7 days,64,HPD,Staten Island,8,30,1
+0-7 days,65,DOHMH,Bronx,27,104,1
+0-7 days,65,DOHMH,Brooklyn,100,435,1
+0-7 days,65,DOHMH,Manhattan,116,463,1
+0-7 days,65,DOHMH,Queens,57,206,1
+0-7 days,65,DOHMH,Staten Island,12,36,1
+0-7 days,65,DOHMH,Unspecified,1,6,1
+0-7 days,66,DOHMH,Bronx,2,10,1
+0-7 days,66,DOHMH,Brooklyn,10,45,1
+0-7 days,66,DOHMH,Manhattan,23,87,1
+0-7 days,66,DOHMH,Queens,7,27,1
+0-7 days,66,DOHMH,Unspecified,1,5,1
+0-7 days,67,TLC,Bronx,11,37,1
+0-7 days,67,TLC,Brooklyn,84,326,1
+0-7 days,67,TLC,Manhattan,137,613,1
+0-7 days,67,TLC,Queens,60,253,1
+0-7 days,67,TLC,Unspecified,10,38,1
+0-7 days,68,TLC,Brooklyn,6,20,1
+0-7 days,68,TLC,Manhattan,8,34,1
+0-7 days,68,TLC,Queens,2,4,1
+0-7 days,68,TLC,Unspecified,1,4,1
+0-7 days,69,TLC,Manhattan,1,6,1
+0-7 days,70,HPD,Bronx,235,863,1
+0-7 days,70,HPD,Brooklyn,235,868,1
+0-7 days,70,HPD,Manhattan,208,785,1
+0-7 days,70,HPD,Queens,213,823,1
+0-7 days,70,HPD,Staten Island,13,36,1
+0-7 days,71,DOB,Bronx,24,85,1
+0-7 days,71,DOB,Brooklyn,178,747,1
+0-7 days,71,DOB,Manhattan,70,289,1
+0-7 days,71,DOB,Queens,66,249,1
+0-7 days,71,DOB,Staten Island,33,131,1
+0-7 days,72,DSNY,Bronx,16,70,1
+0-7 days,72,DSNY,Brooklyn,60,219,1
+0-7 days,72,DSNY,Manhattan,111,423,1
+0-7 days,72,DSNY,Queens,38,136,1
+0-7 days,72,DSNY,Staten Island,10,35,1
+0-7 days,73,DEP,Brooklyn,2,9,1
+0-7 days,73,DEP,Queens,6,17,1
+0-7 days,74,TLC,Queens,1,2,1
+0-7 days,75,TLC,Queens,1,6,1
+0-7 days,76,DOHMH,Bronx,1,4,1
+0-7 days,76,DOHMH,Brooklyn,11,47,1
+0-7 days,76,DOHMH,Manhattan,1,4,1
+0-7 days,76,DOHMH,Queens,7,27,1
+0-7 days,76,DOHMH,Staten Island,2,3,1
+0-7 days,77,DEP,Bronx,6,29,1
+0-7 days,77,DEP,Brooklyn,16,55,1
+0-7 days,77,DEP,Manhattan,4,16,1
+0-7 days,77,DEP,Queens,7,31,1
+0-7 days,77,DEP,Staten Island,1,5,1
+0-7 days,79,HPD,Bronx,293,723,1
+0-7 days,79,HPD,Brooklyn,359,942,1
+0-7 days,79,HPD,Manhattan,398,1059,1
+0-7 days,79,HPD,Queens,250,657,1
+0-7 days,79,HPD,Staten Island,25,58,1
+0-7 days,80,DOT,Bronx,9,26,1
+0-7 days,80,DOT,Brooklyn,9,37,1
+0-7 days,80,DOT,Manhattan,3,9,1
+0-7 days,80,DOT,Queens,12,38,1
+0-7 days,80,DOT,Staten Island,3,5,1
+0-7 days,80,DSNY,Bronx,1,4,1
+0-7 days,80,DSNY,Manhattan,1,7,1
+0-7 days,80,DSNY,Queens,2,9,1
+0-7 days,80,DSNY,Staten Island,2,4,1
+0-7 days,84,DHS,Bronx,2,3,1
+0-7 days,84,DHS,Brooklyn,14,26,1
+0-7 days,84,DHS,Manhattan,53,83,1
+0-7 days,84,DHS,Queens,6,10,1
+0-7 days,85,DOHMH,Bronx,3,13,1
+0-7 days,85,DOHMH,Brooklyn,5,21,1
+0-7 days,85,DOHMH,Queens,2,9,1
+0-7 days,85,DOHMH,Staten Island,6,27,1
+0-7 days,86,DOHMH,Brooklyn,6,29,1
+0-7 days,86,DOHMH,Manhattan,2,3,1
+0-7 days,86,DOHMH,Queens,1,7,1
+0-7 days,87,DSNY,Bronx,58,129,1
+0-7 days,87,DSNY,Brooklyn,158,468,1
+0-7 days,87,DSNY,Manhattan,42,98,1
+0-7 days,87,DSNY,Queens,59,161,1
+0-7 days,87,DSNY,Staten Island,14,41,1
+0-7 days,88,NYPD,Brooklyn,1,1,1
+0-7 days,89,NYPD,Bronx,14,20,1
+0-7 days,89,NYPD,Brooklyn,103,112,1
+0-7 days,89,NYPD,Manhattan,8,8,1
+0-7 days,89,NYPD,Queens,49,49,1
+0-7 days,89,NYPD,Staten Island,6,6,1
+0-7 days,90,DSNY,Brooklyn,5,6,1
+0-7 days,90,DSNY,Manhattan,2,2,1
+0-7 days,90,DSNY,Queens,5,11,1
+0-7 days,90,DSNY,Staten Island,2,4,1
+0-7 days,91,DPR,Bronx,5,22,1
+0-7 days,91,DPR,Brooklyn,39,172,1
+0-7 days,91,DPR,Manhattan,20,71,1
+0-7 days,91,DPR,Queens,24,116,1
+0-7 days,91,DPR,Staten Island,2,10,1
+0-7 days,91,DPR,Unspecified,1,4,1
+0-7 days,93,DOHMH,Bronx,10,15,1
+0-7 days,93,DOHMH,Brooklyn,19,39,1
+0-7 days,93,DOHMH,Manhattan,11,21,1
+0-7 days,93,DOHMH,Queens,12,24,1
+0-7 days,94,DOHMH,Bronx,3,13,1
+0-7 days,94,DOHMH,Brooklyn,5,17,1
+0-7 days,94,DOHMH,Manhattan,4,13,1
+0-7 days,94,DOHMH,Queens,3,13,1
+0-7 days,94,DOHMH,Staten Island,1,3,1
+0-7 days,95,DEP,Bronx,2,6,1
+0-7 days,95,DEP,Brooklyn,10,22,1
+0-7 days,95,DEP,Queens,5,27,1
+0-7 days,95,DEP,Staten Island,1,1,1
+0-7 days,97,DOB,Bronx,5,24,1
+0-7 days,97,DOB,Brooklyn,3,14,1
+0-7 days,97,DOB,Queens,3,7,1
+0-7 days,98,DEP,Bronx,26,100,1
+0-7 days,98,DEP,Brooklyn,115,415,1
+0-7 days,98,DEP,Manhattan,81,297,1
+0-7 days,98,DEP,Queens,62,231,1
+0-7 days,98,DEP,Staten Island,15,55,1
+0-7 days,100,DOHMH,Manhattan,1,5,1
+0-7 days,101,OTI,Bronx,1,7,1
+0-7 days,101,OTI,Manhattan,1,6,1
+0-7 days,101,OTI,Queens,2,8,1
+0-7 days,102,DSNY,Brooklyn,4,17,1
+0-7 days,102,DSNY,Manhattan,2,3,1
+0-7 days,102,DSNY,Queens,2,2,1
+0-7 days,103,DSNY,Bronx,1,1,1
+0-7 days,103,DSNY,Brooklyn,13,22,1
+0-7 days,103,DSNY,Manhattan,9,24,1
+0-7 days,103,DSNY,Queens,6,16,1
+0-7 days,103,DSNY,Staten Island,1,5,1
+0-7 days,104,TLC,Bronx,1,3,1
+0-7 days,104,TLC,Brooklyn,1,2,1
+0-7 days,104,TLC,Manhattan,23,53,1
+0-7 days,104,TLC,Queens,9,20,1
+0-7 days,104,TLC,Unspecified,2,5,1
+0-7 days,105,DSNY,Bronx,5,28,1
+0-7 days,105,DSNY,Brooklyn,10,36,1
+0-7 days,105,DSNY,Manhattan,2,6,1
+0-7 days,105,DSNY,Queens,10,34,1
+0-7 days,105,DSNY,Staten Island,2,9,1
+0-7 days,106,DPR,Bronx,34,127,1
+0-7 days,106,DPR,Brooklyn,180,745,1
+0-7 days,106,DPR,Manhattan,131,539,1
+0-7 days,106,DPR,Queens,102,451,1
+0-7 days,106,DPR,Staten Island,4,9,1
+0-7 days,107,DSNY,Bronx,21,34,1
+0-7 days,107,DSNY,Brooklyn,92,192,1
+0-7 days,107,DSNY,Manhattan,27,61,1
+0-7 days,107,DSNY,Queens,58,115,1
+0-7 days,107,DSNY,Staten Island,18,37,1
+0-7 days,108,DOHMH,Bronx,6,24,1
+0-7 days,108,DOHMH,Brooklyn,12,44,1
+0-7 days,108,DOHMH,Manhattan,25,105,1
+0-7 days,108,DOHMH,Queens,17,80,1
+0-7 days,109,DOHMH,Manhattan,1,1,1
+0-7 days,109,DOHMH,Queens,1,1,1
+0-7 days,109,DOHMH,Staten Island,1,1,1
+0-7 days,111,DOT,Unspecified,1,4,1
+0-7 days,112,DPR,Bronx,1,5,1
+0-7 days,112,DPR,Brooklyn,6,19,1
+0-7 days,112,DPR,Manhattan,4,17,1
+0-7 days,112,DPR,Queens,15,62,1
+0-7 days,113,DEP,Bronx,69,244,1
+0-7 days,113,DEP,Brooklyn,283,1010,1
+0-7 days,113,DEP,Manhattan,286,991,1
+0-7 days,113,DEP,Queens,172,602,1
+0-7 days,113,DEP,Staten Island,33,132,1
+0-7 days,114,NYPD,Bronx,3,3,1
+0-7 days,114,NYPD,Brooklyn,16,16,1
+0-7 days,114,NYPD,Manhattan,8,8,1
+0-7 days,114,NYPD,Queens,37,37,1
+0-7 days,115,EDC,Bronx,4,19,1
+0-7 days,115,EDC,Brooklyn,18,37,1
+0-7 days,115,EDC,Manhattan,74,248,1
+0-7 days,115,EDC,Queens,2,4,1
+0-7 days,115,EDC,Staten Island,2,8,1
+0-7 days,117,NYPD,Bronx,1,1,1
+0-7 days,117,NYPD,Brooklyn,2,2,1
+0-7 days,118,NYPD,Bronx,21,26,1
+0-7 days,118,NYPD,Brooklyn,35,35,1
+0-7 days,118,NYPD,Manhattan,12,12,1
+0-7 days,118,NYPD,Queens,13,13,1
+0-7 days,118,NYPD,Staten Island,15,15,1
+0-7 days,119,NYPD,Bronx,16,16,1
+0-7 days,119,NYPD,Brooklyn,20,20,1
+0-7 days,119,NYPD,Manhattan,22,22,1
+0-7 days,119,NYPD,Queens,8,8,1
+0-7 days,119,NYPD,Staten Island,1,1,1
+0-7 days,120,NYPD,Brooklyn,3,3,1
+0-7 days,120,NYPD,Manhattan,4,6,1
+0-7 days,120,NYPD,Queens,4,4,1
+0-7 days,121,NYPD,Brooklyn,2,2,1
+0-7 days,121,NYPD,Queens,1,1,1
+0-7 days,121,NYPD,Staten Island,2,2,1
+0-7 days,122,DOHMH,Brooklyn,1,3,1
+0-7 days,122,DOHMH,Manhattan,1,4,1
+0-7 days,122,DOHMH,Queens,1,4,1
+0-7 days,123,DSNY,Bronx,10,19,1
+0-7 days,123,DSNY,Brooklyn,49,151,1
+0-7 days,123,DSNY,Manhattan,18,40,1
+0-7 days,123,DSNY,Queens,34,63,1
+0-7 days,123,DSNY,Staten Island,26,66,1
+0-7 days,125,DOT,Bronx,2,12,1
+0-7 days,125,DOT,Brooklyn,10,51,1
+0-7 days,125,DOT,Manhattan,63,283,1
+0-7 days,125,DOT,Queens,2,12,1
+0-7 days,125,DOT,Staten Island,1,7,1
+0-7 days,126,HPD,Bronx,9,18,1
+0-7 days,126,HPD,Brooklyn,8,34,1
+0-7 days,126,HPD,Manhattan,8,31,1
+0-7 days,126,HPD,Queens,6,26,1
+0-7 days,126,HPD,Staten Island,1,2,1
+0-7 days,127,DPR,Bronx,36,123,1
+0-7 days,127,DPR,Brooklyn,160,640,1
+0-7 days,127,DPR,Manhattan,26,97,1
+0-7 days,127,DPR,Queens,218,878,1
+0-7 days,127,DPR,Staten Island,38,121,1
+0-7 days,127,DPR,Unspecified,1,1,1
+0-7 days,128,HPD,Bronx,412,1452,1
+0-7 days,128,HPD,Brooklyn,385,1312,1
+0-7 days,128,HPD,Manhattan,210,726,1
+0-7 days,128,HPD,Queens,114,411,1
+0-7 days,128,HPD,Staten Island,17,56,1
+0-7 days,129,NYPD,Brooklyn,2,2,1
+0-7 days,129,NYPD,Manhattan,1,1,1
+0-7 days,130,DOHMH,Bronx,1,6,1
+0-7 days,130,DOHMH,Brooklyn,1,5,1
+0-7 days,130,DOHMH,Queens,1,4,1
+0-7 days,132,DOB,Bronx,2,3,1
+0-7 days,132,DOB,Brooklyn,17,70,1
+0-7 days,132,DOB,Manhattan,3,9,1
+0-7 days,132,DOB,Queens,12,43,1
+0-7 days,132,DOB,Staten Island,4,20,1
+0-7 days,132,HPD,Bronx,372,1334,1
+0-7 days,132,HPD,Brooklyn,348,1224,1
+0-7 days,132,HPD,Manhattan,283,1078,1
+0-7 days,132,HPD,Queens,134,511,1
+0-7 days,132,HPD,Staten Island,20,59,1
+0-7 days,133,DOHMH,Bronx,1,3,1
+0-7 days,133,DOHMH,Brooklyn,1,3,1
+0-7 days,133,DOHMH,Queens,2,14,1
+0-7 days,138,DOB,Brooklyn,9,19,1
+0-7 days,138,DOB,Manhattan,2,3,1
+0-7 days,138,DOB,Queens,2,2,1
+0-7 days,139,DSNY,Brooklyn,1,1,1
+0-7 days,140,DSNY,Bronx,8,12,1
+0-7 days,140,DSNY,Brooklyn,65,218,1
+0-7 days,140,DSNY,Manhattan,14,26,1
+0-7 days,140,DSNY,Queens,22,40,1
+0-7 days,140,DSNY,Staten Island,3,6,1
+0-7 days,141,DOHMH,Bronx,78,298,1
+0-7 days,141,DOHMH,Brooklyn,166,602,1
+0-7 days,141,DOHMH,Manhattan,118,382,1
+0-7 days,141,DOHMH,Queens,103,421,1
+0-7 days,141,DOHMH,Staten Island,18,65,1
+0-7 days,142,DPR,Bronx,30,113,1
+0-7 days,142,DPR,Brooklyn,82,294,1
+0-7 days,142,DPR,Manhattan,12,51,1
+0-7 days,142,DPR,Queens,90,358,1
+0-7 days,142,DPR,Staten Island,35,132,1
+0-7 days,142,DPR,Unspecified,1,1,1
+0-7 days,143,HPD,Bronx,86,258,1
+0-7 days,143,HPD,Brooklyn,111,449,1
+0-7 days,143,HPD,Manhattan,44,151,1
+0-7 days,143,HPD,Queens,34,91,1
+0-7 days,143,HPD,Staten Island,2,4,1
+0-7 days,144,DSNY,Bronx,3,5,1
+0-7 days,144,DSNY,Brooklyn,14,48,1
+0-7 days,144,DSNY,Manhattan,5,7,1
+0-7 days,144,DSNY,Queens,4,14,1
+0-7 days,145,DOB,Brooklyn,1,1,1
+0-7 days,145,DOB,Queens,1,1,1
+0-7 days,148,DEP,Bronx,12,51,1
+0-7 days,148,DEP,Brooklyn,64,194,1
+0-7 days,148,DEP,Manhattan,26,99,1
+0-7 days,148,DEP,Queens,98,327,1
+0-7 days,148,DEP,Staten Island,23,65,1
+0-7 days,149,DOT,Bronx,39,136,1
+0-7 days,149,DOT,Brooklyn,197,724,1
+0-7 days,149,DOT,Manhattan,58,200,1
+0-7 days,149,DOT,Queens,140,506,1
+0-7 days,149,DOT,Staten Island,40,130,1
+0-7 days,150,DOHMH,Bronx,23,96,1
+0-7 days,150,DOHMH,Brooklyn,63,254,1
+0-7 days,150,DOHMH,Manhattan,37,144,1
+0-7 days,150,DOHMH,Queens,34,123,1
+0-7 days,150,DOHMH,Staten Island,2,10,1
+0-7 days,153,DOB,Staten Island,1,3,1
+0-7 days,155,DOB,Bronx,6,23,1
+0-7 days,155,DOB,Brooklyn,11,49,1
+0-7 days,155,DOB,Manhattan,17,71,1
+0-7 days,155,DOB,Queens,16,70,1
+0-7 days,157,DOHMH,Bronx,2,13,1
+0-7 days,157,DOHMH,Brooklyn,10,48,1
+0-7 days,157,DOHMH,Manhattan,4,13,1
+0-7 days,157,DOHMH,Queens,5,24,1
+0-7 days,157,DOHMH,Staten Island,3,12,1
+0-7 days,158,DOT,Bronx,29,73,1
+0-7 days,158,DOT,Brooklyn,195,588,1
+0-7 days,158,DOT,Manhattan,53,114,1
+0-7 days,158,DOT,Queens,215,600,1
+0-7 days,158,DOT,Staten Island,24,39,1
+0-7 days,159,DOT,Bronx,231,812,1
+0-7 days,159,DOT,Brooklyn,298,1091,1
+0-7 days,159,DOT,Manhattan,212,669,1
+0-7 days,159,DOT,Queens,242,961,1
+0-7 days,159,DOT,Staten Island,134,481,1
+0-7 days,159,DOT,Unspecified,2,4,1
+0-7 days,160,DOT,Bronx,6,20,1
+0-7 days,160,DOT,Brooklyn,21,46,1
+0-7 days,160,DOT,Manhattan,15,50,1
+0-7 days,160,DOT,Queens,15,41,1
+0-7 days,160,DOT,Staten Island,1,1,1
+0-7 days,161,DOT,Bronx,7,23,1
+0-7 days,161,DOT,Brooklyn,7,25,1
+0-7 days,161,DOT,Manhattan,10,35,1
+0-7 days,161,DOT,Queens,17,63,1
+0-7 days,161,DOT,Staten Island,3,6,1
+0-7 days,162,DOT,Bronx,9,29,1
+0-7 days,162,DOT,Brooklyn,18,56,1
+0-7 days,162,DOT,Manhattan,8,44,1
+0-7 days,162,DOT,Queens,14,40,1
+0-7 days,162,DOT,Staten Island,6,13,1
+0-7 days,163,DSNY,Bronx,11,22,1
+0-7 days,163,DSNY,Brooklyn,48,141,1
+0-7 days,163,DSNY,Manhattan,9,24,1
+0-7 days,163,DSNY,Queens,17,43,1
+0-7 days,165,DOHMH,Bronx,1,2,1
+0-7 days,165,DOHMH,Brooklyn,1,3,1
+0-7 days,165,DOHMH,Manhattan,3,9,1
+0-7 days,166,TLC,Bronx,1,7,1
+0-7 days,166,TLC,Brooklyn,4,11,1
+0-7 days,166,TLC,Manhattan,89,391,1
+0-7 days,166,TLC,Queens,88,376,1
+0-7 days,166,TLC,Unspecified,10,48,1
+0-7 days,167,TLC,Manhattan,4,16,1
+0-7 days,169,TLC,Brooklyn,1,1,1
+0-7 days,169,TLC,Manhattan,9,40,1
+0-7 days,169,TLC,Queens,5,16,1
+0-7 days,169,TLC,Unspecified,2,8,1
+0-7 days,170,DOHMH,Brooklyn,1,7,1
+0-7 days,170,DOHMH,Manhattan,1,2,1
+0-7 days,171,NYPD,Brooklyn,2,2,1
+0-7 days,171,NYPD,Queens,1,1,1
+0-7 days,171,NYPD,Staten Island,2,2,1
+0-7 days,172,DOT,Bronx,3,3,1
+0-7 days,172,DOT,Brooklyn,77,217,1
+0-7 days,172,DOT,Manhattan,52,122,1
+0-7 days,172,DOT,Queens,25,89,1
+0-7 days,172,DOT,Staten Island,17,38,1
+0-7 days,176,DOHMH,Bronx,6,14,1
+0-7 days,176,DOHMH,Brooklyn,9,33,1
+0-7 days,176,DOHMH,Manhattan,5,18,1
+0-7 days,176,DOHMH,Queens,13,36,1
+0-7 days,176,DOHMH,Staten Island,4,7,1
+0-7 days,178,DOHMH,Bronx,11,31,1
+0-7 days,178,DOHMH,Brooklyn,11,34,1
+0-7 days,178,DOHMH,Manhattan,6,18,1
+0-7 days,178,DOHMH,Queens,7,35,1
+0-7 days,178,DOHMH,Staten Island,12,53,1
+0-7 days,179,HPD,Bronx,843,3057,1
+0-7 days,179,HPD,Brooklyn,910,3376,1
+0-7 days,179,HPD,Manhattan,599,2257,1
+0-7 days,179,HPD,Queens,352,1264,1
+0-7 days,179,HPD,Staten Island,57,180,1
+0-7 days,180,DOHMH,Bronx,1,2,1
+0-7 days,180,DOHMH,Brooklyn,5,13,1
+0-7 days,180,DOHMH,Manhattan,13,52,1
+0-7 days,180,DOHMH,Queens,8,29,1
+0-7 days,180,DOHMH,Staten Island,3,12,1
+0-7 days,182,DPR,Brooklyn,2,8,1
+0-7 days,182,DPR,Manhattan,1,6,1
+0-7 days,182,DPR,Queens,5,21,1
+0-7 days,182,DPR,Staten Island,1,1,1
+0-7 days,185,DPR,Bronx,17,83,1
+0-7 days,185,DPR,Brooklyn,20,96,1
+0-7 days,185,DPR,Manhattan,23,112,1
+0-7 days,185,DPR,Queens,11,50,1
+0-7 days,186,DEP,Brooklyn,1,1,1
+0-7 days,186,DEP,Manhattan,1,3,1
+0-7 days,186,DEP,Queens,1,2,1
+0-7 days,187,DEP,Bronx,4,8,1
+0-7 days,187,DEP,Brooklyn,5,9,1
+0-7 days,187,DEP,Manhattan,2,3,1
+0-7 days,187,DEP,Staten Island,1,2,1
+0-7 days,188,HPD,Bronx,234,843,1
+0-7 days,188,HPD,Brooklyn,342,1303,1
+0-7 days,188,HPD,Manhattan,167,630,1
+0-7 days,188,HPD,Queens,93,363,1
+0-7 days,188,HPD,Staten Island,9,36,1
+0-7 days,189,DEP,Bronx,35,88,1
+0-7 days,189,DEP,Brooklyn,126,400,1
+0-7 days,189,DEP,Manhattan,28,69,1
+0-7 days,189,DEP,Queens,111,384,1
+0-7 days,189,DEP,Staten Island,45,135,1
+0-7 days,190,DEP,Bronx,2,6,1
+0-7 days,190,DEP,Brooklyn,5,21,1
+0-7 days,190,DEP,Manhattan,3,11,1
+0-7 days,190,DEP,Queens,4,16,1
+0-7 days,194,DPR,Brooklyn,6,25,1
+0-7 days,194,DPR,Queens,11,50,1
+8-30 days,1,DSNY,Brooklyn,4,58,2
+8-30 days,4,DEP,Bronx,5,62,2
+8-30 days,4,DEP,Brooklyn,10,152,2
+8-30 days,4,DEP,Manhattan,11,144,2
+8-30 days,4,DEP,Queens,6,124,2
+8-30 days,4,DEP,Staten Island,4,37,2
+8-30 days,5,DOHMH,Brooklyn,2,25,2
+8-30 days,5,DOHMH,Manhattan,58,956,2
+8-30 days,5,DOHMH,Queens,2,55,2
+8-30 days,5,DOHMH,Staten Island,1,30,2
+8-30 days,6,DPR,Brooklyn,19,246,2
+8-30 days,6,DPR,Manhattan,26,423,2
+8-30 days,6,DPR,Queens,8,154,2
+8-30 days,8,HPD,Bronx,181,2753,2
+8-30 days,8,HPD,Brooklyn,200,2954,2
+8-30 days,8,HPD,Manhattan,205,3450,2
+8-30 days,8,HPD,Queens,89,1520,2
+8-30 days,8,HPD,Staten Island,9,149,2
+8-30 days,9,DOHMH,Bronx,1,9,2
+8-30 days,9,DOHMH,Brooklyn,3,41,2
+8-30 days,9,DOHMH,Manhattan,2,43,2
+8-30 days,9,DOHMH,Queens,1,24,2
+8-30 days,9,DOHMH,Staten Island,1,11,2
+8-30 days,10,DOHMH,Bronx,1,27,2
+8-30 days,10,DOHMH,Manhattan,7,66,2
+8-30 days,11,DOT,Bronx,1,17,2
+8-30 days,11,DOT,Brooklyn,4,89,2
+8-30 days,11,DOT,Queens,3,45,2
+8-30 days,13,DOT,Bronx,2,40,2
+8-30 days,13,DOT,Brooklyn,10,175,2
+8-30 days,13,DOT,Manhattan,14,309,2
+8-30 days,13,DOT,Queens,7,157,2
+8-30 days,13,DOT,Staten Island,1,23,2
+8-30 days,17,DOB,Bronx,14,202,2
+8-30 days,17,DOB,Brooklyn,5,56,2
+8-30 days,17,DOB,Manhattan,16,176,2
+8-30 days,17,DOB,Queens,7,88,2
+8-30 days,17,DOB,Staten Island,3,57,2
+8-30 days,19,DOT,Bronx,1,25,2
+8-30 days,19,DOT,Brooklyn,5,91,2
+8-30 days,19,DOT,Manhattan,2,21,2
+8-30 days,19,DOT,Queens,2,47,2
+8-30 days,20,DOT,Bronx,10,133,2
+8-30 days,20,DOT,Brooklyn,38,569,2
+8-30 days,20,DOT,Manhattan,57,861,2
+8-30 days,20,DOT,Queens,47,599,2
+8-30 days,20,DOT,Staten Island,5,66,2
+8-30 days,22,DOHMH,Bronx,3,69,2
+8-30 days,22,DOHMH,Manhattan,2,41,2
+8-30 days,22,DOHMH,Queens,1,15,2
+8-30 days,25,DOB,Bronx,133,2357,2
+8-30 days,25,DOB,Brooklyn,339,6508,2
+8-30 days,25,DOB,Manhattan,100,1720,2
+8-30 days,25,DOB,Queens,517,9806,2
+8-30 days,25,DOB,Staten Island,93,1794,2
+8-30 days,25,DOB,Unspecified,1,23,2
+8-30 days,26,DOT,Brooklyn,5,43,2
+8-30 days,26,DOT,Manhattan,1,19,2
+8-30 days,26,DOT,Queens,5,79,2
+8-30 days,26,DOT,Staten Island,2,28,2
+8-30 days,28,DOHMH,Brooklyn,1,11,2
+8-30 days,29,OOS,Bronx,55,1063,2
+8-30 days,29,OOS,Brooklyn,95,1924,2
+8-30 days,29,OOS,Manhattan,54,1005,2
+8-30 days,29,OOS,Queens,48,913,2
+8-30 days,29,OOS,Staten Island,7,141,2
+8-30 days,30,DSNY,Brooklyn,2,26,2
+8-30 days,31,DOHMH,Bronx,8,126,2
+8-30 days,31,DOHMH,Brooklyn,35,565,2
+8-30 days,31,DOHMH,Manhattan,26,483,2
+8-30 days,31,DOHMH,Queens,10,204,2
+8-30 days,31,DOHMH,Staten Island,1,12,2
+8-30 days,33,DCWP,Bronx,118,2292,2
+8-30 days,33,DCWP,Brooklyn,302,5605,2
+8-30 days,33,DCWP,Manhattan,243,4320,2
+8-30 days,33,DCWP,Queens,189,3490,2
+8-30 days,33,DCWP,Staten Island,22,407,2
+8-30 days,33,DCWP,Unspecified,6,122,2
+8-30 days,34,DOHMH,Bronx,3,76,2
+8-30 days,34,DOHMH,Manhattan,2,33,2
+8-30 days,36,DOT,Bronx,13,193,2
+8-30 days,36,DOT,Brooklyn,104,1594,2
+8-30 days,36,DOT,Manhattan,49,696,2
+8-30 days,36,DOT,Queens,81,1400,2
+8-30 days,36,DOT,Staten Island,13,203,2
+8-30 days,37,DPR,Bronx,62,938,2
+8-30 days,37,DPR,Brooklyn,1167,23532,2
+8-30 days,37,DPR,Manhattan,42,723,2
+8-30 days,37,DPR,Queens,1068,16205,2
+8-30 days,37,DPR,Staten Island,86,1384,2
+8-30 days,37,DPR,Unspecified,5,85,2
+8-30 days,38,DOHMH,Queens,1,10,2
+8-30 days,39,DSNY,Bronx,1,22,2
+8-30 days,39,DSNY,Staten Island,1,28,2
+8-30 days,39,DSNY,Unspecified,1,11,2
+8-30 days,40,DPR,Bronx,40,776,2
+8-30 days,40,DPR,Brooklyn,255,4389,2
+8-30 days,40,DPR,Manhattan,58,1067,2
+8-30 days,40,DPR,Queens,437,7686,2
+8-30 days,40,DPR,Staten Island,60,925,2
+8-30 days,40,DPR,Unspecified,6,99,2
+8-30 days,45,DSNY,Queens,1,12,2
+8-30 days,46,DSNY,Bronx,14,254,2
+8-30 days,46,DSNY,Brooklyn,53,728,2
+8-30 days,46,DSNY,Manhattan,1,24,2
+8-30 days,46,DSNY,Queens,26,514,2
+8-30 days,46,DSNY,Staten Island,12,245,2
+8-30 days,48,HPD,Bronx,242,3382,2
+8-30 days,48,HPD,Brooklyn,256,3505,2
+8-30 days,48,HPD,Manhattan,339,5285,2
+8-30 days,48,HPD,Queens,154,2506,2
+8-30 days,48,HPD,Staten Island,13,178,2
+8-30 days,50,DOHMH,Brooklyn,1,9,2
+8-30 days,52,DEP,Unspecified,1,25,2
+8-30 days,54,DSNY,Queens,1,13,2
+8-30 days,56,HPD,Bronx,168,2537,2
+8-30 days,56,HPD,Brooklyn,190,2527,2
+8-30 days,56,HPD,Manhattan,172,2723,2
+8-30 days,56,HPD,Queens,92,1536,2
+8-30 days,56,HPD,Staten Island,9,133,2
+8-30 days,57,DOB,Brooklyn,5,95,2
+8-30 days,57,DOB,Queens,3,36,2
+8-30 days,58,DOB,Bronx,186,3476,2
+8-30 days,58,DOB,Brooklyn,165,3049,2
+8-30 days,58,DOB,Manhattan,129,2188,2
+8-30 days,58,DOB,Queens,102,1815,2
+8-30 days,58,DOB,Staten Island,9,184,2
+8-30 days,58,HPD,Bronx,16,189,2
+8-30 days,58,HPD,Brooklyn,21,351,2
+8-30 days,58,HPD,Manhattan,9,188,2
+8-30 days,58,HPD,Queens,10,186,2
+8-30 days,59,DOB,Bronx,6,58,2
+8-30 days,59,DOB,Brooklyn,13,218,2
+8-30 days,59,DOB,Manhattan,16,217,2
+8-30 days,59,DOB,Queens,1,16,2
+8-30 days,59,DOB,Staten Island,4,71,2
+8-30 days,60,DHS,Bronx,7,174,2
+8-30 days,60,DHS,Brooklyn,28,668,2
+8-30 days,60,DHS,Manhattan,213,4693,2
+8-30 days,60,DHS,Queens,10,216,2
+8-30 days,60,DHS,Staten Island,1,19,2
+8-30 days,60,NYPD,Manhattan,1,18,2
+8-30 days,64,HPD,Bronx,137,1907,2
+8-30 days,64,HPD,Brooklyn,122,1746,2
+8-30 days,64,HPD,Manhattan,221,3485,2
+8-30 days,64,HPD,Queens,83,1361,2
+8-30 days,64,HPD,Staten Island,3,30,2
+8-30 days,65,DOHMH,Bronx,87,1700,2
+8-30 days,65,DOHMH,Brooklyn,285,5305,2
+8-30 days,65,DOHMH,Manhattan,351,6733,2
+8-30 days,65,DOHMH,Queens,225,4528,2
+8-30 days,65,DOHMH,Staten Island,47,911,2
+8-30 days,65,DOHMH,Unspecified,11,185,2
+8-30 days,66,DOHMH,Bronx,4,86,2
+8-30 days,66,DOHMH,Brooklyn,15,252,2
+8-30 days,66,DOHMH,Manhattan,28,467,2
+8-30 days,66,DOHMH,Queens,14,240,2
+8-30 days,67,TLC,Bronx,63,1294,2
+8-30 days,67,TLC,Brooklyn,397,6949,2
+8-30 days,67,TLC,Manhattan,609,11334,2
+8-30 days,67,TLC,Queens,219,4121,2
+8-30 days,67,TLC,Staten Island,7,145,2
+8-30 days,67,TLC,Unspecified,51,972,2
+8-30 days,68,TLC,Bronx,6,112,2
+8-30 days,68,TLC,Brooklyn,31,514,2
+8-30 days,68,TLC,Manhattan,21,486,2
+8-30 days,68,TLC,Queens,12,227,2
+8-30 days,68,TLC,Unspecified,3,50,2
+8-30 days,69,TLC,Manhattan,3,37,2
+8-30 days,69,TLC,Queens,1,28,2
+8-30 days,70,HPD,Bronx,198,2723,2
+8-30 days,70,HPD,Brooklyn,245,3547,2
+8-30 days,70,HPD,Manhattan,320,5158,2
+8-30 days,70,HPD,Queens,231,3384,2
+8-30 days,70,HPD,Staten Island,2,37,2
+8-30 days,71,DOB,Bronx,84,1577,2
+8-30 days,71,DOB,Brooklyn,372,6508,2
+8-30 days,71,DOB,Manhattan,188,2514,2
+8-30 days,71,DOB,Queens,547,8854,2
+8-30 days,71,DOB,Staten Island,66,1165,2
+8-30 days,71,DOB,Unspecified,1,12,2
+8-30 days,72,DSNY,Bronx,48,770,2
+8-30 days,72,DSNY,Brooklyn,186,3434,2
+8-30 days,72,DSNY,Manhattan,155,2644,2
+8-30 days,72,DSNY,Queens,81,1398,2
+8-30 days,72,DSNY,Staten Island,17,369,2
+8-30 days,73,DEP,Bronx,1,17,2
+8-30 days,73,DEP,Brooklyn,10,183,2
+8-30 days,73,DEP,Manhattan,2,38,2
+8-30 days,73,DEP,Queens,17,313,2
+8-30 days,73,DEP,Staten Island,1,27,2
+8-30 days,74,TLC,Bronx,1,21,2
+8-30 days,74,TLC,Brooklyn,7,143,2
+8-30 days,74,TLC,Manhattan,4,90,2
+8-30 days,74,TLC,Queens,10,208,2
+8-30 days,74,TLC,Unspecified,3,56,2
+8-30 days,75,TLC,Brooklyn,2,34,2
+8-30 days,76,DOHMH,Bronx,18,289,2
+8-30 days,76,DOHMH,Brooklyn,26,520,2
+8-30 days,76,DOHMH,Manhattan,4,51,2
+8-30 days,76,DOHMH,Queens,14,241,2
+8-30 days,76,DOHMH,Staten Island,4,61,2
+8-30 days,77,DEP,Bronx,12,213,2
+8-30 days,77,DEP,Brooklyn,39,736,2
+8-30 days,77,DEP,Manhattan,33,600,2
+8-30 days,77,DEP,Queens,14,236,2
+8-30 days,77,DEP,Staten Island,10,147,2
+8-30 days,79,HPD,Bronx,113,1776,2
+8-30 days,79,HPD,Brooklyn,55,953,2
+8-30 days,79,HPD,Manhattan,63,1059,2
+8-30 days,79,HPD,Queens,24,384,2
+8-30 days,80,DOT,Bronx,22,419,2
+8-30 days,80,DOT,Brooklyn,8,134,2
+8-30 days,80,DOT,Manhattan,8,159,2
+8-30 days,80,DOT,Queens,13,277,2
+8-30 days,80,DOT,Staten Island,2,51,2
+8-30 days,80,DSNY,Brooklyn,1,11,2
+8-30 days,80,DSNY,Manhattan,1,23,2
+8-30 days,80,DSNY,Queens,10,204,2
+8-30 days,82,DOT,Queens,1,16,2
+8-30 days,83,DOT,Brooklyn,1,14,2
+8-30 days,83,DOT,Queens,1,22,2
+8-30 days,85,DOHMH,Brooklyn,10,218,2
+8-30 days,85,DOHMH,Manhattan,2,46,2
+8-30 days,85,DOHMH,Queens,3,61,2
+8-30 days,85,DOHMH,Staten Island,5,55,2
+8-30 days,86,DOHMH,Brooklyn,4,56,2
+8-30 days,87,DSNY,Bronx,8,174,2
+8-30 days,87,DSNY,Brooklyn,34,466,2
+8-30 days,87,DSNY,Manhattan,1,12,2
+8-30 days,87,DSNY,Queens,13,190,2
+8-30 days,87,DSNY,Staten Island,4,63,2
+8-30 days,89,NYPD,Bronx,1,26,2
+8-30 days,89,NYPD,Staten Island,1,10,2
+8-30 days,91,DPR,Bronx,35,602,2
+8-30 days,91,DPR,Brooklyn,169,3023,2
+8-30 days,91,DPR,Manhattan,45,812,2
+8-30 days,91,DPR,Queens,547,13790,2
+8-30 days,91,DPR,Staten Island,26,438,2
+8-30 days,91,DPR,Unspecified,5,78,2
+8-30 days,92,DSNY,Staten Island,1,17,2
+8-30 days,93,DOHMH,Brooklyn,4,73,2
+8-30 days,93,DOHMH,Manhattan,4,44,2
+8-30 days,93,DOHMH,Queens,2,44,2
+8-30 days,93,DOHMH,Staten Island,1,12,2
+8-30 days,94,DOHMH,Bronx,6,99,2
+8-30 days,94,DOHMH,Brooklyn,11,163,2
+8-30 days,94,DOHMH,Manhattan,3,66,2
+8-30 days,94,DOHMH,Queens,5,81,2
+8-30 days,95,DEP,Bronx,1,25,2
+8-30 days,95,DEP,Brooklyn,2,36,2
+8-30 days,95,DEP,Queens,6,78,2
+8-30 days,95,DEP,Staten Island,8,144,2
+8-30 days,97,DOB,Bronx,2,26,2
+8-30 days,97,DOB,Brooklyn,12,252,2
+8-30 days,97,DOB,Manhattan,3,52,2
+8-30 days,97,DOB,Queens,6,92,2
+8-30 days,97,DOB,Staten Island,3,54,2
+8-30 days,98,DEP,Bronx,58,1123,2
+8-30 days,98,DEP,Brooklyn,272,5132,2
+8-30 days,98,DEP,Manhattan,212,4246,2
+8-30 days,98,DEP,Queens,178,3661,2
+8-30 days,98,DEP,Staten Island,63,1463,2
+8-30 days,101,OTI,Bronx,1,9,2
+8-30 days,101,OTI,Brooklyn,5,113,2
+8-30 days,101,OTI,Manhattan,3,69,2
+8-30 days,101,OTI,Queens,2,37,2
+8-30 days,101,OTI,Staten Island,1,11,2
+8-30 days,102,DSNY,Unspecified,1,28,2
+8-30 days,103,DSNY,Brooklyn,2,16,2
+8-30 days,103,DSNY,Queens,1,20,2
+8-30 days,105,DSNY,Bronx,25,505,2
+8-30 days,105,DSNY,Brooklyn,44,878,2
+8-30 days,105,DSNY,Manhattan,12,204,2
+8-30 days,105,DSNY,Queens,37,771,2
+8-30 days,105,DSNY,Staten Island,19,423,2
+8-30 days,106,DPR,Bronx,50,857,2
+8-30 days,106,DPR,Brooklyn,429,7846,2
+8-30 days,106,DPR,Manhattan,365,6905,2
+8-30 days,106,DPR,Queens,368,7145,2
+8-30 days,106,DPR,Staten Island,2,57,2
+8-30 days,106,DPR,Unspecified,1,10,2
+8-30 days,108,DOHMH,Bronx,29,526,2
+8-30 days,108,DOHMH,Brooklyn,34,684,2
+8-30 days,108,DOHMH,Manhattan,72,1436,2
+8-30 days,108,DOHMH,Queens,41,711,2
+8-30 days,108,DOHMH,Staten Island,3,40,2
+8-30 days,108,DOHMH,Unspecified,1,22,2
+8-30 days,112,DPR,Bronx,4,86,2
+8-30 days,112,DPR,Brooklyn,23,440,2
+8-30 days,112,DPR,Manhattan,10,163,2
+8-30 days,112,DPR,Queens,35,580,2
+8-30 days,112,DPR,Staten Island,15,290,2
+8-30 days,113,DEP,Bronx,46,629,2
+8-30 days,113,DEP,Brooklyn,107,1561,2
+8-30 days,113,DEP,Manhattan,115,1587,2
+8-30 days,113,DEP,Queens,25,387,2
+8-30 days,113,DEP,Staten Island,10,108,2
+8-30 days,114,NYPD,Manhattan,1,8,2
+8-30 days,115,EDC,Bronx,13,239,2
+8-30 days,115,EDC,Brooklyn,130,2514,2
+8-30 days,115,EDC,Manhattan,229,3763,2
+8-30 days,115,EDC,Queens,37,731,2
+8-30 days,115,EDC,Staten Island,3,74,2
+8-30 days,123,DSNY,Bronx,12,277,2
+8-30 days,123,DSNY,Brooklyn,33,565,2
+8-30 days,123,DSNY,Manhattan,2,28,2
+8-30 days,123,DSNY,Queens,23,403,2
+8-30 days,123,DSNY,Staten Island,13,248,2
+8-30 days,125,DOT,Bronx,8,170,2
+8-30 days,125,DOT,Brooklyn,35,555,2
+8-30 days,125,DOT,Manhattan,111,2011,2
+8-30 days,125,DOT,Queens,14,294,2
+8-30 days,125,DOT,Staten Island,8,88,2
+8-30 days,126,HPD,Bronx,2,18,2
+8-30 days,126,HPD,Brooklyn,7,83,2
+8-30 days,126,HPD,Manhattan,6,94,2
+8-30 days,126,HPD,Queens,5,60,2
+8-30 days,127,DPR,Bronx,178,2969,2
+8-30 days,127,DPR,Brooklyn,1242,25820,2
+8-30 days,127,DPR,Manhattan,66,1083,2
+8-30 days,127,DPR,Queens,854,14948,2
+8-30 days,127,DPR,Staten Island,143,2492,2
+8-30 days,127,DPR,Unspecified,13,188,2
+8-30 days,128,HPD,Bronx,283,3663,2
+8-30 days,128,HPD,Brooklyn,217,2872,2
+8-30 days,128,HPD,Manhattan,378,6132,2
+8-30 days,128,HPD,Queens,156,2460,2
+8-30 days,128,HPD,Staten Island,12,156,2
+8-30 days,130,DOHMH,Bronx,1,19,2
+8-30 days,130,DOHMH,Brooklyn,2,36,2
+8-30 days,130,DOHMH,Manhattan,3,51,2
+8-30 days,130,DOHMH,Queens,2,38,2
+8-30 days,130,DOHMH,Staten Island,1,16,2
+8-30 days,132,DOB,Bronx,9,151,2
+8-30 days,132,DOB,Brooklyn,38,667,2
+8-30 days,132,DOB,Manhattan,11,221,2
+8-30 days,132,DOB,Queens,30,502,2
+8-30 days,132,DOB,Staten Island,18,301,2
+8-30 days,132,HPD,Bronx,324,4534,2
+8-30 days,132,HPD,Brooklyn,298,4084,2
+8-30 days,132,HPD,Manhattan,419,6921,2
+8-30 days,132,HPD,Queens,219,3573,2
+8-30 days,132,HPD,Staten Island,15,214,2
+8-30 days,133,DOHMH,Bronx,3,57,2
+8-30 days,133,DOHMH,Manhattan,1,26,2
+8-30 days,133,DOHMH,Queens,3,61,2
+8-30 days,133,DOHMH,Staten Island,6,146,2
+8-30 days,140,DSNY,Brooklyn,28,426,2
+8-30 days,140,DSNY,Queens,1,10,2
+8-30 days,141,DOHMH,Bronx,51,724,2
+8-30 days,141,DOHMH,Brooklyn,239,3689,2
+8-30 days,141,DOHMH,Manhattan,122,1832,2
+8-30 days,141,DOHMH,Queens,315,5516,2
+8-30 days,141,DOHMH,Staten Island,37,607,2
+8-30 days,142,DPR,Bronx,115,2111,2
+8-30 days,142,DPR,Brooklyn,246,4633,2
+8-30 days,142,DPR,Manhattan,17,285,2
+8-30 days,142,DPR,Queens,366,6798,2
+8-30 days,142,DPR,Staten Island,131,2541,2
+8-30 days,142,DPR,Unspecified,9,182,2
+8-30 days,143,HPD,Bronx,52,804,2
+8-30 days,143,HPD,Brooklyn,65,915,2
+8-30 days,143,HPD,Manhattan,87,1364,2
+8-30 days,143,HPD,Queens,61,1006,2
+8-30 days,143,HPD,Staten Island,1,8,2
+8-30 days,144,DSNY,Brooklyn,2,23,2
+8-30 days,144,DSNY,Queens,1,10,2
+8-30 days,144,DSNY,Unspecified,1,16,2
+8-30 days,148,DEP,Bronx,56,911,2
+8-30 days,148,DEP,Brooklyn,118,2024,2
+8-30 days,148,DEP,Manhattan,44,776,2
+8-30 days,148,DEP,Queens,108,1927,2
+8-30 days,148,DEP,Staten Island,13,209,2
+8-30 days,149,DOT,Bronx,42,515,2
+8-30 days,149,DOT,Brooklyn,131,1869,2
+8-30 days,149,DOT,Manhattan,71,1148,2
+8-30 days,149,DOT,Queens,120,1737,2
+8-30 days,149,DOT,Staten Island,18,277,2
+8-30 days,150,DOHMH,Bronx,82,1398,2
+8-30 days,150,DOHMH,Brooklyn,141,2561,2
+8-30 days,150,DOHMH,Manhattan,100,1820,2
+8-30 days,150,DOHMH,Queens,66,1252,2
+8-30 days,150,DOHMH,Staten Island,6,131,2
+8-30 days,153,DOB,Queens,1,23,2
+8-30 days,153,DOB,Staten Island,1,29,2
+8-30 days,154,DOB,Brooklyn,2,18,2
+8-30 days,155,DOB,Bronx,13,275,2
+8-30 days,155,DOB,Brooklyn,73,1422,2
+8-30 days,155,DOB,Manhattan,101,1772,2
+8-30 days,155,DOB,Queens,35,550,2
+8-30 days,155,DOB,Staten Island,5,106,2
+8-30 days,157,DOHMH,Bronx,7,83,2
+8-30 days,157,DOHMH,Brooklyn,12,141,2
+8-30 days,157,DOHMH,Manhattan,3,56,2
+8-30 days,157,DOHMH,Queens,6,65,2
+8-30 days,157,DOHMH,Staten Island,2,35,2
+8-30 days,158,DOT,Bronx,28,528,2
+8-30 days,158,DOT,Brooklyn,266,5085,2
+8-30 days,158,DOT,Manhattan,54,992,2
+8-30 days,158,DOT,Queens,164,2933,2
+8-30 days,158,DOT,Staten Island,30,574,2
+8-30 days,159,DOT,Bronx,252,3451,2
+8-30 days,159,DOT,Brooklyn,427,5773,2
+8-30 days,159,DOT,Manhattan,174,2736,2
+8-30 days,159,DOT,Queens,390,5434,2
+8-30 days,159,DOT,Staten Island,587,12252,2
+8-30 days,159,DOT,Unspecified,15,284,2
+8-30 days,160,DOT,Bronx,7,112,2
+8-30 days,160,DOT,Brooklyn,10,223,2
+8-30 days,160,DOT,Manhattan,15,220,2
+8-30 days,160,DOT,Queens,26,432,2
+8-30 days,160,DOT,Unspecified,1,21,2
+8-30 days,161,DOT,Bronx,7,88,2
+8-30 days,161,DOT,Brooklyn,9,117,2
+8-30 days,161,DOT,Manhattan,12,234,2
+8-30 days,161,DOT,Queens,7,84,2
+8-30 days,161,DOT,Staten Island,2,43,2
+8-30 days,162,DOT,Bronx,12,210,2
+8-30 days,162,DOT,Brooklyn,21,340,2
+8-30 days,162,DOT,Manhattan,10,176,2
+8-30 days,162,DOT,Queens,36,681,2
+8-30 days,162,DOT,Staten Island,5,99,2
+8-30 days,163,DSNY,Bronx,1,8,2
+8-30 days,163,DSNY,Brooklyn,8,107,2
+8-30 days,163,DSNY,Manhattan,1,15,2
+8-30 days,163,DSNY,Queens,4,35,2
+8-30 days,165,DOHMH,Bronx,1,17,2
+8-30 days,165,DOHMH,Brooklyn,4,87,2
+8-30 days,165,DOHMH,Manhattan,5,94,2
+8-30 days,165,DOHMH,Queens,4,62,2
+8-30 days,165,DOHMH,Staten Island,2,44,2
+8-30 days,166,TLC,Bronx,8,142,2
+8-30 days,166,TLC,Brooklyn,19,332,2
+8-30 days,166,TLC,Manhattan,355,6732,2
+8-30 days,166,TLC,Queens,285,5418,2
+8-30 days,166,TLC,Staten Island,1,30,2
+8-30 days,166,TLC,Unspecified,35,703,2
+8-30 days,167,TLC,Brooklyn,1,12,2
+8-30 days,167,TLC,Manhattan,1,19,2
+8-30 days,167,TLC,Queens,2,55,2
+8-30 days,168,TLC,Bronx,1,26,2
+8-30 days,169,TLC,Bronx,2,37,2
+8-30 days,169,TLC,Brooklyn,2,43,2
+8-30 days,169,TLC,Manhattan,33,672,2
+8-30 days,169,TLC,Queens,14,262,2
+8-30 days,169,TLC,Unspecified,2,23,2
+8-30 days,170,DOHMH,Bronx,2,25,2
+8-30 days,170,DOHMH,Brooklyn,4,76,2
+8-30 days,170,DOHMH,Manhattan,8,163,2
+8-30 days,170,DOHMH,Queens,4,110,2
+8-30 days,172,DOT,Bronx,7,128,2
+8-30 days,172,DOT,Brooklyn,62,872,2
+8-30 days,172,DOT,Manhattan,58,966,2
+8-30 days,172,DOT,Queens,60,1056,2
+8-30 days,172,DOT,Staten Island,11,251,2
+8-30 days,175,DOT,Manhattan,1,22,2
+8-30 days,176,DOHMH,Bronx,11,182,2
+8-30 days,176,DOHMH,Brooklyn,33,543,2
+8-30 days,176,DOHMH,Manhattan,14,207,2
+8-30 days,176,DOHMH,Queens,22,363,2
+8-30 days,176,DOHMH,Staten Island,9,191,2
+8-30 days,177,DOHMH,Brooklyn,2,23,2
+8-30 days,177,DOHMH,Manhattan,2,20,2
+8-30 days,177,DOHMH,Queens,1,22,2
+8-30 days,178,DOHMH,Bronx,7,114,2
+8-30 days,178,DOHMH,Brooklyn,20,296,2
+8-30 days,178,DOHMH,Manhattan,6,125,2
+8-30 days,178,DOHMH,Queens,29,587,2
+8-30 days,178,DOHMH,Staten Island,11,159,2
+8-30 days,179,HPD,Bronx,604,8555,2
+8-30 days,179,HPD,Brooklyn,721,9919,2
+8-30 days,179,HPD,Manhattan,904,15243,2
+8-30 days,179,HPD,Queens,505,8029,2
+8-30 days,179,HPD,Staten Island,29,460,2
+8-30 days,180,DOHMH,Bronx,1,10,2
+8-30 days,180,DOHMH,Brooklyn,10,217,2
+8-30 days,180,DOHMH,Manhattan,13,161,2
+8-30 days,180,DOHMH,Queens,18,315,2
+8-30 days,180,DOHMH,Staten Island,6,122,2
+8-30 days,182,DPR,Bronx,2,24,2
+8-30 days,182,DPR,Brooklyn,8,117,2
+8-30 days,182,DPR,Manhattan,1,13,2
+8-30 days,182,DPR,Queens,19,266,2
+8-30 days,182,DPR,Staten Island,2,25,2
+8-30 days,185,DPR,Bronx,6,55,2
+8-30 days,185,DPR,Brooklyn,4,49,2
+8-30 days,185,DPR,Manhattan,13,146,2
+8-30 days,185,DPR,Queens,13,118,2
+8-30 days,188,HPD,Bronx,225,2951,2
+8-30 days,188,HPD,Brooklyn,346,4609,2
+8-30 days,188,HPD,Manhattan,362,5775,2
+8-30 days,188,HPD,Queens,141,2111,2
+8-30 days,188,HPD,Staten Island,8,111,2
+8-30 days,189,DEP,Bronx,38,698,2
+8-30 days,189,DEP,Brooklyn,230,4123,2
+8-30 days,189,DEP,Manhattan,26,404,2
+8-30 days,189,DEP,Queens,306,5529,2
+8-30 days,189,DEP,Staten Island,25,356,2
+8-30 days,190,DEP,Brooklyn,4,62,2
+8-30 days,190,DEP,Queens,3,61,2
+8-30 days,192,DOT,Manhattan,3,63,2
+8-30 days,194,DPR,Bronx,6,77,2
+8-30 days,194,DPR,Brooklyn,34,567,2
+8-30 days,194,DPR,Manhattan,1,16,2
+8-30 days,194,DPR,Queens,38,526,2
+8-30 days,194,DPR,Staten Island,1,13,2
+8-30 days,195,DOHMH,Queens,1,23,2
+31-90 days,2,NYPD,Bronx,5,450,3
+31-90 days,2,NYPD,Brooklyn,3,270,3
+31-90 days,2,NYPD,Queens,13,1170,3
+31-90 days,2,NYPD,Staten Island,4,360,3
+31-90 days,4,DEP,Bronx,3,181,3
+31-90 days,4,DEP,Brooklyn,40,2264,3
+31-90 days,4,DEP,Manhattan,378,22908,3
+31-90 days,4,DEP,Queens,5,270,3
+31-90 days,4,DEP,Staten Island,1,55,3
+31-90 days,5,DOHMH,Bronx,1,36,3
+31-90 days,5,DOHMH,Brooklyn,1,38,3
+31-90 days,5,DOHMH,Manhattan,3,145,3
+31-90 days,5,DOHMH,Staten Island,1,46,3
+31-90 days,6,DPR,Bronx,1,78,3
+31-90 days,6,DPR,Brooklyn,13,805,3
+31-90 days,6,DPR,Manhattan,17,808,3
+31-90 days,6,DPR,Queens,9,516,3
+31-90 days,7,NYPD,Queens,1,90,3
+31-90 days,8,HPD,Bronx,152,8703,3
+31-90 days,8,HPD,Brooklyn,128,7523,3
+31-90 days,8,HPD,Manhattan,106,5674,3
+31-90 days,8,HPD,Queens,75,3907,3
+31-90 days,8,HPD,Staten Island,6,419,3
+31-90 days,9,DOHMH,Bronx,1,87,3
+31-90 days,9,DOHMH,Brooklyn,1,42,3
+31-90 days,10,DOHMH,Bronx,4,242,3
+31-90 days,10,DOHMH,Brooklyn,4,229,3
+31-90 days,10,DOHMH,Manhattan,3,211,3
+31-90 days,10,DOHMH,Staten Island,1,33,3
+31-90 days,11,DOT,Bronx,2,89,3
+31-90 days,11,DOT,Manhattan,1,33,3
+31-90 days,13,DOT,Bronx,1,79,3
+31-90 days,13,DOT,Brooklyn,35,2176,3
+31-90 days,13,DOT,Manhattan,17,997,3
+31-90 days,13,DOT,Queens,17,1168,3
+31-90 days,14,NYPD,Manhattan,1,90,3
+31-90 days,16,NYPD,Bronx,4,360,3
+31-90 days,16,NYPD,Brooklyn,18,1620,3
+31-90 days,16,NYPD,Queens,22,1939,3
+31-90 days,16,NYPD,Staten Island,3,270,3
+31-90 days,17,DOB,Bronx,2,146,3
+31-90 days,17,DOB,Brooklyn,1,55,3
+31-90 days,17,DOB,Manhattan,3,179,3
+31-90 days,17,DOB,Queens,1,62,3
+31-90 days,18,DOB,Brooklyn,1,61,3
+31-90 days,18,DOB,Manhattan,1,53,3
+31-90 days,19,DOT,Bronx,2,90,3
+31-90 days,19,DOT,Brooklyn,2,121,3
+31-90 days,19,DOT,Manhattan,4,180,3
+31-90 days,19,DOT,Queens,2,142,3
+31-90 days,20,DOT,Bronx,1,60,3
+31-90 days,20,DOT,Brooklyn,1,38,3
+31-90 days,20,DOT,Manhattan,1,37,3
+31-90 days,20,DOT,Queens,2,78,3
+31-90 days,22,DOHMH,Bronx,1,66,3
+31-90 days,22,DOHMH,Brooklyn,3,105,3
+31-90 days,22,DOHMH,Manhattan,2,89,3
+31-90 days,22,DOHMH,Queens,1,45,3
+31-90 days,25,DOB,Bronx,216,12552,3
+31-90 days,25,DOB,Brooklyn,607,35166,3
+31-90 days,25,DOB,Manhattan,114,6979,3
+31-90 days,25,DOB,Queens,1522,91952,3
+31-90 days,25,DOB,Staten Island,194,11730,3
+31-90 days,26,DOT,Bronx,1,85,3
+31-90 days,26,DOT,Manhattan,1,37,3
+31-90 days,28,DOHMH,Bronx,1,40,3
+31-90 days,28,DOHMH,Manhattan,1,44,3
+31-90 days,28,DOHMH,Queens,1,47,3
+31-90 days,29,OOS,Bronx,80,4240,3
+31-90 days,29,OOS,Brooklyn,109,5894,3
+31-90 days,29,OOS,Manhattan,65,3644,3
+31-90 days,29,OOS,Queens,74,4369,3
+31-90 days,29,OOS,Staten Island,7,256,3
+31-90 days,31,DOHMH,Bronx,46,3081,3
+31-90 days,31,DOHMH,Brooklyn,69,3932,3
+31-90 days,31,DOHMH,Manhattan,85,5439,3
+31-90 days,31,DOHMH,Queens,48,3140,3
+31-90 days,31,DOHMH,Staten Island,1,46,3
+31-90 days,33,DCWP,Bronx,37,1560,3
+31-90 days,33,DCWP,Brooklyn,100,4628,3
+31-90 days,33,DCWP,Manhattan,55,2340,3
+31-90 days,33,DCWP,Queens,62,2865,3
+31-90 days,33,DCWP,Staten Island,9,383,3
+31-90 days,33,DCWP,Unspecified,3,201,3
+31-90 days,34,DOHMH,Bronx,4,198,3
+31-90 days,34,DOHMH,Manhattan,6,385,3
+31-90 days,34,DOHMH,Queens,1,38,3
+31-90 days,36,DOT,Bronx,8,439,3
+31-90 days,36,DOT,Brooklyn,71,3407,3
+31-90 days,36,DOT,Manhattan,32,1572,3
+31-90 days,36,DOT,Queens,70,3468,3
+31-90 days,36,DOT,Staten Island,12,628,3
+31-90 days,37,DPR,Bronx,131,7842,3
+31-90 days,37,DPR,Brooklyn,1203,72112,3
+31-90 days,37,DPR,Manhattan,83,4721,3
+31-90 days,37,DPR,Queens,1128,68227,3
+31-90 days,37,DPR,Staten Island,249,15693,3
+31-90 days,37,DPR,Unspecified,17,965,3
+31-90 days,38,DOHMH,Brooklyn,1,60,3
+31-90 days,39,DSNY,Bronx,1,58,3
+31-90 days,39,DSNY,Brooklyn,2,127,3
+31-90 days,39,DSNY,Manhattan,2,120,3
+31-90 days,39,DSNY,Queens,3,175,3
+31-90 days,39,DSNY,Unspecified,1,41,3
+31-90 days,40,DPR,Bronx,60,3503,3
+31-90 days,40,DPR,Brooklyn,457,27887,3
+31-90 days,40,DPR,Manhattan,84,4643,3
+31-90 days,40,DPR,Queens,799,49754,3
+31-90 days,40,DPR,Staten Island,102,6236,3
+31-90 days,40,DPR,Unspecified,15,884,3
+31-90 days,44,DOB,Queens,5,286,3
+31-90 days,45,DSNY,Manhattan,1,32,3
+31-90 days,46,DSNY,Bronx,51,3170,3
+31-90 days,46,DSNY,Brooklyn,41,2497,3
+31-90 days,46,DSNY,Queens,90,5460,3
+31-90 days,46,DSNY,Staten Island,52,3193,3
+31-90 days,47,NYPD,Brooklyn,1,90,3
+31-90 days,48,HPD,Bronx,140,7938,3
+31-90 days,48,HPD,Brooklyn,91,5421,3
+31-90 days,48,HPD,Manhattan,100,4823,3
+31-90 days,48,HPD,Queens,82,3979,3
+31-90 days,48,HPD,Staten Island,7,486,3
+31-90 days,49,NYPD,Brooklyn,1,90,3
+31-90 days,49,NYPD,Manhattan,4,360,3
+31-90 days,50,DOHMH,Manhattan,1,53,3
+31-90 days,51,NYPD,Bronx,1,90,3
+31-90 days,51,NYPD,Manhattan,2,180,3
+31-90 days,51,NYPD,Queens,2,180,3
+31-90 days,52,DEP,Unspecified,5,292,3
+31-90 days,56,HPD,Bronx,83,5121,3
+31-90 days,56,HPD,Brooklyn,81,4982,3
+31-90 days,56,HPD,Manhattan,76,3888,3
+31-90 days,56,HPD,Queens,68,3487,3
+31-90 days,56,HPD,Staten Island,7,446,3
+31-90 days,57,DOB,Bronx,1,70,3
+31-90 days,57,DOB,Brooklyn,5,302,3
+31-90 days,57,DOB,Queens,1,73,3
+31-90 days,58,DOB,Bronx,197,9473,3
+31-90 days,58,DOB,Brooklyn,166,7870,3
+31-90 days,58,DOB,Manhattan,101,5255,3
+31-90 days,58,DOB,Queens,115,5722,3
+31-90 days,58,DOB,Staten Island,3,163,3
+31-90 days,58,HPD,Bronx,1,67,3
+31-90 days,58,HPD,Brooklyn,5,271,3
+31-90 days,58,HPD,Manhattan,4,192,3
+31-90 days,58,HPD,Queens,7,395,3
+31-90 days,58,HPD,Staten Island,1,31,3
+31-90 days,59,DOB,Brooklyn,5,224,3
+31-90 days,59,DOB,Manhattan,4,166,3
+31-90 days,59,DOB,Queens,3,169,3
+31-90 days,59,DOB,Staten Island,1,31,3
+31-90 days,60,DHS,Bronx,3,169,3
+31-90 days,60,DHS,Brooklyn,89,5688,3
+31-90 days,60,DHS,Manhattan,717,47663,3
+31-90 days,60,DHS,Queens,41,2576,3
+31-90 days,60,DHS,Staten Island,1,80,3
+31-90 days,60,NYPD,Manhattan,3,270,3
+31-90 days,60,NYPD,Staten Island,1,90,3
+31-90 days,64,HPD,Bronx,64,3669,3
+31-90 days,64,HPD,Brooklyn,64,3649,3
+31-90 days,64,HPD,Manhattan,67,3131,3
+31-90 days,64,HPD,Queens,38,1988,3
+31-90 days,65,DOHMH,Bronx,142,6483,3
+31-90 days,65,DOHMH,Brooklyn,368,16718,3
+31-90 days,65,DOHMH,Manhattan,466,21421,3
+31-90 days,65,DOHMH,Queens,285,12902,3
+31-90 days,65,DOHMH,Staten Island,36,1604,3
+31-90 days,65,DOHMH,Unspecified,17,717,3
+31-90 days,66,DOHMH,Bronx,2,75,3
+31-90 days,66,DOHMH,Brooklyn,11,439,3
+31-90 days,66,DOHMH,Manhattan,13,501,3
+31-90 days,66,DOHMH,Queens,8,324,3
+31-90 days,66,DOHMH,Staten Island,1,31,3
+31-90 days,67,TLC,Bronx,129,7936,3
+31-90 days,67,TLC,Brooklyn,1030,58243,3
+31-90 days,67,TLC,Manhattan,1303,80367,3
+31-90 days,67,TLC,Queens,475,27469,3
+31-90 days,67,TLC,Staten Island,12,739,3
+31-90 days,67,TLC,Unspecified,43,2466,3
+31-90 days,68,TLC,Bronx,13,764,3
+31-90 days,68,TLC,Brooklyn,112,6540,3
+31-90 days,68,TLC,Manhattan,37,2012,3
+31-90 days,68,TLC,Queens,44,2551,3
+31-90 days,68,TLC,Unspecified,6,332,3
+31-90 days,69,TLC,Manhattan,6,428,3
+31-90 days,69,TLC,Queens,3,169,3
+31-90 days,69,TLC,Unspecified,1,64,3
+31-90 days,70,HPD,Bronx,112,6271,3
+31-90 days,70,HPD,Brooklyn,128,7430,3
+31-90 days,70,HPD,Manhattan,105,5091,3
+31-90 days,70,HPD,Queens,89,4342,3
+31-90 days,70,HPD,Staten Island,1,69,3
+31-90 days,71,DOB,Bronx,62,3309,3
+31-90 days,71,DOB,Brooklyn,473,27050,3
+31-90 days,71,DOB,Manhattan,94,5029,3
+31-90 days,71,DOB,Queens,332,19101,3
+31-90 days,71,DOB,Staten Island,128,7350,3
+31-90 days,71,DOB,Unspecified,2,93,3
+31-90 days,72,DSNY,Bronx,43,2860,3
+31-90 days,72,DSNY,Brooklyn,99,5484,3
+31-90 days,72,DSNY,Manhattan,60,3480,3
+31-90 days,72,DSNY,Queens,29,1613,3
+31-90 days,72,DSNY,Staten Island,12,460,3
+31-90 days,72,NYPD,Staten Island,1,90,3
+31-90 days,73,DEP,Bronx,4,255,3
+31-90 days,73,DEP,Brooklyn,21,1236,3
+31-90 days,73,DEP,Manhattan,1,51,3
+31-90 days,73,DEP,Queens,32,1882,3
+31-90 days,74,TLC,Bronx,4,196,3
+31-90 days,74,TLC,Brooklyn,5,244,3
+31-90 days,74,TLC,Manhattan,1,32,3
+31-90 days,74,TLC,Queens,7,283,3
+31-90 days,75,TLC,Manhattan,2,86,3
+31-90 days,75,TLC,Queens,2,121,3
+31-90 days,75,TLC,Staten Island,1,59,3
+31-90 days,76,DOHMH,Bronx,25,1332,3
+31-90 days,76,DOHMH,Brooklyn,44,2402,3
+31-90 days,76,DOHMH,Manhattan,7,473,3
+31-90 days,76,DOHMH,Queens,38,2141,3
+31-90 days,76,DOHMH,Staten Island,6,367,3
+31-90 days,77,DEP,Bronx,7,304,3
+31-90 days,77,DEP,Brooklyn,12,569,3
+31-90 days,77,DEP,Manhattan,10,424,3
+31-90 days,77,DEP,Queens,12,618,3
+31-90 days,77,DEP,Staten Island,4,171,3
+31-90 days,78,DEP,Brooklyn,2,156,3
+31-90 days,78,DEP,Manhattan,3,241,3
+31-90 days,78,DEP,Staten Island,2,167,3
+31-90 days,79,HPD,Bronx,122,7555,3
+31-90 days,79,HPD,Brooklyn,157,9075,3
+31-90 days,79,HPD,Manhattan,98,6252,3
+31-90 days,79,HPD,Queens,23,1215,3
+31-90 days,79,HPD,Staten Island,2,131,3
+31-90 days,80,DOT,Bronx,4,203,3
+31-90 days,80,DOT,Brooklyn,3,165,3
+31-90 days,80,DOT,Manhattan,5,321,3
+31-90 days,80,DOT,Queens,20,1019,3
+31-90 days,80,DSNY,Bronx,1,34,3
+31-90 days,80,DSNY,Brooklyn,1,35,3
+31-90 days,80,DSNY,Queens,11,669,3
+31-90 days,80,DSNY,Staten Island,1,35,3
+31-90 days,82,DOT,Brooklyn,1,41,3
+31-90 days,82,DOT,Queens,1,46,3
+31-90 days,83,DOT,Queens,1,35,3
+31-90 days,85,DOHMH,Bronx,20,1241,3
+31-90 days,85,DOHMH,Brooklyn,7,381,3
+31-90 days,85,DOHMH,Manhattan,4,260,3
+31-90 days,85,DOHMH,Queens,10,579,3
+31-90 days,85,DOHMH,Staten Island,12,737,3
+31-90 days,86,DOHMH,Bronx,1,73,3
+31-90 days,86,DOHMH,Brooklyn,5,262,3
+31-90 days,86,DOHMH,Manhattan,1,56,3
+31-90 days,86,DOHMH,Staten Island,1,53,3
+31-90 days,87,DSNY,Bronx,19,1217,3
+31-90 days,87,DSNY,Brooklyn,13,740,3
+31-90 days,87,DSNY,Manhattan,6,445,3
+31-90 days,87,DSNY,Queens,21,1282,3
+31-90 days,87,DSNY,Staten Island,12,771,3
+31-90 days,88,NYPD,Bronx,1,90,3
+31-90 days,88,NYPD,Queens,3,270,3
+31-90 days,89,NYPD,Bronx,17,1530,3
+31-90 days,89,NYPD,Brooklyn,30,2700,3
+31-90 days,89,NYPD,Manhattan,7,630,3
+31-90 days,89,NYPD,Queens,40,3516,3
+31-90 days,89,NYPD,Staten Island,8,720,3
+31-90 days,91,DPR,Bronx,66,3831,3
+31-90 days,91,DPR,Brooklyn,203,12197,3
+31-90 days,91,DPR,Manhattan,86,4751,3
+31-90 days,91,DPR,Queens,281,17024,3
+31-90 days,91,DPR,Staten Island,16,858,3
+31-90 days,91,DPR,Unspecified,2,98,3
+31-90 days,92,DSNY,Bronx,1,56,3
+31-90 days,92,DSNY,Queens,2,100,3
+31-90 days,94,DOHMH,Bronx,2,110,3
+31-90 days,94,DOHMH,Brooklyn,1,42,3
+31-90 days,94,DOHMH,Manhattan,4,248,3
+31-90 days,94,DOHMH,Queens,1,65,3
+31-90 days,94,DOHMH,Staten Island,1,88,3
+31-90 days,95,DEP,Bronx,1,86,3
+31-90 days,95,DEP,Brooklyn,1,44,3
+31-90 days,95,DEP,Queens,2,113,3
+31-90 days,95,DEP,Staten Island,3,163,3
+31-90 days,97,DOB,Brooklyn,7,378,3
+31-90 days,97,DOB,Manhattan,2,81,3
+31-90 days,97,DOB,Queens,5,215,3
+31-90 days,97,DOB,Staten Island,6,256,3
+31-90 days,98,DEP,Bronx,5,175,3
+31-90 days,98,DEP,Brooklyn,17,616,3
+31-90 days,98,DEP,Manhattan,11,392,3
+31-90 days,98,DEP,Queens,19,779,3
+31-90 days,98,DEP,Unspecified,1,63,3
+31-90 days,101,OTI,Bronx,1,32,3
+31-90 days,101,OTI,Manhattan,2,62,3
+31-90 days,101,OTI,Staten Island,1,31,3
+31-90 days,102,DSNY,Bronx,1,52,3
+31-90 days,102,DSNY,Brooklyn,1,31,3
+31-90 days,103,DSNY,Manhattan,1,57,3
+31-90 days,105,DSNY,Bronx,70,4401,3
+31-90 days,105,DSNY,Brooklyn,173,10846,3
+31-90 days,105,DSNY,Manhattan,46,2808,3
+31-90 days,105,DSNY,Queens,150,9131,3
+31-90 days,105,DSNY,Staten Island,64,3894,3
+31-90 days,106,DPR,Bronx,67,3649,3
+31-90 days,106,DPR,Brooklyn,409,24406,3
+31-90 days,106,DPR,Manhattan,590,31884,3
+31-90 days,106,DPR,Queens,905,53022,3
+31-90 days,106,DPR,Staten Island,4,209,3
+31-90 days,108,DOHMH,Bronx,29,1415,3
+31-90 days,108,DOHMH,Brooklyn,72,3362,3
+31-90 days,108,DOHMH,Manhattan,93,4271,3
+31-90 days,108,DOHMH,Queens,46,1990,3
+31-90 days,108,DOHMH,Staten Island,2,101,3
+31-90 days,111,DOT,Unspecified,1,74,3
+31-90 days,112,DPR,Bronx,5,281,3
+31-90 days,112,DPR,Brooklyn,69,3601,3
+31-90 days,112,DPR,Manhattan,10,588,3
+31-90 days,112,DPR,Queens,31,2024,3
+31-90 days,112,DPR,Staten Island,5,201,3
+31-90 days,113,DEP,Bronx,7,359,3
+31-90 days,113,DEP,Brooklyn,28,1392,3
+31-90 days,113,DEP,Manhattan,28,1164,3
+31-90 days,113,DEP,Queens,5,208,3
+31-90 days,113,DEP,Staten Island,4,215,3
+31-90 days,114,NYPD,Bronx,1,90,3
+31-90 days,114,NYPD,Brooklyn,5,450,3
+31-90 days,114,NYPD,Manhattan,1,90,3
+31-90 days,114,NYPD,Queens,1,90,3
+31-90 days,114,NYPD,Staten Island,1,90,3
+31-90 days,115,EDC,Bronx,30,1734,3
+31-90 days,115,EDC,Brooklyn,266,15210,3
+31-90 days,115,EDC,Manhattan,158,9818,3
+31-90 days,115,EDC,Queens,59,3526,3
+31-90 days,115,EDC,Staten Island,4,242,3
+31-90 days,117,NYPD,Bronx,2,180,3
+31-90 days,118,NYPD,Bronx,22,1932,3
+31-90 days,118,NYPD,Brooklyn,23,2027,3
+31-90 days,118,NYPD,Manhattan,18,1561,3
+31-90 days,118,NYPD,Queens,18,1620,3
+31-90 days,119,NYPD,Bronx,34,3015,3
+31-90 days,119,NYPD,Brooklyn,16,1329,3
+31-90 days,119,NYPD,Manhattan,13,1070,3
+31-90 days,119,NYPD,Queens,10,900,3
+31-90 days,119,NYPD,Staten Island,1,90,3
+31-90 days,120,NYPD,Bronx,5,450,3
+31-90 days,120,NYPD,Brooklyn,1,90,3
+31-90 days,120,NYPD,Manhattan,3,270,3
+31-90 days,120,NYPD,Queens,3,270,3
+31-90 days,120,NYPD,Staten Island,1,90,3
+31-90 days,121,NYPD,Bronx,4,360,3
+31-90 days,121,NYPD,Brooklyn,2,180,3
+31-90 days,123,DSNY,Bronx,31,1843,3
+31-90 days,123,DSNY,Brooklyn,41,2326,3
+31-90 days,123,DSNY,Manhattan,13,822,3
+31-90 days,123,DSNY,Queens,42,2467,3
+31-90 days,123,DSNY,Staten Island,71,4453,3
+31-90 days,125,DOT,Bronx,8,476,3
+31-90 days,125,DOT,Brooklyn,37,1851,3
+31-90 days,125,DOT,Manhattan,125,6517,3
+31-90 days,125,DOT,Queens,8,451,3
+31-90 days,125,DOT,Staten Island,1,33,3
+31-90 days,126,HPD,Brooklyn,3,142,3
+31-90 days,126,HPD,Manhattan,4,133,3
+31-90 days,126,HPD,Queens,2,89,3
+31-90 days,127,DPR,Bronx,292,16653,3
+31-90 days,127,DPR,Brooklyn,1887,115989,3
+31-90 days,127,DPR,Manhattan,116,6610,3
+31-90 days,127,DPR,Queens,2145,132880,3
+31-90 days,127,DPR,Staten Island,226,13080,3
+31-90 days,127,DPR,Unspecified,36,2162,3
+31-90 days,128,HPD,Bronx,79,3971,3
+31-90 days,128,HPD,Brooklyn,40,2303,3
+31-90 days,128,HPD,Manhattan,78,3561,3
+31-90 days,128,HPD,Queens,54,2365,3
+31-90 days,128,HPD,Staten Island,2,95,3
+31-90 days,129,NYPD,Brooklyn,1,90,3
+31-90 days,129,NYPD,Manhattan,3,270,3
+31-90 days,130,DOHMH,Bronx,2,81,3
+31-90 days,130,DOHMH,Brooklyn,6,344,3
+31-90 days,130,DOHMH,Manhattan,8,421,3
+31-90 days,130,DOHMH,Queens,8,550,3
+31-90 days,130,DOHMH,Staten Island,3,188,3
+31-90 days,131,DEP,Brooklyn,1,86,3
+31-90 days,132,DOB,Bronx,20,1076,3
+31-90 days,132,DOB,Brooklyn,74,4010,3
+31-90 days,132,DOB,Manhattan,22,1166,3
+31-90 days,132,DOB,Queens,85,4794,3
+31-90 days,132,DOB,Staten Island,19,1124,3
+31-90 days,132,HPD,Bronx,214,12755,3
+31-90 days,132,HPD,Brooklyn,225,13390,3
+31-90 days,132,HPD,Manhattan,184,10096,3
+31-90 days,132,HPD,Queens,87,4214,3
+31-90 days,132,HPD,Staten Island,12,682,3
+31-90 days,133,DOHMH,Bronx,5,242,3
+31-90 days,133,DOHMH,Manhattan,2,117,3
+31-90 days,133,DOHMH,Queens,6,290,3
+31-90 days,133,DOHMH,Staten Island,6,270,3
+31-90 days,138,DOB,Brooklyn,2,124,3
+31-90 days,138,DOB,Queens,1,31,3
+31-90 days,140,DSNY,Brooklyn,7,238,3
+31-90 days,141,DOHMH,Bronx,5,261,3
+31-90 days,141,DOHMH,Brooklyn,226,12719,3
+31-90 days,141,DOHMH,Manhattan,44,2307,3
+31-90 days,141,DOHMH,Queens,320,16357,3
+31-90 days,141,DOHMH,Staten Island,142,8510,3
+31-90 days,141,DOHMH,Unspecified,1,72,3
+31-90 days,142,DPR,Bronx,194,11860,3
+31-90 days,142,DPR,Brooklyn,603,36349,3
+31-90 days,142,DPR,Manhattan,56,3229,3
+31-90 days,142,DPR,Queens,743,43355,3
+31-90 days,142,DPR,Staten Island,318,18670,3
+31-90 days,142,DPR,Unspecified,17,1074,3
+31-90 days,143,HPD,Bronx,19,920,3
+31-90 days,143,HPD,Brooklyn,34,2105,3
+31-90 days,143,HPD,Manhattan,31,1533,3
+31-90 days,143,HPD,Queens,20,1024,3
+31-90 days,143,HPD,Staten Island,6,406,3
+31-90 days,144,DSNY,Bronx,2,104,3
+31-90 days,144,DSNY,Brooklyn,2,101,3
+31-90 days,147,DEP,Bronx,14,1128,3
+31-90 days,147,DEP,Brooklyn,39,3218,3
+31-90 days,147,DEP,Manhattan,13,1046,3
+31-90 days,147,DEP,Queens,22,1796,3
+31-90 days,147,DEP,Staten Island,4,325,3
+31-90 days,148,DEP,Bronx,68,3594,3
+31-90 days,148,DEP,Brooklyn,210,11018,3
+31-90 days,148,DEP,Manhattan,89,4808,3
+31-90 days,148,DEP,Queens,141,7590,3
+31-90 days,148,DEP,Staten Island,32,1702,3
+31-90 days,149,DOT,Bronx,16,838,3
+31-90 days,149,DOT,Brooklyn,52,2887,3
+31-90 days,149,DOT,Manhattan,38,2038,3
+31-90 days,149,DOT,Queens,52,2816,3
+31-90 days,149,DOT,Staten Island,10,591,3
+31-90 days,150,DOHMH,Bronx,103,5262,3
+31-90 days,150,DOHMH,Brooklyn,121,5456,3
+31-90 days,150,DOHMH,Manhattan,97,4386,3
+31-90 days,150,DOHMH,Queens,66,3001,3
+31-90 days,150,DOHMH,Staten Island,8,322,3
+31-90 days,153,DOB,Bronx,1,37,3
+31-90 days,153,DOB,Staten Island,2,75,3
+31-90 days,154,DOB,Brooklyn,1,54,3
+31-90 days,155,DOB,Bronx,14,789,3
+31-90 days,155,DOB,Brooklyn,70,3867,3
+31-90 days,155,DOB,Manhattan,82,4362,3
+31-90 days,155,DOB,Queens,49,3055,3
+31-90 days,155,DOB,Staten Island,3,145,3
+31-90 days,155,DOB,Unspecified,2,76,3
+31-90 days,157,DOHMH,Bronx,4,253,3
+31-90 days,157,DOHMH,Brooklyn,7,408,3
+31-90 days,157,DOHMH,Manhattan,3,226,3
+31-90 days,157,DOHMH,Queens,7,381,3
+31-90 days,158,DOT,Bronx,57,3334,3
+31-90 days,158,DOT,Brooklyn,767,45495,3
+31-90 days,158,DOT,Manhattan,223,13229,3
+31-90 days,158,DOT,Queens,346,22323,3
+31-90 days,158,DOT,Staten Island,58,3575,3
+31-90 days,158,DOT,Unspecified,1,54,3
+31-90 days,159,DOT,Bronx,352,25530,3
+31-90 days,159,DOT,Brooklyn,308,20993,3
+31-90 days,159,DOT,Manhattan,172,10336,3
+31-90 days,159,DOT,Queens,259,14960,3
+31-90 days,159,DOT,Staten Island,776,45044,3
+31-90 days,159,DOT,Unspecified,31,1848,3
+31-90 days,160,DOT,Bronx,8,429,3
+31-90 days,160,DOT,Brooklyn,17,815,3
+31-90 days,160,DOT,Manhattan,12,604,3
+31-90 days,160,DOT,Queens,42,2665,3
+31-90 days,160,DOT,Staten Island,4,312,3
+31-90 days,161,DOT,Bronx,2,119,3
+31-90 days,161,DOT,Brooklyn,6,429,3
+31-90 days,161,DOT,Manhattan,3,163,3
+31-90 days,161,DOT,Queens,7,461,3
+31-90 days,161,DOT,Staten Island,3,194,3
+31-90 days,162,DOT,Bronx,16,951,3
+31-90 days,162,DOT,Brooklyn,23,1301,3
+31-90 days,162,DOT,Manhattan,11,660,3
+31-90 days,162,DOT,Queens,52,3085,3
+31-90 days,162,DOT,Staten Island,10,579,3
+31-90 days,163,DSNY,Manhattan,11,632,3
+31-90 days,165,DOHMH,Bronx,3,127,3
+31-90 days,165,DOHMH,Brooklyn,9,421,3
+31-90 days,165,DOHMH,Manhattan,13,613,3
+31-90 days,165,DOHMH,Queens,4,184,3
+31-90 days,165,DOHMH,Staten Island,1,45,3
+31-90 days,166,TLC,Bronx,10,702,3
+31-90 days,166,TLC,Brooklyn,33,2011,3
+31-90 days,166,TLC,Manhattan,751,46944,3
+31-90 days,166,TLC,Queens,710,41380,3
+31-90 days,166,TLC,Unspecified,49,2678,3
+31-90 days,167,TLC,Manhattan,3,136,3
+31-90 days,167,TLC,Queens,2,76,3
+31-90 days,167,TLC,Unspecified,1,41,3
+31-90 days,168,TLC,Queens,2,168,3
+31-90 days,169,TLC,Brooklyn,3,166,3
+31-90 days,169,TLC,Manhattan,71,4226,3
+31-90 days,169,TLC,Queens,71,4435,3
+31-90 days,169,TLC,Unspecified,6,482,3
+31-90 days,170,DOHMH,Bronx,7,415,3
+31-90 days,170,DOHMH,Brooklyn,8,477,3
+31-90 days,170,DOHMH,Manhattan,9,459,3
+31-90 days,170,DOHMH,Queens,5,369,3
+31-90 days,172,DOT,Bronx,23,1379,3
+31-90 days,172,DOT,Brooklyn,68,4073,3
+31-90 days,172,DOT,Manhattan,81,5100,3
+31-90 days,172,DOT,Queens,111,6729,3
+31-90 days,172,DOT,Staten Island,11,686,3
+31-90 days,176,DOHMH,Bronx,14,810,3
+31-90 days,176,DOHMH,Brooklyn,79,4673,3
+31-90 days,176,DOHMH,Manhattan,12,731,3
+31-90 days,176,DOHMH,Queens,33,2007,3
+31-90 days,176,DOHMH,Staten Island,9,524,3
+31-90 days,177,DOHMH,Bronx,1,40,3
+31-90 days,177,DOHMH,Brooklyn,1,89,3
+31-90 days,177,DOHMH,Queens,2,124,3
+31-90 days,177,DOHMH,Staten Island,1,46,3
+31-90 days,178,DOHMH,Bronx,1,38,3
+31-90 days,178,DOHMH,Brooklyn,20,1022,3
+31-90 days,178,DOHMH,Manhattan,5,220,3
+31-90 days,178,DOHMH,Queens,45,2387,3
+31-90 days,178,DOHMH,Staten Island,27,1441,3
+31-90 days,179,HPD,Bronx,375,21141,3
+31-90 days,179,HPD,Brooklyn,338,19884,3
+31-90 days,179,HPD,Manhattan,346,17242,3
+31-90 days,179,HPD,Queens,378,21001,3
+31-90 days,179,HPD,Staten Island,32,1827,3
+31-90 days,180,DOHMH,Brooklyn,9,464,3
+31-90 days,180,DOHMH,Manhattan,2,73,3
+31-90 days,180,DOHMH,Queens,28,1559,3
+31-90 days,180,DOHMH,Staten Island,25,1292,3
+31-90 days,182,DPR,Bronx,5,338,3
+31-90 days,182,DPR,Brooklyn,26,1753,3
+31-90 days,182,DPR,Manhattan,4,208,3
+31-90 days,182,DPR,Queens,21,1297,3
+31-90 days,182,DPR,Staten Island,1,61,3
+31-90 days,183,NYPD,Brooklyn,1,90,3
+31-90 days,185,DPR,Bronx,1,73,3
+31-90 days,185,DPR,Brooklyn,1,50,3
+31-90 days,185,DPR,Manhattan,2,155,3
+31-90 days,185,DPR,Queens,3,217,3
+31-90 days,186,DEP,Brooklyn,1,34,3
+31-90 days,186,DEP,Queens,1,44,3
+31-90 days,187,DEP,Bronx,1,57,3
+31-90 days,187,DEP,Manhattan,3,161,3
+31-90 days,188,HPD,Bronx,52,2680,3
+31-90 days,188,HPD,Brooklyn,38,2172,3
+31-90 days,188,HPD,Manhattan,51,2136,3
+31-90 days,188,HPD,Queens,64,2872,3
+31-90 days,189,DEP,Bronx,45,2363,3
+31-90 days,189,DEP,Brooklyn,193,11474,3
+31-90 days,189,DEP,Manhattan,41,2127,3
+31-90 days,189,DEP,Queens,128,6821,3
+31-90 days,189,DEP,Staten Island,18,964,3
+31-90 days,190,DEP,Manhattan,1,60,3
+31-90 days,190,DEP,Staten Island,1,48,3
+31-90 days,191,DEP,Bronx,5,401,3
+31-90 days,191,DEP,Brooklyn,71,5785,3
+31-90 days,191,DEP,Manhattan,5,396,3
+31-90 days,191,DEP,Queens,1,89,3
+31-90 days,191,DEP,Staten Island,3,250,3
+31-90 days,192,DOT,Bronx,1,59,3
+31-90 days,192,DOT,Brooklyn,1,77,3
+31-90 days,194,DPR,Bronx,7,443,3
+31-90 days,194,DPR,Brooklyn,66,3968,3
+31-90 days,194,DPR,Manhattan,1,58,3
+31-90 days,194,DPR,Queens,23,1366,3
+31-90 days,194,DPR,Staten Island,2,167,3
+91+ days,1,DSNY,Brooklyn,3,474,4
+91+ days,2,NYPD,Manhattan,1,91,4
+91+ days,2,NYPD,Queens,2,182,4
+91+ days,2,NYPD,Staten Island,1,91,4
+91+ days,4,DEP,Bronx,1,350,4
+91+ days,4,DEP,Manhattan,1,92,4
+91+ days,4,DEP,Staten Island,1,381,4
+91+ days,5,DOHMH,Bronx,1,393,4
+91+ days,5,DOHMH,Brooklyn,8,2378,4
+91+ days,5,DOHMH,Manhattan,5,811,4
+91+ days,5,DOHMH,Queens,10,2157,4
+91+ days,6,DPR,Brooklyn,3,488,4
+91+ days,6,DPR,Manhattan,1,351,4
+91+ days,6,DPR,Queens,6,646,4
+91+ days,8,HPD,Bronx,224,42177,4
+91+ days,8,HPD,Brooklyn,142,27785,4
+91+ days,8,HPD,Manhattan,140,27561,4
+91+ days,8,HPD,Queens,66,13268,4
+91+ days,8,HPD,Staten Island,1,258,4
+91+ days,9,DOHMH,Brooklyn,5,1503,4
+91+ days,9,DOHMH,Manhattan,1,246,4
+91+ days,9,DOHMH,Queens,6,1739,4
+91+ days,10,DOHMH,Bronx,3,418,4
+91+ days,10,DOHMH,Brooklyn,5,550,4
+91+ days,10,DOHMH,Manhattan,12,2381,4
+91+ days,10,DOHMH,Queens,1,117,4
+91+ days,10,DOHMH,Staten Island,1,124,4
+91+ days,12,DOB,Queens,1,329,4
+91+ days,13,DOT,Bronx,1,93,4
+91+ days,13,DOT,Brooklyn,5,520,4
+91+ days,13,DOT,Manhattan,10,1122,4
+91+ days,13,DOT,Queens,3,449,4
+91+ days,16,NYPD,Brooklyn,1,91,4
+91+ days,16,NYPD,Queens,7,637,4
+91+ days,16,NYPD,Staten Island,1,91,4
+91+ days,17,DOB,Bronx,7,1783,4
+91+ days,17,DOB,Brooklyn,10,2661,4
+91+ days,17,DOB,Queens,4,1160,4
+91+ days,17,DOB,Staten Island,2,687,4
+91+ days,18,DOB,Brooklyn,1,181,4
+91+ days,18,DOB,Manhattan,7,1306,4
+91+ days,18,DOB,Queens,1,399,4
+91+ days,19,DOT,Bronx,1,177,4
+91+ days,19,DOT,Manhattan,1,152,4
+91+ days,19,DOT,Queens,2,274,4
+91+ days,22,DOHMH,Bronx,4,690,4
+91+ days,22,DOHMH,Brooklyn,5,766,4
+91+ days,22,DOHMH,Manhattan,5,1552,4
+91+ days,22,DOHMH,Queens,1,216,4
+91+ days,22,DOHMH,Staten Island,2,382,4
+91+ days,23,DOB,Brooklyn,1,140,4
+91+ days,25,DOB,Bronx,165,25338,4
+91+ days,25,DOB,Brooklyn,1035,185560,4
+91+ days,25,DOB,Manhattan,108,14780,4
+91+ days,25,DOB,Queens,2601,483131,4
+91+ days,25,DOB,Staten Island,121,22695,4
+91+ days,26,DOT,Bronx,1,126,4
+91+ days,29,OOS,Bronx,36,3794,4
+91+ days,29,OOS,Brooklyn,21,2157,4
+91+ days,29,OOS,Manhattan,41,4687,4
+91+ days,29,OOS,Queens,29,3162,4
+91+ days,29,OOS,Staten Island,6,628,4
+91+ days,31,DOHMH,Bronx,287,70950,4
+91+ days,31,DOHMH,Brooklyn,310,75498,4
+91+ days,31,DOHMH,Manhattan,358,89505,4
+91+ days,31,DOHMH,Queens,175,42963,4
+91+ days,31,DOHMH,Staten Island,14,4068,4
+91+ days,33,DCWP,Bronx,1,374,4
+91+ days,33,DCWP,Brooklyn,4,735,4
+91+ days,33,DCWP,Manhattan,7,1607,4
+91+ days,33,DCWP,Queens,5,1386,4
+91+ days,33,DCWP,Staten Island,1,108,4
+91+ days,34,DOHMH,Manhattan,1,91,4
+91+ days,36,DOT,Bronx,9,1445,4
+91+ days,36,DOT,Brooklyn,10,1172,4
+91+ days,36,DOT,Manhattan,6,894,4
+91+ days,36,DOT,Queens,8,974,4
+91+ days,36,DOT,Staten Island,5,523,4
+91+ days,37,DPR,Bronx,200,37499,4
+91+ days,37,DPR,Brooklyn,1839,329360,4
+91+ days,37,DPR,Manhattan,94,14745,4
+91+ days,37,DPR,Queens,2116,418136,4
+91+ days,37,DPR,Staten Island,444,80666,4
+91+ days,37,DPR,Unspecified,18,2549,4
+91+ days,38,DOHMH,Brooklyn,1,366,4
+91+ days,39,DSNY,Bronx,6,1616,4
+91+ days,39,DSNY,Brooklyn,6,908,4
+91+ days,39,DSNY,Manhattan,3,471,4
+91+ days,39,DSNY,Queens,8,1886,4
+91+ days,39,DSNY,Unspecified,2,549,4
+91+ days,40,DPR,Bronx,82,15802,4
+91+ days,40,DPR,Brooklyn,661,122969,4
+91+ days,40,DPR,Manhattan,64,8447,4
+91+ days,40,DPR,Queens,1334,252932,4
+91+ days,40,DPR,Staten Island,174,28901,4
+91+ days,40,DPR,Unspecified,20,2406,4
+91+ days,44,DOB,Bronx,1,313,4
+91+ days,44,DOB,Brooklyn,9,2472,4
+91+ days,44,DOB,Manhattan,1,217,4
+91+ days,44,DOB,Queens,2,421,4
+91+ days,44,DOB,Staten Island,4,1045,4
+91+ days,45,DSNY,Bronx,4,1062,4
+91+ days,45,DSNY,Brooklyn,10,2741,4
+91+ days,45,DSNY,Queens,14,3923,4
+91+ days,45,DSNY,Staten Island,4,1276,4
+91+ days,46,DSNY,Bronx,576,141175,4
+91+ days,46,DSNY,Brooklyn,136,33012,4
+91+ days,46,DSNY,Manhattan,25,5644,4
+91+ days,46,DSNY,Queens,194,40353,4
+91+ days,46,DSNY,Staten Island,171,43082,4
+91+ days,46,DSNY,Unspecified,1,382,4
+91+ days,48,HPD,Bronx,290,57579,4
+91+ days,48,HPD,Brooklyn,192,39522,4
+91+ days,48,HPD,Manhattan,282,63081,4
+91+ days,48,HPD,Queens,70,16362,4
+91+ days,48,HPD,Staten Island,7,1319,4
+91+ days,50,DOHMH,Bronx,4,1257,4
+91+ days,50,DOHMH,Brooklyn,7,2250,4
+91+ days,50,DOHMH,Manhattan,5,1264,4
+91+ days,50,DOHMH,Queens,6,1594,4
+91+ days,50,DOHMH,Staten Island,2,753,4
+91+ days,51,NYPD,Bronx,1,91,4
+91+ days,54,DSNY,Queens,1,350,4
+91+ days,56,HPD,Bronx,191,37958,4
+91+ days,56,HPD,Brooklyn,183,38074,4
+91+ days,56,HPD,Manhattan,151,30862,4
+91+ days,56,HPD,Queens,65,12833,4
+91+ days,56,HPD,Staten Island,4,751,4
+91+ days,57,DOB,Bronx,4,984,4
+91+ days,57,DOB,Brooklyn,10,2380,4
+91+ days,57,DOB,Queens,16,3695,4
+91+ days,57,DOB,Staten Island,3,968,4
+91+ days,58,DOB,Bronx,35,4344,4
+91+ days,58,DOB,Brooklyn,13,1378,4
+91+ days,58,DOB,Manhattan,7,953,4
+91+ days,58,DOB,Queens,14,1596,4
+91+ days,58,DOB,Staten Island,2,235,4
+91+ days,58,HPD,Bronx,18,3237,4
+91+ days,58,HPD,Brooklyn,11,2144,4
+91+ days,58,HPD,Manhattan,9,2023,4
+91+ days,59,DOB,Brooklyn,1,128,4
+91+ days,59,DOB,Queens,8,2817,4
+91+ days,60,DHS,Bronx,3,490,4
+91+ days,60,DHS,Brooklyn,140,18459,4
+91+ days,60,DHS,Manhattan,800,102260,4
+91+ days,60,DHS,Queens,42,5386,4
+91+ days,60,DHS,Staten Island,2,235,4
+91+ days,63,TLC,Brooklyn,1,112,4
+91+ days,64,HPD,Bronx,141,27964,4
+91+ days,64,HPD,Brooklyn,94,18960,4
+91+ days,64,HPD,Manhattan,120,24171,4
+91+ days,64,HPD,Queens,30,7180,4
+91+ days,64,HPD,Staten Island,7,1685,4
+91+ days,66,DOHMH,Bronx,6,1857,4
+91+ days,66,DOHMH,Brooklyn,16,5528,4
+91+ days,66,DOHMH,Manhattan,27,7816,4
+91+ days,66,DOHMH,Queens,10,3097,4
+91+ days,67,TLC,Bronx,555,116230,4
+91+ days,67,TLC,Brooklyn,1865,380678,4
+91+ days,67,TLC,Manhattan,4389,931134,4
+91+ days,67,TLC,Queens,1222,261035,4
+91+ days,67,TLC,Staten Island,77,16436,4
+91+ days,67,TLC,Unspecified,145,30650,4
+91+ days,68,TLC,Bronx,32,8092,4
+91+ days,68,TLC,Brooklyn,124,25287,4
+91+ days,68,TLC,Manhattan,84,19479,4
+91+ days,68,TLC,Queens,128,30023,4
+91+ days,68,TLC,Staten Island,11,2488,4
+91+ days,68,TLC,Unspecified,23,5084,4
+91+ days,69,TLC,Bronx,1,158,4
+91+ days,69,TLC,Brooklyn,4,1024,4
+91+ days,69,TLC,Manhattan,54,14146,4
+91+ days,69,TLC,Queens,5,938,4
+91+ days,69,TLC,Unspecified,2,455,4
+91+ days,70,HPD,Bronx,300,60412,4
+91+ days,70,HPD,Brooklyn,185,34009,4
+91+ days,70,HPD,Manhattan,320,71905,4
+91+ days,70,HPD,Queens,94,19543,4
+91+ days,70,HPD,Staten Island,7,1219,4
+91+ days,71,DOB,Bronx,62,10448,4
+91+ days,71,DOB,Brooklyn,499,87724,4
+91+ days,71,DOB,Manhattan,51,7274,4
+91+ days,71,DOB,Queens,634,139740,4
+91+ days,71,DOB,Staten Island,98,19321,4
+91+ days,72,DSNY,Bronx,20,3833,4
+91+ days,72,DSNY,Brooklyn,377,86367,4
+91+ days,72,DSNY,Manhattan,96,21280,4
+91+ days,72,DSNY,Queens,23,5070,4
+91+ days,72,DSNY,Staten Island,12,2931,4
+91+ days,73,DEP,Brooklyn,3,344,4
+91+ days,73,DEP,Queens,2,238,4
+91+ days,74,TLC,Bronx,1,151,4
+91+ days,74,TLC,Brooklyn,20,6621,4
+91+ days,74,TLC,Manhattan,17,5036,4
+91+ days,74,TLC,Queens,37,10705,4
+91+ days,74,TLC,Unspecified,4,1144,4
+91+ days,75,TLC,Brooklyn,13,3818,4
+91+ days,75,TLC,Manhattan,7,1636,4
+91+ days,75,TLC,Queens,15,3608,4
+91+ days,76,DOHMH,Bronx,50,15551,4
+91+ days,76,DOHMH,Brooklyn,107,32536,4
+91+ days,76,DOHMH,Manhattan,52,15703,4
+91+ days,76,DOHMH,Queens,71,19495,4
+91+ days,76,DOHMH,Staten Island,36,8688,4
+91+ days,78,DEP,Bronx,1,122,4
+91+ days,78,DEP,Brooklyn,1,92,4
+91+ days,78,DEP,Manhattan,1,97,4
+91+ days,79,HPD,Bronx,6202,1387646,4
+91+ days,79,HPD,Brooklyn,1531,327154,4
+91+ days,79,HPD,Manhattan,2889,652219,4
+91+ days,79,HPD,Queens,834,183908,4
+91+ days,79,HPD,Staten Island,29,6333,4
+91+ days,80,DOT,Bronx,6,677,4
+91+ days,80,DOT,Brooklyn,4,593,4
+91+ days,80,DOT,Manhattan,8,1150,4
+91+ days,80,DOT,Queens,9,1099,4
+91+ days,80,DOT,Staten Island,1,331,4
+91+ days,80,DSNY,Queens,4,387,4
+91+ days,84,DHS,Bronx,13,2806,4
+91+ days,84,DHS,Brooklyn,8,1612,4
+91+ days,84,DHS,Manhattan,34,6378,4
+91+ days,84,DHS,Queens,7,1319,4
+91+ days,85,DOHMH,Bronx,84,25661,4
+91+ days,85,DOHMH,Brooklyn,68,17523,4
+91+ days,85,DOHMH,Manhattan,13,3738,4
+91+ days,85,DOHMH,Queens,38,8929,4
+91+ days,85,DOHMH,Staten Island,29,7171,4
+91+ days,86,DOHMH,Brooklyn,10,2409,4
+91+ days,86,DOHMH,Manhattan,5,1454,4
+91+ days,86,DOHMH,Queens,7,2093,4
+91+ days,86,DOHMH,Staten Island,3,763,4
+91+ days,87,DSNY,Bronx,53,12142,4
+91+ days,87,DSNY,Brooklyn,63,15920,4
+91+ days,87,DSNY,Manhattan,8,1981,4
+91+ days,87,DSNY,Queens,92,20995,4
+91+ days,87,DSNY,Staten Island,49,11375,4
+91+ days,87,DSNY,Unspecified,2,748,4
+91+ days,89,NYPD,Bronx,3,273,4
+91+ days,89,NYPD,Queens,14,1365,4
+91+ days,89,NYPD,Staten Island,2,182,4
+91+ days,91,DPR,Bronx,87,15216,4
+91+ days,91,DPR,Brooklyn,263,50478,4
+91+ days,91,DPR,Manhattan,72,11246,4
+91+ days,91,DPR,Queens,380,62458,4
+91+ days,91,DPR,Staten Island,20,4111,4
+91+ days,91,DPR,Unspecified,1,124,4
+91+ days,92,DSNY,Bronx,3,676,4
+91+ days,92,DSNY,Brooklyn,8,1464,4
+91+ days,92,DSNY,Queens,10,2071,4
+91+ days,92,DSNY,Staten Island,4,1055,4
+91+ days,93,DOHMH,Bronx,9,2782,4
+91+ days,93,DOHMH,Brooklyn,5,1102,4
+91+ days,93,DOHMH,Manhattan,6,1922,4
+91+ days,93,DOHMH,Queens,5,1367,4
+91+ days,93,DOHMH,Staten Island,1,250,4
+91+ days,94,DOHMH,Bronx,3,807,4
+91+ days,94,DOHMH,Brooklyn,9,2119,4
+91+ days,94,DOHMH,Manhattan,8,2181,4
+91+ days,94,DOHMH,Queens,7,1933,4
+91+ days,94,DOHMH,Staten Island,1,151,4
+91+ days,95,DEP,Bronx,2,468,4
+91+ days,95,DEP,Brooklyn,12,2308,4
+91+ days,95,DEP,Manhattan,2,621,4
+91+ days,95,DEP,Queens,3,461,4
+91+ days,95,DEP,Staten Island,12,3127,4
+91+ days,97,DOB,Brooklyn,3,545,4
+91+ days,97,DOB,Queens,3,600,4
+91+ days,97,DOB,Staten Island,1,313,4
+91+ days,98,DEP,Bronx,9,2180,4
+91+ days,98,DEP,Brooklyn,24,5677,4
+91+ days,98,DEP,Manhattan,14,3952,4
+91+ days,98,DEP,Queens,34,10579,4
+91+ days,98,DEP,Staten Island,6,1860,4
+91+ days,100,DOHMH,Queens,1,103,4
+91+ days,101,OTI,Bronx,1,137,4
+91+ days,101,OTI,Manhattan,6,1055,4
+91+ days,105,DSNY,Bronx,136,31135,4
+91+ days,105,DSNY,Brooklyn,384,80719,4
+91+ days,105,DSNY,Manhattan,110,24229,4
+91+ days,105,DSNY,Queens,288,61168,4
+91+ days,105,DSNY,Staten Island,104,19485,4
+91+ days,105,DSNY,Unspecified,1,326,4
+91+ days,106,DPR,Bronx,51,9664,4
+91+ days,106,DPR,Brooklyn,624,95610,4
+91+ days,106,DPR,Manhattan,200,32556,4
+91+ days,106,DPR,Queens,1060,176147,4
+91+ days,106,DPR,Staten Island,7,1923,4
+91+ days,106,DPR,Unspecified,2,482,4
+91+ days,109,DOHMH,Brooklyn,1,374,4
+91+ days,110,DOHMH,Brooklyn,1,101,4
+91+ days,112,DPR,Bronx,27,4046,4
+91+ days,112,DPR,Brooklyn,123,19064,4
+91+ days,112,DPR,Manhattan,34,4807,4
+91+ days,112,DPR,Queens,134,19764,4
+91+ days,112,DPR,Staten Island,31,5409,4
+91+ days,113,DEP,Bronx,4,771,4
+91+ days,113,DEP,Brooklyn,5,756,4
+91+ days,113,DEP,Manhattan,3,809,4
+91+ days,113,DEP,Queens,2,334,4
+91+ days,113,DEP,Staten Island,1,120,4
+91+ days,114,NYPD,Manhattan,2,320,4
+91+ days,114,NYPD,Queens,1,293,4
+91+ days,115,EDC,Bronx,50,12131,4
+91+ days,115,EDC,Brooklyn,3158,909168,4
+91+ days,115,EDC,Manhattan,8306,2160465,4
+91+ days,115,EDC,Queens,1989,631622,4
+91+ days,115,EDC,Staten Island,106,27375,4
+91+ days,117,NYPD,Manhattan,1,91,4
+91+ days,118,NYPD,Bronx,115,33423,4
+91+ days,118,NYPD,Manhattan,1,91,4
+91+ days,118,NYPD,Queens,1,91,4
+91+ days,119,NYPD,Bronx,30,3038,4
+91+ days,119,NYPD,Manhattan,1,91,4
+91+ days,119,NYPD,Queens,2,452,4
+91+ days,120,NYPD,Bronx,3,273,4
+91+ days,121,NYPD,Queens,1,91,4
+91+ days,123,DSNY,Bronx,49,12244,4
+91+ days,123,DSNY,Brooklyn,37,8925,4
+91+ days,123,DSNY,Manhattan,14,4557,4
+91+ days,123,DSNY,Queens,62,13039,4
+91+ days,123,DSNY,Staten Island,92,20523,4
+91+ days,123,DSNY,Unspecified,2,502,4
+91+ days,125,DOT,Bronx,1,139,4
+91+ days,125,DOT,Brooklyn,12,1389,4
+91+ days,125,DOT,Manhattan,6,719,4
+91+ days,125,DOT,Queens,4,490,4
+91+ days,126,HPD,Bronx,2,438,4
+91+ days,126,HPD,Manhattan,2,301,4
+91+ days,126,HPD,Queens,3,782,4
+91+ days,127,DPR,Bronx,299,45047,4
+91+ days,127,DPR,Brooklyn,4637,920910,4
+91+ days,127,DPR,Manhattan,140,18394,4
+91+ days,127,DPR,Queens,4354,775940,4
+91+ days,127,DPR,Staten Island,279,52799,4
+91+ days,127,DPR,Unspecified,45,6146,4
+91+ days,128,HPD,Bronx,126,26567,4
+91+ days,128,HPD,Brooklyn,153,33456,4
+91+ days,128,HPD,Manhattan,114,26793,4
+91+ days,128,HPD,Queens,45,10257,4
+91+ days,128,HPD,Staten Island,1,103,4
+91+ days,130,DOHMH,Bronx,18,4363,4
+91+ days,130,DOHMH,Brooklyn,36,8838,4
+91+ days,130,DOHMH,Manhattan,10,2456,4
+91+ days,130,DOHMH,Queens,18,5181,4
+91+ days,130,DOHMH,Staten Island,4,1081,4
+91+ days,131,DEP,Bronx,2,603,4
+91+ days,131,DEP,Brooklyn,2,717,4
+91+ days,131,DEP,Manhattan,6,1831,4
+91+ days,131,DEP,Queens,3,636,4
+91+ days,131,DEP,Staten Island,1,309,4
+91+ days,132,DOB,Bronx,15,2544,4
+91+ days,132,DOB,Brooklyn,65,10651,4
+91+ days,132,DOB,Manhattan,5,517,4
+91+ days,132,DOB,Queens,70,16172,4
+91+ days,132,DOB,Staten Island,8,1804,4
+91+ days,132,HPD,Bronx,774,142052,4
+91+ days,132,HPD,Brooklyn,390,80908,4
+91+ days,132,HPD,Manhattan,573,121301,4
+91+ days,132,HPD,Queens,163,34229,4
+91+ days,132,HPD,Staten Island,16,3651,4
+91+ days,135,OTI,Bronx,1,225,4
+91+ days,135,OTI,Brooklyn,1,125,4
+91+ days,135,OTI,Manhattan,1,403,4
+91+ days,137,DOHMH,Brooklyn,2,270,4
+91+ days,137,DOHMH,Queens,1,156,4
+91+ days,138,DOB,Brooklyn,3,709,4
+91+ days,138,DOB,Staten Island,1,107,4
+91+ days,139,DSNY,Manhattan,1,156,4
+91+ days,140,DSNY,Bronx,1,181,4
+91+ days,140,DSNY,Brooklyn,1,292,4
+91+ days,140,DSNY,Manhattan,5,1104,4
+91+ days,140,DSNY,Unspecified,1,309,4
+91+ days,141,DOHMH,Bronx,3,665,4
+91+ days,141,DOHMH,Brooklyn,121,14776,4
+91+ days,141,DOHMH,Manhattan,20,3101,4
+91+ days,141,DOHMH,Queens,176,21400,4
+91+ days,141,DOHMH,Staten Island,52,6027,4
+91+ days,142,DPR,Bronx,473,80293,4
+91+ days,142,DPR,Brooklyn,2283,536359,4
+91+ days,142,DPR,Manhattan,248,57564,4
+91+ days,142,DPR,Queens,1880,338306,4
+91+ days,142,DPR,Staten Island,901,176536,4
+91+ days,142,DPR,Unspecified,37,5857,4
+91+ days,143,HPD,Bronx,82,15348,4
+91+ days,143,HPD,Brooklyn,80,15692,4
+91+ days,143,HPD,Manhattan,81,17847,4
+91+ days,143,HPD,Queens,23,4542,4
+91+ days,144,DSNY,Brooklyn,2,519,4
+91+ days,144,DSNY,Queens,4,706,4
+91+ days,144,DSNY,Staten Island,1,375,4
+91+ days,144,DSNY,Unspecified,5,985,4
+91+ days,147,DEP,Bronx,253,57868,4
+91+ days,147,DEP,Brooklyn,373,78466,4
+91+ days,147,DEP,Manhattan,158,35827,4
+91+ days,147,DEP,Queens,423,95100,4
+91+ days,147,DEP,Staten Island,68,17040,4
+91+ days,148,DEP,Bronx,3,575,4
+91+ days,148,DEP,Brooklyn,32,5919,4
+91+ days,148,DEP,Manhattan,4,495,4
+91+ days,148,DEP,Queens,8,1086,4
+91+ days,149,DOT,Bronx,45,9715,4
+91+ days,149,DOT,Brooklyn,29,4179,4
+91+ days,149,DOT,Manhattan,48,8972,4
+91+ days,149,DOT,Queens,18,2873,4
+91+ days,149,DOT,Staten Island,10,1385,4
+91+ days,150,DOHMH,Queens,2,649,4
+91+ days,151,DSNY,Bronx,7,1663,4
+91+ days,151,DSNY,Brooklyn,14,3416,4
+91+ days,151,DSNY,Manhattan,1,241,4
+91+ days,151,DSNY,Queens,88,21601,4
+91+ days,151,DSNY,Staten Island,3,683,4
+91+ days,151,DSNY,Unspecified,2,548,4
+91+ days,152,DOT,Bronx,33,8538,4
+91+ days,153,DOB,Brooklyn,1,151,4
+91+ days,153,DOB,Staten Island,5,991,4
+91+ days,154,DOB,Brooklyn,23,3495,4
+91+ days,155,DOB,Bronx,24,4659,4
+91+ days,155,DOB,Brooklyn,189,39019,4
+91+ days,155,DOB,Manhattan,203,42528,4
+91+ days,155,DOB,Queens,195,41249,4
+91+ days,155,DOB,Staten Island,9,1629,4
+91+ days,155,DOB,Unspecified,1,92,4
+91+ days,157,DOHMH,Bronx,5,975,4
+91+ days,157,DOHMH,Brooklyn,10,1810,4
+91+ days,157,DOHMH,Manhattan,1,378,4
+91+ days,157,DOHMH,Queens,8,2519,4
+91+ days,157,DOHMH,Staten Island,3,829,4
+91+ days,158,DOT,Bronx,169,33499,4
+91+ days,158,DOT,Brooklyn,1602,274736,4
+91+ days,158,DOT,Manhattan,318,59451,4
+91+ days,158,DOT,Queens,4758,1092723,4
+91+ days,158,DOT,Staten Island,186,40343,4
+91+ days,158,DOT,Unspecified,10,2164,4
+91+ days,159,DOT,Bronx,441,100523,4
+91+ days,159,DOT,Brooklyn,988,186684,4
+91+ days,159,DOT,Manhattan,499,132260,4
+91+ days,159,DOT,Queens,595,131539,4
+91+ days,159,DOT,Staten Island,165,32162,4
+91+ days,159,DOT,Unspecified,22,4419,4
+91+ days,160,DOT,Bronx,10,1347,4
+91+ days,160,DOT,Brooklyn,23,2809,4
+91+ days,160,DOT,Manhattan,7,1055,4
+91+ days,160,DOT,Queens,113,17206,4
+91+ days,160,DOT,Staten Island,7,867,4
+91+ days,161,DOT,Bronx,8,1147,4
+91+ days,161,DOT,Brooklyn,7,933,4
+91+ days,161,DOT,Manhattan,1,94,4
+91+ days,161,DOT,Queens,14,2484,4
+91+ days,161,DOT,Staten Island,2,317,4
+91+ days,162,DOT,Bronx,14,1894,4
+91+ days,162,DOT,Brooklyn,21,3152,4
+91+ days,162,DOT,Manhattan,8,1085,4
+91+ days,162,DOT,Queens,143,22800,4
+91+ days,162,DOT,Staten Island,9,1161,4
+91+ days,163,DSNY,Bronx,2,503,4
+91+ days,163,DSNY,Brooklyn,3,994,4
+91+ days,163,DSNY,Manhattan,8,1042,4
+91+ days,163,DSNY,Queens,1,170,4
+91+ days,163,DSNY,Unspecified,3,874,4
+91+ days,164,DOHMH,Brooklyn,2,523,4
+91+ days,164,DOHMH,Manhattan,1,213,4
+91+ days,164,DOHMH,Queens,1,94,4
+91+ days,166,TLC,Bronx,36,7544,4
+91+ days,166,TLC,Brooklyn,156,33937,4
+91+ days,166,TLC,Manhattan,3529,771136,4
+91+ days,166,TLC,Queens,2695,627640,4
+91+ days,166,TLC,Staten Island,4,781,4
+91+ days,166,TLC,Unspecified,145,32914,4
+91+ days,168,TLC,Bronx,1,290,4
+91+ days,168,TLC,Brooklyn,1,269,4
+91+ days,168,TLC,Queens,1,270,4
+91+ days,168,TLC,Unspecified,1,346,4
+91+ days,169,TLC,Bronx,9,1985,4
+91+ days,169,TLC,Brooklyn,19,5074,4
+91+ days,169,TLC,Manhattan,308,73786,4
+91+ days,169,TLC,Queens,281,71075,4
+91+ days,169,TLC,Unspecified,28,7196,4
+91+ days,170,DOHMH,Bronx,20,4436,4
+91+ days,170,DOHMH,Brooklyn,26,5717,4
+91+ days,170,DOHMH,Manhattan,26,5598,4
+91+ days,170,DOHMH,Queens,33,7447,4
+91+ days,170,DOHMH,Staten Island,5,1183,4
+91+ days,172,DOT,Bronx,129,32251,4
+91+ days,172,DOT,Brooklyn,981,253231,4
+91+ days,172,DOT,Manhattan,1154,283606,4
+91+ days,172,DOT,Queens,707,177795,4
+91+ days,172,DOT,Staten Island,32,8303,4
+91+ days,172,DOT,Unspecified,6,1612,4
+91+ days,175,DOT,Manhattan,1,99,4
+91+ days,176,DOHMH,Bronx,71,16779,4
+91+ days,176,DOHMH,Brooklyn,186,40580,4
+91+ days,176,DOHMH,Manhattan,46,11646,4
+91+ days,176,DOHMH,Queens,149,35592,4
+91+ days,176,DOHMH,Staten Island,33,7887,4
+91+ days,177,DOHMH,Bronx,2,727,4
+91+ days,177,DOHMH,Brooklyn,12,3492,4
+91+ days,177,DOHMH,Manhattan,8,2069,4
+91+ days,177,DOHMH,Queens,9,2527,4
+91+ days,177,DOHMH,Staten Island,2,587,4
+91+ days,178,DOHMH,Brooklyn,9,1095,4
+91+ days,178,DOHMH,Manhattan,1,211,4
+91+ days,178,DOHMH,Queens,17,2009,4
+91+ days,178,DOHMH,Staten Island,4,434,4
+91+ days,179,HPD,Bronx,699,129379,4
+91+ days,179,HPD,Brooklyn,556,109457,4
+91+ days,179,HPD,Manhattan,454,91232,4
+91+ days,179,HPD,Queens,312,57674,4
+91+ days,179,HPD,Staten Island,14,2992,4
+91+ days,180,DOHMH,Brooklyn,4,508,4
+91+ days,180,DOHMH,Manhattan,3,486,4
+91+ days,180,DOHMH,Queens,18,2203,4
+91+ days,180,DOHMH,Staten Island,5,549,4
+91+ days,182,DPR,Bronx,4,423,4
+91+ days,182,DPR,Brooklyn,57,11665,4
+91+ days,182,DPR,Manhattan,4,447,4
+91+ days,182,DPR,Queens,100,18927,4
+91+ days,182,DPR,Staten Island,1,153,4
+91+ days,185,DPR,Brooklyn,1,104,4
+91+ days,185,DPR,Queens,4,672,4
+91+ days,187,DEP,Manhattan,2,331,4
+91+ days,187,DEP,Staten Island,18,4340,4
+91+ days,188,HPD,Bronx,69,15089,4
+91+ days,188,HPD,Brooklyn,108,25227,4
+91+ days,188,HPD,Manhattan,67,15598,4
+91+ days,188,HPD,Queens,35,8095,4
+91+ days,188,HPD,Staten Island,4,1036,4
+91+ days,189,DEP,Bronx,3,1014,4
+91+ days,189,DEP,Brooklyn,11,1547,4
+91+ days,189,DEP,Manhattan,7,1260,4
+91+ days,189,DEP,Queens,44,7516,4
+91+ days,190,DEP,Bronx,1,148,4
+91+ days,190,DEP,Brooklyn,3,468,4
+91+ days,190,DEP,Queens,2,617,4
+91+ days,191,DEP,Bronx,169,46267,4
+91+ days,191,DEP,Brooklyn,368,64951,4
+91+ days,191,DEP,Manhattan,85,20038,4
+91+ days,191,DEP,Queens,434,110307,4
+91+ days,191,DEP,Staten Island,28,6332,4
+91+ days,192,DOT,Bronx,1,193,4
+91+ days,194,DPR,Bronx,8,1341,4
+91+ days,194,DPR,Brooklyn,70,10408,4
+91+ days,194,DPR,Manhattan,7,887,4
+91+ days,194,DPR,Queens,58,10905,4
+91+ days,194,DPR,Staten Island,15,2504,4
+91+ days,195,DOHMH,Bronx,1,100,4
