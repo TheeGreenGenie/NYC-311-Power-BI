@@ -1,0 +1,196 @@
+ComplaintKey,ComplaintType,Category
+1,Abandoned Bike,Parking & Vehicles
+2,Abandoned Vehicle,Parking & Vehicles
+3,Ahv Inspection Unit,Other
+4,Air Quality,Environmental Health
+5,Animal Facility - No Permit,Animals & Pests
+6,Animal In A Park,Animals & Pests
+7,Animal-Abuse,Animals & Pests
+8,Appliance,Housing Conditions
+9,Asbestos,Environmental Health
+10,Beach/Pool/Sauna Complaint,Other
+11,Bench,Other
+12,Best/Site Safety,Housing Conditions
+13,Bike Rack,Parking & Vehicles
+14,Bike/Roller/Skate,Parking & Vehicles
+15,Bike/Roller/Skate Chronic,Parking & Vehicles
+16,Blocked Driveway,Parking & Vehicles
+17,Boilers,Other
+18,Borough Office,Other
+19,Bridge Condition,Streets & Sidewalks
+20,Broken Parking Meter,Parking & Vehicles
+21,Building Condition,Buildings & Permits
+22,Building Drinking Water Tank,Water & Sewer
+23,Building Marshal'S Office,Buildings & Permits
+24,Building Marshals Office,Buildings & Permits
+25,Building/Use,Buildings & Permits
+26,Bus Stop Shelter Complaint,Streets & Sidewalks
+27,Bus Stop Shelter Placement,Streets & Sidewalks
+28,Calorie Labeling,Other
+29,Cannabis Retailer,Consumer & Business
+30,Commercial Disposal Complaint,Sanitation & Litter
+31,Construction Lead Dust,Environmental Health
+32,Construction Safety Enforcement,Housing Conditions
+33,Consumer Complaint,Consumer & Business
+34,Cooling Tower,Other
+35,Cranes And Derricks,Other
+36,Curb Condition,Streets & Sidewalks
+37,Damaged Tree,Trees & Parks
+38,Day Care,Other
+39,Dead Animal,Animals & Pests
+40,Dead/Dying Tree,Trees & Parks
+41,Dep Highway Condition,Streets & Sidewalks
+42,Dep Sidewalk Condition,Streets & Sidewalks
+43,Dep Street Condition,Streets & Sidewalks
+44,Dept Of Investigations,Other
+45,Derelict Vehicles,Parking & Vehicles
+46,Dirty Condition,Sanitation & Litter
+47,Disorderly Youth,Public Safety & Conduct
+48,Door/Window,Housing Conditions
+49,Drinking,Public Safety & Conduct
+50,Drinking Water,Water & Sewer
+51,Drug Activity,Public Safety & Conduct
+52,Dry Weather Discharge,Other
+53,Dsny Internal,Other
+54,Dumpster Complaint,Other
+55,E-Scooter,Other
+56,Electric,Housing Conditions
+57,Electrical,Housing Conditions
+58,Elevator,Housing Conditions
+59,Emergency Response Team (Ert),Other
+60,Encampment,Homelessness
+61,Ferry Complaint,Other
+62,Ferry Inquiry,Other
+63,Fhv Licensee Complaint,Other
+64,Flooring/Stairs,Housing Conditions
+65,Food Establishment,Consumer & Business
+66,Food Poisoning,Consumer & Business
+67,For Hire Vehicle Complaint,Parking & Vehicles
+68,For Hire Vehicle Report,Parking & Vehicles
+69,Found Property,Other
+70,General,Housing Conditions
+71,General Construction/Plumbing,Housing Conditions
+72,Graffiti,Sanitation & Litter
+73,Green Infrastructure,Other
+74,Green Taxi Complaint,Parking & Vehicles
+75,Green Taxi Report,Parking & Vehicles
+76,Harboring Bees/Wasps,Other
+77,Hazardous Material,Environmental Health
+78,Hazardous Materials,Environmental Health
+79,Heat/Hot Water,Heat & Hot Water
+80,Highway Condition,Streets & Sidewalks
+81,Highway Sign - Damaged,Streets & Sidewalks
+82,Highway Sign - Dangling,Streets & Sidewalks
+83,Highway Sign - Missing,Streets & Sidewalks
+84,Homeless Person Assistance,Homelessness
+85,Illegal Animal Kept As Pet,Animals & Pests
+86,Illegal Animal Sold,Animals & Pests
+87,Illegal Dumping,Sanitation & Litter
+88,Illegal Fireworks,Public Safety & Conduct
+89,Illegal Parking,Parking & Vehicles
+90,Illegal Posting,Consumer & Business
+91,Illegal Tree Damage,Trees & Parks
+92,Incorrect Data,Other
+93,Indoor Air Quality,Environmental Health
+94,Indoor Sewage,Other
+95,Industrial Waste,Sanitation & Litter
+96,Institution Disposal Complaint,Sanitation & Litter
+97,Investigations And Discipline (Iad),Other
+98,Lead,Environmental Health
+99,Leaning Bar,Other
+100,Lifeguard,Other
+101,Linknyc,Other
+102,Litter Basket Complaint,Sanitation & Litter
+103,Litter Basket Request,Sanitation & Litter
+104,Lost Property,Public Safety & Conduct
+105,Lot Condition,Other
+106,Maintenance Or Facility,Trees & Parks
+107,Missed Collection,Sanitation & Litter
+108,Mobile Food Vendor,Consumer & Business
+109,Mold,Housing Conditions
+110,Mosquitoes,Animals & Pests
+111,Municipal Parking Facility,Parking & Vehicles
+112,New Tree Request,Trees & Parks
+113,Noise,Noise
+114,Noise - Commercial,Noise
+115,Noise - Helicopter,Noise
+116,Noise - House Of Worship,Noise
+117,Noise - Park,Noise
+118,Noise - Residential,Noise
+119,Noise - Street/Sidewalk,Noise
+120,Noise - Vehicle,Noise
+121,Non-Emergency Police Matter,Public Safety & Conduct
+122,Non-Residential Heat,Other
+123,Obstruction,Streets & Sidewalks
+124,Oil Or Gas Spill,Other
+125,Outdoor Dining,Consumer & Business
+126,Outside Building,Housing Conditions
+127,Overgrown Tree/Branches,Trees & Parks
+128,Paint/Plaster,Housing Conditions
+129,Panhandling,Public Safety & Conduct
+130,Pet Sale,Other
+131,Plant,Trees & Parks
+132,Plumbing,Housing Conditions
+133,Poison Ivy,Other
+134,Posting Advertisement,Other
+135,Public Payphone Complaint,Other
+136,Public Toilet,Other
+137,Radioactive Material,Other
+138,Real Time Enforcement,Other
+139,Recycling Basket Complaint,Sanitation & Litter
+140,Residential Disposal Complaint,Sanitation & Litter
+141,Rodent,Animals & Pests
+142,Root/Sewer/Sidewalk Condition,Streets & Sidewalks
+143,Safety,Housing Conditions
+144,Sanitation Worker Or Vehicle Complaint,Parking & Vehicles
+145,Scaffold Safety,Housing Conditions
+146,School Maintenance,Other
+147,Sewer,Water & Sewer
+148,Sewer Maintenance,Water & Sewer
+149,Sidewalk Condition,Streets & Sidewalks
+150,Smoking Or Vaping,Consumer & Business
+151,Snow Or Ice,Sanitation & Litter
+152,Snw,Other
+153,Special Natural Area District (Snad),Other
+154,Special Operations,Other
+155,Special Projects Inspection Team (Spit),Other
+156,Squeegee,Other
+157,Standing Water,Water & Sewer
+158,Street Condition,Streets & Sidewalks
+159,Street Light Condition,Streets & Sidewalks
+160,Street Sign - Damaged,Streets & Sidewalks
+161,Street Sign - Dangling,Streets & Sidewalks
+162,Street Sign - Missing,Streets & Sidewalks
+163,Street Sweeping Complaint,Sanitation & Litter
+164,Tanning,Other
+165,Tattooing,Other
+166,Taxi Complaint,Parking & Vehicles
+167,Taxi Compliment,Parking & Vehicles
+168,Taxi Licensee Complaint,Parking & Vehicles
+169,Taxi Report,Parking & Vehicles
+170,Tobacco Or Non-Tobacco Sale,Other
+171,Traffic,Streets & Sidewalks
+172,Traffic Signal Condition,Streets & Sidewalks
+173,Transfer Station Complaint,Other
+174,Trapping Pigeon,Other
+175,Tunnel Condition,Other
+176,Unleashed Dog,Other
+177,Unsanitary Animal Facility,Animals & Pests
+178,Unsanitary Animal Pvt Property,Animals & Pests
+179,Unsanitary Condition,Housing Conditions
+180,Unsanitary Pigeon Condition,Other
+181,Unspecified,Other
+182,Uprooted Stump,Other
+183,Urinating In Public,Public Safety & Conduct
+184,Vendor Enforcement,Consumer & Business
+185,Violation Of Park Rules,Trees & Parks
+186,Waste Water Treatment Plant,Sanitation & Litter
+187,Water Conservation,Water & Sewer
+188,Water Leak,Housing Conditions
+189,Water Maintenance,Water & Sewer
+190,Water Quality,Water & Sewer
+191,Water System,Water & Sewer
+192,Wayfinding,Other
+193,Window Guard,Other
+194,Wood Pile Remaining,Other
+195,X-Ray Machine/Equipment,Other
